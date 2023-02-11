@@ -1,0 +1,108 @@
+   16  gunzip -help
+   17  gunzip -k HS7_R1.fastq.gz 
+   19  gunzip -k HS7_R2.fastq.gz 
+   20  gunzip -k HS7_pacbioData.fastq.gz 
+   31  /FastQC/fastqc
+   35  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out < (zcat ./Data_for_Assignment/HS7_R1.fastq.gz)
+   36  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ./Data_for_Assignment/HS7_R1.fastq.gz)
+   39  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ./scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+   40  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+   41  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_19mer_out.histo R1_19mer_out 
+   42  R
+   43  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R1_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+   44  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_25mer_out.histo R1_25mer_out 
+   45  R
+   46  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R1_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+   47  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_30mer_out.histo R1_30mer_out 
+   48  R
+   49  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R2_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+   50  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R2_30mer_out.histo R2_30mer_out 
+   51  R
+   52  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+   53  ls ../Data_for_Assignment/HS7_R1.fastq.gz > R1_list
+   54  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+   55  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_list
+   56  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_listls
+   68  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+   69  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_list
+   71  less R1_corr.freq.stat 
+   72  ls ../../Data_for_Assignment/HS7_R1.fastq.gz > R1_list
+   73  KmerFreq_AR --help
+   74  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ./Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+   75  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+   76  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+   77  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_19mer_corr.histo R1_19mer_corr_out 
+   78  R
+   79  cat ../../Data_for_Assignment/HS7_R1.fastq | grep "^@" | wc -l
+   80  ls
+   81  ls ../../Data_for_Assignment/
+   82  gunzip -k ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz 
+   83  ls ../../Data_for_Assignment/
+   84  cat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq | grep "^@" | wc -l
+   85  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R1_25mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+   86  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_25mer_corr.histo R1_25mer_corr_out 
+   87  R
+   88  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R1_30mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+   89  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_30mer_corr.histo R1_30mer_corr_out 
+   96  cat reads_1.fastq | grep "^@" | wc -l
+   97  gunzip -k reads_1.fastq.gz
+   98  gunzip -k reads_1.fastq.gz.cor.single.fq.gz 
+  100  cat reads_1.fastq | grep "^@" | wc -l
+  101  cat reads_1.fastq.gz.cor.single.fq.gz | grep "^@" | wc -l
+  102  cat reads_1.fastq.gz.cor.single.fq | grep "^@" | wc -l
+  109  ls ../../Data_for_Assignment/HS7_R2.fastq.gz > R2_list
+  110  KmerFreq_AR -k 15 -t 1 -q 33 -p R2_corr R2_list
+  111  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R2_corr.freq.cz R2_corr.freq.cz.len R2_list
+  112  gunzip -k ../../Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz 
+  113  cat ../../Data_for_Assignment/HS7_R2.fastq | grep "^@" | wc -l
+  114  cat ../../Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq | grep "^@" | wc -l
+  115  ls ../../../data/practical2/
+  116  gunzip -k ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz 
+  117  gunzip -k ../../../data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  118  Corrector_AR --help
+  119  cat ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz | grep "^@" | wc -l
+  120  cat ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq | grep "^@" | wc -l
+  121  cat ../../../data/practical2/frag_2.fastq.gz.cor.pair_2.fq | grep "^@" | wc -l
+  130  cd Assignment/kmer_Analysis/Correction/
+  131  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  132  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_19mer.histo R12corr_19mer_out
+  135  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  136  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  137  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12corr_19mer_out
+  139  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12_19mer_out
+  142  R
+  143  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  144  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12_19mer_out
+  145  R
+  146  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R12_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  147  cd Correction/
+  148  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R12corr_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  149  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_25mer.histo R12corr_25mer_out
+  150  R
+  151  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R12corr_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  152  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_30mer.histo R12corr_30mer_out
+  153  R
+  154  cd ../
+  155  history
+  156  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pabbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  157  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_30mer.histo pacbio30mer_out
+  158  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pacbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  159  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_19mer.histo pacbio_19mer_out 
+  160  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o pacbio_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  161  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_25mer.histo pacbio_25mer_out 
+  162  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o pacbio_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  163  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_30mer.histo pacbio_30mer_out 
+  164  R
+  167  ls ../../Data_for_Assignment/HS7_pacbioData.fastq.gz > PacBio_list
+  168  KmerFreq_AR -k 15 -t 1 -q 33 -p PacBio_corr PacBio_list 
+  169  Corrector_AR -k 15 -l 2 -Q 33 -t 1 PacBio_corr.freq.cz PacBio_corr.freq.cz.len PacBio_list
+  170  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  171  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o PacBio_corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  172  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_19mer.histo PacBio_corr_19mer_out 
+  173  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o PacBio_corr_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  174  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_25mer.histo PacBio_corr_25mer_out 
+  175  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o PacBio_corr_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  176  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_30mer.histo PacBio_corr_30mer_out 
+  177  R
+  178  cd ../
+  179  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pacbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
