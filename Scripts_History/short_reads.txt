@@ -1,0 +1,1000 @@
+  115  zcat /scratch/s388143/gamod/data/Rhodobacter/RS_frag_1.fastq.gz.cor.single.fq.gz | grep -v "^@|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot += length($1)}END{print "Sum:"tot}'
+  116  zcat /scratch/s388143/gamod/data/Rhodobacter/RS_frag_1.fastq.gz.cor.single.fq.gz | grep -v "^@\|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot += length($1)}END{print "Sum:"tot}'
+  117  zcat /scratch/s388143/gamod/data/Rhodobacter/RS_frag_1.fastq.gz.cor.single.fq.gz | grep "^@" | wc -l
+  118  /FastQC/fastqc
+  119  SOAPdenovo-64mer
+  120  mkdir soap
+  121  cd soap
+  122  SOAPdenovo-63mer
+  123  less sopaPE.conf 
+  124  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  125  less sopaPE.conf 
+  126  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  127  less /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz
+  128  ls /scratch/s388143/gamod/data/practical2/
+  129  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  130  less /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz
+  131  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  132  nano sopaPE.conf 
+  133  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  134  nano sopaPE.conf 
+  135  head /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz
+  136  xterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256colorxterm-256color
+  137  nano sopaPE.conf 
+  138  rm soapPE.conf 
+  139  nano sopaPE.conf 
+  140  nano soapPE.conf 
+  141  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 2900000 -p 2 -o peK25
+  142  SOAPdenovo-63mer contig -g peK25 -s soapPE.conf -p 2
+  143  java -jar /usr/local/bin/gnx.jar peK25.contig
+  144  nano
+  145  nano soapPE.conf 
+  146  nano soapPE_cor.config 
+  147  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  148  nano soapPE_cor.config 
+  149  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  150  nano soapPE_cor.config 
+  151  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  152  rm soapPE_cor.config 
+  153  nano soapPE_cor.config
+  154  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  155  less soapPE_cor.conf
+  156  ls
+  157  less soapPE_cor.config 
+  158  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  159  nano soapPE_cor.conf 
+  160  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  161  less /scratch/s388143/gamod/data/pratical2/frag_1.fastq.gz.cor.pair_1.fq.gz
+  162  less /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz
+  163  less /scratch/s388143/gamod/data/pratical2/frag_1.fastq.gz.cor.pair_1.fq.gz
+  164  nano soapPE_cor.conf 
+  165  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 25 -z 2900000 -p 2 -o peK25
+  166  SOAPdenovo-63mer contig -g peK25 -s soapPE_cor.conf -p 2
+  167  java -jar /usr/local/bin/gnx.jar peK25.contig
+  168  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 27 -z 2900000 -p 2 -o peK25
+  169  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 27 -z 2900000 -p 2 -o peK27
+  170  SOAPdenovo-63mer contig -g peK27 -s soapPE_cor.conf -p 2
+  171  java -jar /usr/local/bin/gnx.jar peK27.contig
+  172  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 31 -z 2900000 -p 2 -o peK31
+  173  SOAPdenovo-63mer contig -g peK31 -s soapPE_cor.conf -p 2
+  174  java -jar /usr/local/bin/gnx.jar peK31.contig
+  175  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 35 -z 2900000 -p 2 -o peK23
+  176  SOAPdenovo-63mer contig -g peK35 -s soapPE_cor.conf -p 2
+  177  java -jar /usr/local/bin/gnx.jar peK35.contig
+  178  SOAPdenovo-63mer sparse_pregraph -s soapPE_cor.conf -K 23 -z 2900000 -p 2 -o peK23
+  179  java -jar /usr/local/bin/gnx.jar peK23.contig
+  180  SOAPdenovo-63mer contig -g peK23 -s soapPE_cor.conf -p 2
+  181  java -jar /usr/local/bin/gnx.jar peK23.contig
+  182  nano soapPE_MP.config
+  183  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -z 2900000 -p 2 -o pe_mp23
+  184  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  185  nano soapPE_MP.conf
+  186  ls
+  187  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  188  nano soapPE_MP.conf
+  189  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  190  nano soapPE_MP.conf 
+  191  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  192  nano soapPE_MP.conf 
+  193  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  194  nano soapPE_MP.conf 
+  195  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  196  nano soapPE_MP.conf 
+  197  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp25 -p 2
+  198  java -jar /usr/local/bin/gnx.jar pe_mp25.scafSeq
+  199  GapCloser -a pe_mp25.scafSeq -b soapPE_MP.config -o pe_mp25_gapClosed.fasta
+  200  GapCloser -a pe_mp25.scafSeq -b soapPE_MP.conf -o pe_mp25_gapClosed.fasta
+  201  SOAPdenovo-63mer all -s soapPE_MP.conf -K 25 -o pe_mp27 -p 2
+  202  java -jar /usr/local/bin/gnx.jar pe_mp27.scafSeq
+  203  GapCloser -a pe_mp27.scafSeq -b soapPE_MP.conf -o pe_mp27_gapClosed.fasta
+  204  SOAPdenovo-63mer all -s soapPE_MP.conf -K 27 -o pe_mp27 -p 2
+  205  GapCloser -a pe_mp27.scafSeq -b soapPE_MP.conf -o pe_mp27_gapClosed.fasta
+  206  java -jar /usr/local/bin/gnx.jar pe_mp27.scafSeq
+  207  SOAPdenovo-63mer all -s soapPE_MP.conf -K 31 -o pe_mp31 -p 2
+  208  GapCloser -a pe_mp31.scafSeq -b soapPE_MP.conf -o pe_mp23_gapClosed.fasta
+  209  java -jar /usr/local/bin/gnx.jar pe_mp31.scafSeq
+  210  SOAPdenovo-63mer all -s soapPE_MP.conf -K 35 -o pe_mp35 -p 2
+  211  GapCloser -a pe_mp35.scafSeq -b soapPE_MP.conf -o pe_mp35_gapClosed.fasta
+  212  java -jar /usr/local/bin/gnx.jar pe_mp35.scafSeq
+  213  SOAPdenovo-63mer all -s soapPE_MP.conf -K 23 -o pe_mp23 -p 2
+  214  GapCloser -a pe_mp23.scafSeq -b soapPE_MP.conf -o pe_mp23_gapClosed.fasta
+  215  java -jar /usr/local/bin/gnx.jar pe_mp23.scafSeq
+  216  cd ../
+  217  mkdir velvet
+  218  cd velvet
+  219  velveth k25_SE_out 25 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  220  velvetg k25_SE_out
+  221  java -jar /usr/local/bin/gnx.jar k25_SE_out/contigs.fa
+  222  zcat /scratch/s388143/gamod/data/practical3/shortjump_1.fastq.gz fastx_reverse_complement -Q 33 -z -i - -o shortjump1_REV.fastq.gz
+  223  zcat /scratch/s388143/gamod/data/practical3/shortjump_1.fastq.gz | fastx_reverse_complement -Q 33 -z -i - -o shortjump1_REV.fastq.gz
+  224  zcat /scratch/s388143/gamod/data/practical3/shortjump_2.fastq.gz | fastx_reverse_complement -Q 33 -z -i - -o shortjump2_REV.fastq.gz
+  225  velveth k25_SE_MP_out 25 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump_1_REV.fastq.gz shortjump_2_REV.fastq.gz
+  226  velveth k25_SE_MP_out 25 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump1_REV.fastq.gz shortjump2_REV.fastq.gz
+  227  velvet k25_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  228  velvetg k25_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  229  GapCloser -a k25_SE_MP_out/contigs.fa -b ../soap/soapPE_MP.conf -o k25_SE_MP_out/contigsGapClose.fa
+  230  java -jar /usr/local/bin/gnx.jar k25_SE_MP_out/contigsGapClose.fa
+  231  cd practical3
+  232  cd velvet/
+  233  velveth k27_SE_out 27 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  234  velvetg k27_SE_out
+  235  java -jar /usr/local/bin/gnx.jar k27_SE_out/contigs.fa
+  236  zcat /scratch/s388143/gamod/data/practical3/shortjump_1.fastq.gz fastx_reverse_complement -Q 33 -z -i - -o shortjump1_REV.fastq.gz
+  237  zcat /scratch/s388143/gamod/data/practical3/shortjump_1.fastq.gz | fastx_reverse_complement -Q 33 -z -i - -o shortjump1_REV.fastq.gz
+  238  velveth k27_SE_MP_out 27 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump_1_REV.fastq.gz shortjump_2_REV.fastq.gz
+  239  zcat /scratch/s388143/gamod/data/practical3/shortjump_2.fastq.gz | fastx_reverse_complement -Q 33 -z -i - -o shortjump2_REV.fastq.gz
+  240  velveth k27_SE_MP_out 27 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump_1_REV.fastq.gz shortjump_2_REV.fastq.gz
+  241  velveth k27_SE_MP_out 27 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump1_REV.fastq.gz shortjump2_REV.fastq.gz
+  242  velvet k27_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  243  velvetg k27_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  244  GapCloser -a k27_SE_MP_out/contigs.fa -b ../soap/soapPE_MP.conf -o k27_SE_MP_out/contigsGapClose.fa
+  245  java -jar /usr/local/bin/gnx.jar k27_SE_MP_out/contigsGapClose.fa
+  246  velveth k31_SE_out 31 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  247  velvetg k31_SE_out
+  248  java -jar /usr/local/bin/gnx.jar k31_SE_out/contigs.fa
+  249  velveth k31_SE_MP_out 31 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump1_REV.fastq.gz shortjump2_REV.fastq.gz
+  250  velvetg k31_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  251  GapCloser -a k31_SE_MP_out/contigs.fa -b ../soap/soapPE_MP.conf -o k31_SE_MP_out/contigsGapClose.fa
+  252  java -jar /usr/local/bin/gnx.jar k31_SE_MP_out/contigsGapClose.fa
+  253  velveth k23_SE_out 23 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  254  velvetg k23_SE_out
+  255  java -jar /usr/local/bin/gnx.jar k23_SE_out/contigs.fa
+  256  velveth k23_SE_MP_out 23 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz -shortPaired2 -separate -fastq.gz shortjump1_REV.fastq.gz shortjump2_REV.fastq.gz
+  257  velvetg k23_SE_MP_out -ins_length 180 -ins_length_sd 20 -ins_length2 3500 -ins_length2_sd 350 -scaffolding yes -exp_cov auto -cov_cutoff auto
+  258  GapCloser -a k23_SE_MP_out/contigs.fa -b ../soap/soapPE_MP.conf -o k23_SE_MP_out/contigsGapClose.fa
+  259  java -jar /usr/local/bin/gnx.jar k23_SE_MP_out/contigsGapClose.fa
+  260  cd../
+  261  cd ../
+  262  ls
+  263  mkdir idba
+  264  zcat /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz > frag_1.cor.fastq
+  265  zcat /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz > frag_2.cor.fastq
+  266  fq2a --merge frag_1.cor.fastq frag_2.cor.fastq  frag12_PE.fasta
+  267  fq2fa --merge frag_1.cor.fastq frag_2.cor.fastq  frag12_PE.fasta
+  268  rm frag_*.cor.fastq
+  269  idba -r frag12_PE.fasta --read_level2 shortjump12_MP.fasta --mink 20 --maxk 54 --step 7 -o k20_54_PE_MP --num_threads 2
+  270  idba -r frag12_PE.fasta --read_level_2 shortjump12_MP.fasta --mink 20 --maxk 54 --step 7 -o k20_54_PE_MP --num_threads 2
+  271  cd idba/
+  272  zcat /scratch/s388143/gamod/practical3/velvet/shortjump1_REV.fastq.gz > shortjump_1_REV.fastq
+  273  zcat /scratch/s388143/gamod/practical3/velvet/shortjump2_REV.fastq.gz > shortjump_2_REV.fastq
+  274  fq2fa --merge shortjump_1_REV.fastq shortjump_2_REV.fastq shortjump12_MP.fasta
+  275  rm short*.fastq
+  276  idba -r frag12_PE.fasta --read_level_2 shortjump12_MP.fasta --mink 20 --maxk 54 --step 7 -o k20_54_PE_MP --num_threads 2
+  277  GapCloser --help
+  278  GapCloser -a k20_54_PE_MP/scaffhold-level-2.fa -b /scratch/s388143/gamod/practical3/soap/soapPE_MP.conf -o k20_54_PE_MP/scaffold-level-2_gapClosed.fa
+  279  GapCloser -a k20_54_PE_MP/scaffold-level-2.fa -b /scratch/s388143/gamod/practical3/soap/soapPE_MP.conf -o k20_54_PE_MP/scaffold-level-2_gapClosed.fa
+  280  java -jar /usr/local/bin/gnx.jar k20_54_PE_MP/scaffold-level-2_gapClosed.fa
+  281  idba -r frag12_PE.fasta --read_level_2 shortjump12_MP.fasta --mink 21 --maxk 69 --step 8 -o k21_69_PE_MP --num_threads 2
+  282  GapCloser -a k21_69_PE_MP/scaffold-level-2.fa -b /scratch/s388143/gamod/practical3/soap/soapPE_MP.conf -o k21_69_PE_MP/scaffold-level-2_gapClosed.fa
+  283  java -jar /usr/local/bin/gnx.jar k21_69_PE_MP/scaffold-level-2_gapClosed.fa
+  284  cd ../../
+  285  mkdir practical4
+  286  cd practical4
+  287  mkdir soap
+  288  cd soap
+  289  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p soap_pe_mp27 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/soap/pe_mp27.scafSeq
+  290  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 soap_pe_mp27.delta > soap_pe_mp27.fdelta
+  291  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot soap_pe_mp27.fdelta -l -f -p soap_pe_mp27
+  292  gnuplot soap_pe_mp27.gp 
+  293  cd ..
+  294  ls
+  295  mkdir velvet
+  296  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p velvet_pe_mpk27 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/velvet/k27_SE_out/contigs.fa 
+  297  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 velvet_pe_mpk27.delta > velvet_pe_mpk27.fdelta
+  298  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot velvet_pe_mpk27.fdelta -l -f -p soap_pe_mp27
+  299  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot velvet_pe_mpk27.fdelta -l -f -p velvet_pe_mp27
+  300  gnuplot velvet_pe_mp27.gp 
+  301  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot soap_pe_mp27.fdelta -l -f -p soap_pe_mp27
+  302  ls
+  303  cd velvet
+  304  gnuplot velvet_pe_mp27.gp 
+  305  cd ../
+  306  mkdir idba
+  307  cd idba
+  308  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p diba_pe_mpk27_20_54 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/idba/k20_54_PE_MP/contig-27.fa 
+  309  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 idba_pe_mpk27_20_54.delta > idba_pe_mpk27_20_54.fdelta
+  310  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p idba_pe_mpk27_20_54 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/idba/k20_54_PE_MP/contig-27.fa 
+  311  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 idba_pe_mpk27_20_54.delta > idba_pe_mpk27_20_54.fdelta
+  312  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot idba_pe_mpk27_20_54.fdelta -l -f -p idba_pe_mpk27_20_54
+  313  gnuplot idba_pe_mpk27_20_54.gp 
+  314  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p idba_pe_mpk27_21_69 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/idba/k21_69_PE_MP/contig-27.fa 
+  315  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 idba_pe_mpk27_21_69.delta > idba_pe_mpk27_21_69.fdelta
+  316  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot idba_pe_mpk27_21_69.fdelta -l -f -p idba_pe_mpk27_21_69
+  317  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p idba_pe_mpk27_21_69 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/idba/k21_69_PE_MP/contig-27.fa 
+  318  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p idba_pe_mpk27_21_69 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/data/practical4/SA_genome.fasta /scratch/s388143/gamod/practical3/idba/k21_69_PE_MP/contig-29.fa 
+  319  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 idba_pe_mpk27_21_69.delta > idba_pe_mpk27_21_69.fdelta
+  320  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot idba_pe_mpk27_21_69.fdelta -l -f -p idba_pe_mpk27_21_69
+  321  gnuplot idba_pe_mpk27_21_69.gp
+  322  cd ../
+  323  ls
+  324  mkdir ALE
+  325  cd ALE
+  326  mkdir soap
+  327  cd soap
+  328  bwa index /scratch/s388143/gamod/practical3/soap/pe_mp27_gapClosed.fasta
+  329  bwa --help
+  330  bwa
+  331  bwa mem /scratch/s388143/gamod/practical3/soap/pe_mp27_gapClosed.fasta ~/gamod/data/practical2/frag_1.fastq.gz ~/gamod/data/practical2/frag_2.fastq.gz | samtools view -bS -> pe_mp27_aligns.bam
+  332  samtools sort pe_mp27_aligns.bam -o pe_mp27_alignSort.bam
+  333  samtools --help
+  334  samtools index pe_mp27_alignSort.bam
+  335  /ALE/src/ALE pe_mp27_alignSort.bam ~/gamod/practical3/soap/pe_mp27_gapClosed.fasta pe_mp27.ale
+  336  /ALE/src/ale2wiggle.py pe_mp27.ale
+  337  igv.sh
+  338  ls
+  339  cd gamod/
+  340  ls
+  341  cd practical3/
+  342  l
+  343  ls
+  344  cd velvet/
+  345  ls
+  346  velveth k27_SE_out 27 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  347  velvet
+  348  velveth k25_SE_out 25 -shortPaired -separate -fastq.gz /scratch/s388143/gamod/data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz /scratch/s388143/gamod/data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  349  module load Singularity
+  350  singularity shell gamod.sing
+  351  singularity shell gamod.simg
+  352  cd ../
+  353  singularity shell gamod.simg
+  354  ls
+  355  cd practical4
+  356  ls
+  357  cd ALE
+  358  cd soap/
+  359  /ALE/src/ale2wiggle.py pe_mp27.ale
+  360  /ALE/scr/ALE pe_mp27_alignSort.bam ~/gamod/practical3/soap/pe_mp27_gapClosed.fasta pe_mp27.ale
+  361  /ALE/src/ALE pe_mp27_alignSort.bam ~/gamod/practical3/soap/pe_mp27_gapClosed.fasta pe_mp27.ale
+  362  igv.sh
+  363  cd ../
+  364  mkdir KAT
+  365  cd KAT
+  366  kat comp -o pe_vs_pecor_mp23 -t 2 '/scratch/s388143/gamod/data/practical2/frag_?.fastq.gz.cor.pair_?.fq.gz' ~/gamod/practical3/soap/pe_mp23_gapClosed.fasta
+  367  python3 /usr/local/share/kat/scripts/kat/plot/spectra_cn.py pe_vs_pecor_mp23-main.mx -o pe_vs_pecor_mp23
+  368  pe_vs_pecor_mp23.stats
+  369  ls
+  370  pe_vs_pecor_mp23.stats
+  371  pe_vs_pecor_mp23.png
+  372  cd ../
+  373  ls
+  374  cd ALE
+  375  cd soap/
+  376  ls
+  377  igv.sh
+  378  cd ../
+  379  mkdir pratcical5
+  380  rm pratcical5/
+  381  rm -r pratcical5/
+  382  mkdir practical5
+  383  cd practical5
+  384  mkdir canu
+  385  cd canu
+  386  mkdir salmonella
+  387  cd salmonella/
+  388  cp --help
+  389  l
+  390  ls
+  391  cp template.sub salmonella_canu.sub
+  392  ls
+  393  less salmonella_canu.sub 
+  394  qsub salmonella_canu.sub 
+  395  qstat
+  396  exit
+  397  ls
+  398  cd practical5
+  399  ls
+  400  mkdir soap
+  401  ls
+  402  cd soap
+  403  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p soap_salmonella10TTU46 -l 30 -l 30 --banded -D 5 ~/gamod/data/salmonella/salmonella_10TTU468x.fasta ~/gamod/practical5/falcon/salmonella/2-asm-falcon/p_ctg.fa 
+  404  ls
+  405  /MaSuRCA-3.2.7/global-l/MUMmer/delta-filter -i 95 soap_salmonella10TTU46.delta > soap_salmonella10TTU46
+  406  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 soap_salmonella10TTU46.delta > soap_salmonella10TTU46
+  407  ls
+  408  /MaSuRCA-3.2.7/global-1/MUMmer/nummerplot soap_salmonella10TTU46.fdelta -l -f -p soap_salmonella10TTU46
+  409  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot soap_salmonella10TTU46.fdelta -l -f -p soap_salmonella10TTU46
+  410  ls
+  411  /MaSuRCA-3.2.7/global-l/MUMmer/delta-filter -i 95 soap_salmonella10TTU46.delta > soap_salmonella10TTU46.fdelta
+  412  ls
+  413  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot soap_salmonella10TTU46.fdelta -l -f -p soap_salmonella10TTU46
+  414  ls
+  415  rm soap_salmonella10TTU46.fdelta
+  416  rm soap_salmonella10TTU46
+  417  rm soap_salmonella10TTU46.delta
+  418  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p soap_salmonella10TTU46 -l 30 -l 30 --banded -D 5 ~/gamod/data/salmonella/salmonella_10TTU468x.fasta ~/gamod/practical5/falcon/salmonella/2-asm-falcon/p_ctg.fa 
+  419  ls
+  420  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 soap_salmonella10TTU46.delta > soap_salmonella10TTU46.fdelta
+  421  ls
+  422  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot soap_salmonella10TTU46.fdelta -l -f -p soap_salmonella10TTU46
+  423  gnuplot soap_salmonella10TTU46
+  424  ls
+  425  gnuplot soap_salmonella10TTU46.gp 
+  426  cd ../
+  427  ls
+  428  cd ../
+  429  ls
+  430  cd practical5
+  431  ls
+  432  kmdir salmonella
+  433  mkdir slamonella
+  434  ls
+  435  cp canu ./salmonella
+  436  cp -r canu ./salmonella
+  437  ls
+  438  ls salmonella
+  439  ls
+  440  ls slamonella/
+  441  rm slamonella/
+  442  rm -r slamonella/
+  443  ls
+  444  ls salmonella/
+  445  mv canu salmonella/
+  446  ls
+  447  ls salmonella/
+  448  mv falcon/ salmonella/
+  449  ls
+  450  mv soap/ salmonella/
+  451  ls
+  452  mkdir micrococcaceae
+  453  cd micrococcaceae/
+  454  mkdir canu
+  455  cd canu
+  456  canu useGrid=false -p SRR5829181_15
+  457  cp /scratch/s388143/gamod/practical5/salmonella/canu/salmonella/salmonella_canu.sub ./miccroco_canu_sub
+  458  ls
+  459  qsub miccroco_canu.sub
+  460  exit
+  461  cd practical5/micrococcaceae/falcon/
+  462  ls
+  463  zcat /scratch/s388143/gamod/data/micrococcaceae_bact_JKS001869/SRR5829181_15perc.fastq.gz | awk '{if(NR%4 < 3){if(NR%4==1){split($3,a,"length=");print">"substr($1,2,length($1))"/"NR"/0_"a[2]}else{if(NR%4 == 2){print}}}}' > ~/gamod/practical5/micrococcaceae/falcon/SRR5829181_15perc.fasta
+  464  ls ~/gamod/practical5/micrococcaceae/falcon/SRR5829181_15perc.fasta
+  465  cp ~/gamod/data/practical5/falcon_config ./
+  466  ls ~/gamod/practical5/micrococcaceae/falcon/SRR5829181_15perc.fasta > inputFoF
+  467  ls
+  468  input_fofn
+  469  source /Falcon-integrate/fc_env/bin/activate
+  470  fc_run falcon_config
+  471  ls
+  472  cd gampd
+  473  cd gamod/
+  474  module load singularity
+  475  module load Singularity
+  476  singularity shell gamod.simg
+  477  ls
+  478  cd practical5/micrococcaceae/
+  479  ls
+  480  cd canu/
+  481  ls
+  482  qsub miccroco_canu.sub 
+  483  qstat
+  484  ls
+  485  cd ../
+  486  l
+  487  ls
+  488  mkdir falcon
+  489  cd falcon
+  490  cd ../../
+  491  cd ../
+  492  ls
+  493  singularity shell gamod.simg 
+  494  cd practical5/
+  495  ls
+  496  cd canu/
+  497  ls
+  498  cd salmonella/
+  499  ls
+  500  less salmonella.o233512
+  501  cd ../
+  502  cd falcon/salmonella/
+  503  ls
+  504  source /Falcon-integrate/fc_env/bin/activate
+  505  fc_run falcon_config
+  506  ls
+  507  mkdir practical6
+  508  l
+  509  ls
+  510  cd practical6
+  511  mkdir DBG2OLC
+  512  cd DBG2OLC/
+  513  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq
+  514  ls
+  515  less Contigs.txt
+  516  cat Contigs.txt | grep "^>" | wc-l
+  517  cat Contigs.txt | grep "^>" | wc -l
+  518  cat Contigs.txt | grep -v "^>" | awk '{tot+=length($1)}END{print "Tot sum:" tot}'
+  519  cat ~/gamod/data/ecoli/ERR2683112_1_18.fastq | grep "^>" | wc -l
+  520  cat ~/gamod/data/ecoli/ERR2683112_1_18.fastq | grep "^@" | wc -l
+  521  cat ~/gamod/data/ecoli/ERR2683112_1_18.fastq | grep -v "@\|+" | awk '{tot+=length($1)}END{print "Tot sum:" tot}'
+  522  cat ~/gamod/data/ecoli/ERR2683112_1_18.fastq | grep -v "@\|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot+=length($1)}END{print "Tot sum:" tot}'
+  523  cat ~/gamod/data/ecoli/ERR2683112_1_18.fastq | grep -v "^@\|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot+=length($1)}END{print "Tot sum:" tot}'
+  524  cat ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta | grep "^>" | wc -l
+  525  cat ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta | grep -v "^>" | awk '{tot+=length($1)}END{print "Tot sum:" tot}'
+  526  /DBG2OLC/compiled/DBG2OLC k 17 AdaptiveTh 0.0001 KmerCovTh 2 MinOverLap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  527  ls
+  528  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverLap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  529  chmod a+x my_split_nrun_sparc.sh
+  530  cp ~/gamod/data/practical6/my_split_nrun_sparc.sh ./
+  531  chmod a+x my_split_nrun_sparc.sh
+  532  source /pitchfork/setup-env.sh
+  533  cat Contigs.txt ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta > ctg_pb.fasta
+  534  ./my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/consensusOUT 2
+  535  ls
+  536  /fastqc/ FastQC
+  537  /FastQC/ fastqc
+  538  /FastQC/fastqc
+  539  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz 
+  540  ls
+  541  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq
+  542  mkdir correction_short
+  543  cd correction_short/
+  544  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz 
+  545  ls
+  546  cat Contigs.txt ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta > ctg_pb.fasta
+  547  ./my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/correction_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/consensusOUT 2
+  548  ls
+  549  ./my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/correction_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/consensusOUT 2
+  550  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/correction_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/consensusOUT 2
+  551  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/correction_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/correction_short/consensusOUT 2
+  552  cd ../
+  553  ./my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/consensusOUT 2
+  554  ls
+  555  cd correction_short/
+  556  ls
+  557  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverLap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta_
+  558  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/correction_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/correction_short/consensusOUT 2
+  559  ls
+  560  lscd ../
+  561  cd ../
+  562  mkdir cor_short
+  563  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz 
+  564  ls
+  565  cd cor_short/
+  566  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz 
+  567  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverLap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads..fasta
+  568  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverLap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta
+  569  cd ../
+  570  ls
+  571  mkdir cor_short
+  572  cp ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz ./
+  573  ls
+  574  cd cor_short/
+  575  ls
+  576  cp ~/gamod/data/ecoli/ERR2683112_1_18.fastq.cor.single.fq.gz ./
+  577  ls
+  578  gunzip ERR2683112_1_18.fastq.cor.single.fq.gz 
+  579  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ERR2683112_1_18.fastq.cor.single.fq 
+  580  ls
+  581  cat Contigs.txt ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta > ctg_pb.fasta
+  582  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~ctg_pb.fasta ./consensusOUT 2
+  583  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~ctg_pb.fasta ~gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  584  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta  ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  585  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta  ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  586  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/cor_short/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/cor_short/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta  ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  587  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/cor_short/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/cor_short/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta  ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT_cor 2
+  588  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ERR2683112_1_18.fastq.cor.single.fq 
+  589  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/cor_short/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/cor_short/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta  ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT_cor 2
+  590  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/cor_short/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/cor_short/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  591  s
+  592  ls
+  593  cd practical6/
+  594  ls
+  595  cd DBG2OLC/
+  596  ls
+  597  cd cor_short
+  598  ls
+  599  /DBG2OLC/compiled/SparseAssembler GS 8000000 NodeCovTh 1 EdgeCovTh 1 k 27 g 1 f ERR2683112_1_18.fastq.cor.single.fq 
+  600  DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  601  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  602  source /pitchfork/setup-env.sh 
+  603  cat Contigs.txt ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta > ctg_pb.fasta
+  604  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/cor_short/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/cor_short/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/cor_short/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/cor_short/consensusOUT 2
+  605  cd ../
+  606  mkdir masurca
+  607  cd masurca/
+  608  /MaSuRCA-3.2.7/bin/masurca -h
+  609  /MaSuRCA-3.2.7/bin/masurca -g masurca_config
+  610  ls
+  611  export PATH=$PATH:./
+  612  /MaSuRCA-3.2.7/bin/masurca masurca-config
+  613  /MaSuRCA-3.2.7/bin/masurca masurca_config
+  614  ./assemble.sh
+  615  ls
+  616  cd ../
+  617  mkdir ~/gamod/pratical6/spades
+  618  mkdir spades
+  619  cd spades/
+  620  spades.py
+  621  spades.py -o ecoli --s1 ~/gamod/data/ecoli/ERR2683112_1_18.fastq ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta -t 4 -m 4
+  622  spades.py -o ecoli --s1 ~/gamod/data/ecoli/ERR2683112_1_18.fastq --pacbio ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta -t 4 -m 4
+  623  cd ../
+  624  ls
+  625  cd DBG2OLC/
+  626  ls
+  627  mkdir soap
+  628  cd soap
+  629  ls
+  630  nano soapPE.conf
+  631  cd ../
+  632  ls
+  633  mkdir velvet
+  634  cd velvet
+  635  velveth -h
+  636  velveth k27_SE_out 27 -shortPaired -fastq ~/gamod/data/ecoli/ERR2683112_1_18.fastq
+  637  ls
+  638  cd gamod/
+  639  ls
+  640  module load SIngularity
+  641  module load Singularity
+  642  cd gamod
+  643  ls
+  644  singularity shell gamod.simg
+  645  cd practical6
+  646  ls
+  647  cd DBG2OLC/
+  648  ls
+  649  cd ../
+  650  ls
+  651  cd ../
+  652  singularity shell gamod.simg
+  653  cd ../
+  654  ls
+  655  cd gamod/
+  656  singularity shell gamod.simg
+  657  cd practical6
+  658  ls
+  659  cd DBG2OLC/
+  660  ls
+  661  cd velvet/
+  662  velvetg k27_SE_out
+  663  ls
+  664  java -jar /usr/local/bin/gnx.jar k27_SE_out/contigs.fa 
+  665  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  666  /DBG2OLC/compiled/DBG2OLC k 27 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs k27_SE_out/contigs.fa f ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta 
+  667  source /pitchfork/setup-env.sh 
+  668  cat k27_SE_out/contigs.fa ~/gamod/data/ecoli/NormalTwoDirectionReads.fasta > ctg_pb.fasta
+  669  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/velvet/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/velvet/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/velvet/consensusOUT 2 
+  670  ../my_split_nrun_sparc.sh ~/gamod/practical6/DBG2OLC/velvet/backbone_raw.fasta ~/gamod/practical6/DBG2OLC/velvet/DBG2OLC_Consensus_info.txt ~/gamod/practical6/DBG2OLC/velvet/ctg_pb.fasta ~/gamod/practical6/DBG2OLC/velvet/consensusOUT 2 
+  671  cd ../
+  672  ls
+  673  cd masurca/
+  674  mkdir PE_rze42
+  675  cd PE_rze42/
+  676  ls
+  677  cd practical6
+  678  ls
+  679   cd masurca/
+  680  ls
+  681  cd --h
+  682  cd -h
+  683  ls dir
+  684  ls -h
+  685  ls --help
+  686  ls -d
+  687  mkdir pe_rze
+  688  cd pe
+  689  cd pe_rze
+  690  java -jar /usr/local/bin/gnx.jar ~/gamod/data/rhizobium_etli_cfn42//PE_rze42_R1.fastq.gz
+  691  java -jar /usr/local/bin/gnx.jar ~/gamod/data/rhizobium_etli_cfn42/PE_rze42_R1.fastq.gz
+  692  java -jar /usr/local/bin/gnx.jar ~/gamod/data/rhizobium_etli_cfn42/PE_rze42_R2.fastq.gz
+  693  java -jar /usr/local/bin/gnx.jar ~/gamod/data/rhizobium_etli_cfn42/rhi_LongReads.fasta 
+  694  java -jar /usr/local/bin/gnx.jar ~/gamod/data/rhizobium_etli_cfn42/rhi_LongReads_shorter.fasta 
+  695  gunzip ~/gamod/data/rhizobium_etli_cfn42/PE_rze42_R2.fastq.gz
+  696  cp ~/gamod/data/rhizobium_etli_cfn42/PE_rze42_R2.fastq.gz ./
+  697  cp ~/gamod/data/rhizobium_etli_cfn42/PE_rze42_R1.fastq.gz ./
+  698  gunzip PE_rze42_R1.fastq.gz 
+  699  gunzip PE_rze42_R2.fastq.gz 
+  700  ls
+  701  /MaSuRCA-3.2.7/bin/masurca -h
+  702  /MaSuRCA-3.2.7/bin/masurca -g masurca config
+  703  /MaSuRCA-3.2.7/bin/masurca -g masurca_config
+  704  ls
+  705  export PATH=$PATH
+  706  /MaSuRCA-3.2.7/bin/masurca masurca_config 
+  707  ./assemble.sh
+  708  ls
+  709  /MaSuRCA-3.2.7/bin/masurca masurca_config 
+  710  export PATH=$PATH:./
+  711  /MaSuRCA-3.2.7/bin/masurca masurca_config 
+  712  ./assemble.sh
+  713  locale -a
+  714  /MaSuRCA-3.2.7/bin/masurca masurca_config 
+  715  /MaSuRCA-3.2.7/bin/masurca -g masurca_conf
+  716  /MaSuRCA-3.2.7/bin/masurca -h
+  717  export PATH=$PATH:./
+  718  /MaSuRCA-3.2.7/bin/masurca -h
+  719  cd p6
+  720  cd practical6
+  721  ls
+  722  cd masurca/
+  723  ls
+  724  cd pe_rze/
+  725  ls
+  726  /MaSuRCA-3.2.7/bin/masurca -h
+  727  export PATH=$PATH:./
+  728  /MaSuRCA-3.2.7/bin/masurca masurca_config
+  729  ./assemble.sh
+  730  ls
+  731  cd gamod/
+  732  module load Singularity
+  733  singularity shell gamod.simg 
+  734  ls
+  735  cd practical6
+  736  ls
+  737  cd masurca/
+  738  ls
+  739  cd pe_rze/
+  740  ls
+  741  /MaSuRCA-3.2.7/global-1/MUMmer/nucmer --maxmatch -p pe_rze42 -l 30 -l 30 --banded -D 5 /scratch/s388143/gamod/practical6/masurca/pe_rze/CA.mr.41.15.17.0.029/9-terminator/genome.scf.fasta ~/gamod/data/rhizobium_etli_cfn42/rhizobium_etli_cfn42.fasta 
+  742  /MaSuRCA-3.2.7/global-1/MUMmer/delta-filter -i 95 pe_rze42.delta > pe_rze42.fdelta
+  743  ls
+  744  /MaSuRCA-3.2.7/global-1/MUMmer/nummerplot pe_rze42.fdelta -l -f -p pe_rze42
+  745  /MaSuRCA-3.2.7/global-1/MUMmer/mummerplot pe_rze42.fdelta -l -f -p pe_rze42
+  746  ls
+  747  gunplot pe_rze42.gp 
+  748  gnuplot pe_rze42.gp 
+  749  cd ../
+  750  mkdir practical7
+  751  cd practical7/
+  752  java -jar /usr/local/bin/pilon-1.22.jar --help
+  753  mkdir test1
+  754  cd test1
+  755  ln -s
+  756  ln -s ~/gamod/practical6/DBG2OLC/consensusOUT/final_assembly.fasta 
+  757  bwa index final_assembly.fasta 
+  758  bwa mem final_assembly.fasta ~/gamod/data/ecoli/ERR2683112_1_18.fastq | samtools view -bS -> ERR2683112_1_18_aligns.bam
+  759  ls
+  760  samtools -h
+  761  samtools --help
+  762  samtools fasta ~/gamod/practical7/test1/ERR2683112_1_18_aligns.bam -0 ERR2683112_1_18_aligns.fasta
+  763  cat ERR2683112_1_18_aligns.fasta | grep v "^*" | wc -l
+  764  cat ERR2683112_1_18_aligns.fasta | grep -v "^*" | wc -l
+  765  samtools sort ERR2683112_1_18_aligns.bam -o ERR2683112_1_18_alignsSorted.bam
+  766  less ERR2683112_1_18_aligns.fasta 
+  767  samtools fastq ~/gamod/practical7/test1/ERR2683112_1_18_aligns.bam -0 ERR2683112_1_18_aligns.fastq
+  768  ls
+  769  less ERR2683112_1_18_aligns.fastq 
+  770  less ERR2683112_1_18_aligns.bam 
+  771  cat ERR2683112_1_18_aligns.bam | grep -v "^*" | wc -l
+  772  cat ERR2683112_1_18_aligns.bam | grep -v "^*"
+  773  less ERR2683112_1_18_aligns.bam 
+  774  samtools --h
+  775  samtools view ERR2683112_1_18_aligns.bam 
+  776  cut --help
+  777  samtools view ERR2683112_1_18_aligns.bam | cut -f 3 | grep "^*" | wc -l
+  778  samtools view ERR2683112_1_18_aligns.bam | cut -f 3 | grep -v "^*" | wc -l
+  779  samtools view ERR2683112_1_18_aligns.bam | cut -f 3 | grep -v "*" | wc -l
+  780  samtools view ERR2683112_1_18_aligns.bam | cut -f 3
+  781  samtools view ERR2683112_1_18_aligns.bam
+  782  samtools sort ERR2683112_1_18_aligns.bam ERR2683112_1_18_alignsSorted.bam
+  783  samtools index ERR2683112_1_18_alignsSorted.bam
+  784  java -jar /usr/local/bin/pilon-1.22.jar --unpaired ERR2683112_1_18_alignsSorted.bam --genome final_assembly.fasta --output ecoli_final_piloned --tracks > pilon_log
+  785  ls
+  786  grep "^Corrected" pilon_log | awk '{print $1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9" "$10" "$11" "$12" "$13" "$14" "$15" "$16" "$17" "$18" "$19"}'
+  787  grep "^Corrected" pilon_log | awk '{print $1" "$2" "$3" "$4" "$5" "$6" "$7" "$8" "$9" "$10" "$11" "$12" "$13" "$14" "$15" "$16" "$17" "$18" "$19}'
+  788  grep "^Corrected" pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19}'
+  789  grep "^Corrected" ecoli_final_piloned.fasta | awk '{print $1" "$2" "$3"..."$17" "$18" "$19}'
+  790  ln -s 
+  791  bwa ecoli_final_piloned.fasta
+  792  bwa index ecoli_final_piloned.fasta
+  793  bwa mem ecoli_final_piloned.fasta ~/gamod/data/ecoli/ERR2683112_1_18.fastq | samtools view -bS -> ERR2683112_1_18_aligns.bam
+  794  bwa mem ecoli_final_piloned.fasta ~/gamod/data/ecoli/ERR2683112_1_18.fastq | samtools view -bS -> ecoli_ERR2683112_1_18_aligns.bam
+  795  ln --help
+  796  samtools sort ecoli_ERR2683112_1_18_aligns.bam ecoli_ERR2683112_1_18_alignsSorted.bam 
+  797  samtools index ecoli_ERR2683112_1_18_alignsSorted.bam 
+  798  ls
+  799  samtools sort ecoli_ERR2683112_1_18_aligns.bam ecoli_ERR2683112_1_18_alignsSorted.bam 
+  800  samtools sort ecoli_ERR2683112_1_18_aligns.bam -o ecoli_ERR2683112_1_18_alignsSorted.bam 
+  801  samtools index ecoli_ERR2683112_1_18_alignsSorted.bam 
+  802  java -jar /usr/local/bin/pilon-1.22.jar --unpaired ecoli_ERR2683112_1_18_alignsSorted.bam --genome final_assembly.fasta --output ecoli_final_final_pilond --tracks > final_pilon_log
+  803  gre "^Corrected" final_pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19"}'
+  804  grep "^Corrected" final_pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19"}'
+  805  grep "^Corrected" final_pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19}'
+  806  ls
+  807  java -jar /usr/local/bin/pilon-1.22.jar --unpaired ecoli_ERR2683112_1_18_alignsSorted.bam --genome final_assembly.fasta --output ecoli_final_final_piloned --tracks > final_pilon_log
+  808  grep "^Corrected" final_pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19}'
+  809  igv.sh
+  810  java -jar /usr/local/bin/pilon-1.22.jar --unpaired ecoli_ERR2683112_1_18_alignsSorted.bam --genome ecoli_final_piloned.fasta --output ecoli_final_pilond --tracks > final_pilon_log
+  811  grep "^Corrected" final_pilon_log | awk '{print $1" "$2" "$3"..."$17" "$18" "$19}'
+  812  ls
+  813  cd gamod/
+  814  module load Singularity
+  815  ls
+  816  singularity shell gamod.simg 
+  817  module load Singularity
+  818  singularity shell gamod.simg 
+  819  cp /tutorials/bioinformatics/IBIX-SYS/Data_for_Assignment/ ./
+  820  cp -r /tutorials/bioinformatics/IBIX-SYS/Data_for_Assignment/ ./
+  821  ls
+  822  cd Data_for_Assignment/
+  823  ls
+  824  cd ../
+  825  mkdir QualityControl
+  826  cd QualityControl/
+  827  history
+  828  cd ../
+  829  ls
+  830  cd Data_for_Assignment/
+  831  ls
+  832  gunzip -help
+  833  gunzip -k HS7_R1.fastq.gz 
+  834  ls
+  835  gunzip -k HS7_R2.fastq.gz 
+  836  gunzip -k HS7_pacbioData.fastq.gz 
+  837  cd ../
+  838  ls
+  839  cd QualityControl/
+  840  /FastQC/fastqc
+  841  cd ../
+  842  mkdir tests
+  843  cd tests
+  844  cp /tutorials/bioinformatics/IBIX-SYS/Data_for_Assignment/ ./
+  845  cp -r /tutorials/bioinformatics/IBIX-SYS/Data_for_Assignment/ ./
+  846  ls
+  847  /FastQC/fastqc
+  848  cd ../
+  849  mkdir kmer_Analysis
+  850  cd kmer_Analysis/
+  851  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out < (zcat ./Data_for_Assignment/HS7_R1.fastq.gz)
+  852  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ./Data_for_Assignment/HS7_R1.fastq.gz)
+  853  ls
+  854  ls ./
+  855  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ./scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+  856  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+  857  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_19mer_out.histo R1_19mer_out 
+  858  R
+  859  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R1_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+  860  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_25mer_out.histo R1_25mer_out 
+  861  R
+  862  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R1_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz)
+  863  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_30mer_out.histo R1_30mer_out 
+  864  R
+  865  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R2_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  866  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R2_30mer_out.histo R2_30mer_out 
+  867  R
+  868  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+  869  ls ../Data_for_Assignment/HS7_R1.fastq.gz > R1_list
+  870  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+  871  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_list
+  872  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_listls
+  873  ls
+  874  rm R1_corr*
+  875  ls
+  876  mkdir Correction
+  877  cp R1_list /Correction
+  878  cd Correction
+  879  cp ./R1_list ./
+  880  cp ../R1_list ./
+  881  ls
+  882  ls ../../Data_for_Assignment/HS7_R1.fastq.gz > R1_list
+  883  ls
+  884  KmerFreq_AR -k 15 -t 1 -q 33 -p R1_corr R1_list
+  885  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R1_corr.freq.cz R1_corr.freq.cz.len R1_list
+  886  ls
+  887  less R1_corr.freq.stat 
+  888  ls ../../Data_for_Assignment/HS7_R1.fastq.gz > R1_list
+  889  KmerFreq_AR --help
+  890  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ./Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+  891  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+  892  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R1_19mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+  893  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_19mer_corr.histo R1_19mer_corr_out 
+  894  R
+  895  cat ../../Data_for_Assignment/HS7_R1.fastq | grep "^@" | wc -l
+  896  ls
+  897  ls ../../Data_for_Assignment/
+  898  gunzip -k ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz 
+  899  ls ../../Data_for_Assignment/
+  900  cat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq | grep "^@" | wc -l
+  901  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R1_25mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+  902  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_25mer_corr.histo R1_25mer_corr_out 
+  903  R
+  904  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R1_30mer_corr_out <(zcat ../../Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz)
+  905  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R1_30mer_corr.histo R1_30mer_corr_out 
+  906  R
+  907  history
+  908  cd ../
+  909  ls data/
+  910  ls data/practical1
+  911  cd data/practical1
+  912  cat reads_1.fastq | grep "^@" | wc -l
+  913  gunzip -k reads_1.fastq.gz
+  914  gunzip -k reads_1.fastq.gz.cor.single.fq.gz 
+  915  ls
+  916  cat reads_1.fastq | grep "^@" | wc -l
+  917  cat reads_1.fastq.gz.cor.single.fq.gz | grep "^@" | wc -l
+  918  cat reads_1.fastq.gz.cor.single.fq | grep "^@" | wc -l
+  919  cd ../
+  920  cd Assignment/
+  921  ls
+  922  cd kmer_Analysis/
+  923  cd Correction/
+  924  ls
+  925  ls ../../Data_for_Assignment/HS7_R2.fastq.gz > R2_list
+  926  KmerFreq_AR -k 15 -t 1 -q 33 -p R2_corr R2_list
+  927  Corrector_AR -k 15 -l 2 -Q 33 -t 1 R2_corr.freq.cz R2_corr.freq.cz.len R2_list
+  928  gunzip -k ../../Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz 
+  929  cat ../../Data_for_Assignment/HS7_R2.fastq | grep "^@" | wc -l
+  930  cat ../../Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq | grep "^@" | wc -l
+  931  ls ../../../data/practical2/
+  932  gunzip -k ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz 
+  933  gunzip -k ../../../data/practical2/frag_2.fastq.gz.cor.pair_2.fq.gz 
+  934  Corrector_AR --help
+  935  cat ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq.gz | grep "^@" | wc -l
+  936  cat ../../../data/practical2/frag_1.fastq.gz.cor.pair_1.fq | grep "^@" | wc -l
+  937  cat ../../../data/practical2/frag_2.fastq.gz.cor.pair_2.fq | grep "^@" | wc -l
+  938  KmerFreq_AR
+  939  KmerFreq_HA
+  940  KmerFreq_HAR
+  941  KmerFreq_AR
+  942  Corrector_AR
+  943  history
+  944  cd ../
+  945  ls
+  946  cd Assignment/kmer_Analysis/Correction/
+  947  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  948  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_19mer.histo R12corr_19mer_out
+  949  R
+  950  cd ../
+  951  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  952  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  953  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12corr_19mer_out
+  954  ls
+  955  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12_19mer_out
+  956  R
+  957  ls
+  958  R
+  959  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  960  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12_19mer.histo R12_19mer_out
+  961  R
+  962  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R12_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz)
+  963  cd Correction/
+  964  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o R12corr_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  965  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_25mer.histo R12corr_25mer_out
+  966  R
+  967  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o R12corr_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz) <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz)
+  968  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_30mer.histo R12corr_30mer_out
+  969  R
+  970  cd ../
+  971  history
+  972  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pabbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  973  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o R12corr_30mer.histo pacbio30mer_out
+  974  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pacbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  975  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_19mer.histo pacbio_19mer_out 
+  976  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o pacbio_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  977  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_25mer.histo pacbio_25mer_out 
+  978  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o pacbio_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  979  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_30mer.histo pacbio_30mer_out 
+  980  R
+  981  cd co
+  982  cd Correction/
+  983  ls ../../Data_for_Assignment/HS7_pacbioData.fastq.gz > PacBio_list
+  984  KmerFreq_AR -k 15 -t 1 -q 33 -p PacBio_corr PacBio_list 
+  985  Corrector_AR -k 15 -l 2 -Q 33 -t 1 PacBio_corr.freq.cz PacBio_corr.freq.cz.len PacBio_list
+  986  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o R12corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  987  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o PacBio_corr_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  988  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_19mer.histo PacBio_corr_19mer_out 
+  989  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 25 -s 1G -o PacBio_corr_25mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  990  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_25mer.histo PacBio_corr_25mer_out 
+  991  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 30 -s 1G -o PacBio_corr_30mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz.cor.single.fq.gz)
+  992  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish histo -o pacbio_corr_30mer.histo PacBio_corr_30mer_out 
+  993  R
+  994  cd ../
+  995  /MaSuRCA-3.2.7/global-1/jellyfish/bin/jellyfish count -t 2 -C -m 19 -s 1G -o pacbio_19mer_out <(zcat ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fastq.gz)
+  996  history -> kmer_analysis.txt
+  997  history > kmer_analysis.txt
+  998  ls
+  999  cd Assignment/
+ 1000  ls
+ 1001  mkdir Assemblies
+ 1002  cd Assemblies/
+ 1003  mkdir soap
+ 1004  cd soap
+ 1005  SOAPdenovo-63mer
+ 1006  nano soapPE.conf
+ 1007  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 19 -z 4900000
+ 1008  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 19 -z 4900000 -p 2 -o peK19
+ 1009  SOAPdenovo-63mer contig -g pe19 -s soepPE.conf -p 2 ke
+ 1010  SOAPdenovo-63mer contig --help
+ 1011  SOAPdenovo-63mer contig -g pe19 -s soapPE.conf -p 2
+ 1012  SOAPdenovo-63mer contig -g peK19 -s soapPE.conf -p 2
+ 1013  java -jar /usr/local/bin/gnx.jar peK19.contig
+ 1014  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 20 -z 4900000 -p 2 -o peK20
+ 1015  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 25 -z 4900000 -p 2 -o peK25
+ 1016  SOAPdenovo-63mer contig -g peK25 -s soapPE.conf -p 2
+ 1017  java -jar /usr/local/bin/gnx.jar peK25.contig
+ 1018  SOAPdenovo-63mer sparse_pregraph -s soapPE.conf -K 30 -z 5000000 -p 2 -o peK30
+ 1019  SOAPdenovo-63mer contig -g peK30 -s soapPE.conf -p 2
+ 1020  java -jar /usr/local/bin/gnx.jar peK30.contig
+ 1021  cd ../
+ 1022  mkdir velvet
+ 1023  cd velvet
+ 1024  cd ../
+ 1025  ls
+ 1026  cd kmer_Analysis/
+ 1027  cd Correction/
+ 1028  ls
+ 1029  cd ../
+ 1030  ls
+ 1031  cat ../Data_for_Assignment/HS7_R1.fastq | grep -v "^@\|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot += length($1)}END{print "Sum:"tot}'
+ 1032  cat ../Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq | grep -v "^@\|+" | awk '{if(NR%2 == 1){print}}' | awk '{tot += length($1)}END{print "Sum:"tot}'
+ 1033  velveth --help
+ 1034  velveth k19__out 19 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz 
+ 1035  cat /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq | grep "^@" | wc -l
+ 1036  velveth k19__out 19 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq.gz
+ 1037  velveth k19__out 19 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1038  ls
+ 1039  rm k19_out
+ 1040  rm -dir k19_out
+ 1041  rm -rk19_out
+ 1042  rm -r k19_out
+ 1043  cd ../
+ 1044  cd Assemblies/
+ 1045  cd velvet/
+ 1046  velveth k19__out 19 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1047  velvetg k19__out/
+ 1048  java -jar /usr/local/bin/gnx.jar k19__out/contigs.fa 
+ 1049  velveth k25_out 25 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1050  velvetg k25_out/
+ 1051  java -jar /usr/local/bin/gnx.jar k25_out/contigs.fa 
+ 1052  velveth k20_out 30 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1053  velvetg k30_out/
+ 1054  velveth k30_out 30 -shortPaired -separate -fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1055  velvetg k30_out/
+ 1056  java -jar /usr/local/bin/gnx.jar k30_out/contigs.fa 
+ 1057  cd ../
+ 1058  platanus
+ 1059  platanus --help
+ 1060  platanus assemble
+ 1061  mkdir platanus
+ 1062  cd platanus/
+ 1063  platanus assemble -o k19_cor_out -k 19 -f 
+ 1064  platanus assemble -o k19_cor_out -k 19 -f ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz
+ 1065  platanus assemble -o k19_cor_out -k 19 -f ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1066  platanus
+ 1067  ls
+ 1068  java -jar /usr/local/bin/gnx.jar k19_cor_out_contig.fa 
+ 1069  platanus scaffold
+ 1070  platanus assembly
+ 1071  platanus scaffold
+ 1072  platanus scaffold -o k19_corr_scaffhold -c k19_cor_out_contig.fa 
+ 1073  platanus scaffold -o k19_corr_scaffhold -c k19_cor_out_contig.fa -a 350
+ 1074  ls
+ 1075  platanus scaffold -o k19_corr_scaffhold -c k19_cor_out_contig.fa -a 350 -b k19_cor_out_contigBubble.fa 
+ 1076  /FastQC/ fastqc
+ 1077  FastQC/ fastqc
+ 1078  FastQC fastqc
+ 1079  /FastQC fastqc
+ 1080  /FastQC/ fastqc
+ 1081  module load FastQC
+ 1082  module load fastqc
+ 1083  platanus scaffold -o k19_corr_scaffhold -c k19_cor_out_contig.fa -a 350 -b k19_cor_out_contigBubble.fa -ip1 ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fas
+ 1084  platanus scaffold -o k19_corr_scaffhold -c k19_cor_out_contig.fa -a 350 -b k19_cor_out_contigBubble.fa -ip1 ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1085  ls
+ 1086  java -jar /usr/local/bin/gnx.jar k19_cor_scaffhold_scaffold.fa
+ 1087  java -jar /usr/local/bin/gnx.jar k19_corr_scaffhold_scaffold.fa 
+ 1088  platanus
+ 1089  platanus assemble -o k25_cor_out -k 25 -f ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1090  java -jar /usr/local/bin/gnx.jar k25_corr_scaffhold_scaffold.fa 
+ 1091  java -jar /usr/local/bin/gnx.jar k25_cor_out_contig.fa 
+ 1092  platanus scaffold -o k25_corr_scaffhold -c k25_cor_out_contig.fa -a 350 -b k25_cor_out_contigBubble.fa -ip1 ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1093  java -jar /usr/local/bin/gnx.jar k25_corr_scaffhold_scaffold.fa 
+ 1094  platanus gap
+ 1095  platanus gap_close
+ 1096  platanus gap_close -o k25_corr_gapClosed -c k25_corr_scaffhold_scaffold.fa -ip /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1097  ls
+ 1098  java -jar /usr/local/bin/gnx.jar k25_corr_gapClosed_gapClosed.fa 
+ 1099  java -jar /usr/local/bin/gnx.jar k19_corr_scaffhold_scaffold.fa 
+ 1100  platanus assemble -o k30_cor_out -k 30 -f ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1101  java -jar /usr/local/bin/gnx.jar k30_cor_out_contig.fa 
+ 1102  platanus scaffold -o k30_corr_scaffhold -c k30_cor_out_contig.fa -a 350 -b k30_cor_out_contigBubble.fa -ip1 ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1103  java -jar /usr/local/bin/gnx.jar k30_corr_scaffhold_scaffold.fa 
+ 1104  platanus gap_close -o k19_corr_gapClosed -c k19_corr_scaffhold_scaffold.fa -ip /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1105  java -jar /usr/local/bin/gnx.jar k30_corr_gapClosed_gapClosed.fa 
+ 1106  ls
+ 1107  platanus gap_close -o k30_corr_gapClosed -c k30_corr_scaffhold_scaffold.fa -ip /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq
+ 1108  java -jar /usr/local/bin/gnx.jar k30_corr_gapClosed_gapClosed.fa 
+ 1109  java -jar /usr/local/bin/gnx.jar k25_corr_gapClosed_gapClosed.fa 
+ 1110  cd ../
+ 1111  mkdir canu
+ 1112  cd canu
+ 1113  cd ../
+ 1114  history > short_reads.txt
