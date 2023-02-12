@@ -147,8 +147,8 @@ public class fileChooserPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(35, 35, 35)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(87, 87, 87)
                 .addComponent(textLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
@@ -170,7 +170,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
                             .addComponent(confirmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(95, 95, 95)
                 .addComponent(waitMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(65, 65, 65))
+                .addContainerGap())
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -339,8 +339,6 @@ public class fileChooserPanel extends javax.swing.JPanel {
     //When confirmation of selected file, save variables of file
     public void confirm(){
         //Open metrics panel and display results panel
-        //mainFrame.metricsPanel.setVisible(true);
-        
         this.setVisible(false);
     }
     

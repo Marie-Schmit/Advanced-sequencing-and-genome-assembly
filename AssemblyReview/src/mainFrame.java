@@ -31,6 +31,11 @@ public class mainFrame extends javax.swing.JFrame {
 
         jLayeredPane = new javax.swing.JLayeredPane();
         fileChooserPanel = new fileChooserPanel();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        newFileMenu = new javax.swing.JMenu();
+        newFasta = new javax.swing.JMenuItem();
+        newGtf = new javax.swing.JMenuItem();
+        metricsMenu = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,10 +51,30 @@ public class mainFrame extends javax.swing.JFrame {
         );
         jLayeredPaneLayout.setVerticalGroup(
             jLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jLayeredPaneLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(fileChooserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jLayeredPaneLayout.createSequentialGroup()
+                .addComponent(fileChooserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 463, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 13, Short.MAX_VALUE))
         );
+
+        newFileMenu.setText("Choose new file");
+
+        newFasta.setText("Choose fasta file");
+        newFileMenu.add(newFasta);
+
+        newGtf.setText("Choose gtf file");
+        newGtf.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newGtfActionPerformed(evt);
+            }
+        });
+        newFileMenu.add(newGtf);
+
+        jMenuBar1.add(newFileMenu);
+
+        metricsMenu.setText("View metrics");
+        jMenuBar1.add(metricsMenu);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -64,6 +89,10 @@ public class mainFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void newGtfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGtfActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_newGtfActionPerformed
 
     /**
      * @param args the command line arguments
@@ -103,5 +132,10 @@ public class mainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private fileChooserPanel fileChooserPanel;
     private javax.swing.JLayeredPane jLayeredPane;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenu metricsMenu;
+    private javax.swing.JMenuItem newFasta;
+    private javax.swing.JMenu newFileMenu;
+    private javax.swing.JMenuItem newGtf;
     // End of variables declaration//GEN-END:variables
 }

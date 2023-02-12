@@ -1,0 +1,8 @@
+/DBG2OLC/compiled/SparseAssembler GS 5000000 NodeCovTh 1 EdgeCovTh 1 k 30 g 1 f ~/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq ~/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq
+
+/DBG2OLC/compiled/DBG2OLC k 30 AdaptiveTh 0.0001 KmerCovTh 2 MinOverlap 20 RemoveChimera 1 Contigs Contigs.txt f ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData.fasta
+
+source /pitchfork/setup-env.sh
+
+./my_split_nrun_sparc.sh ~/gamod/Assignment/Assemblies/hybrid/DBG2OLC/backbone_raw.fasta ~/gamod/Assignment/Assemblies/hybrid/DBG2OLC/DBG2OLC_Consensus_info.txt ~/gamod/Assignment/Assemblies/hybrid/DBG2OLC/ctg_pb.fasta ~/gamod/Assignment/Assemblies/hybrid/DBG2OLC/consensusOUT 2
+
