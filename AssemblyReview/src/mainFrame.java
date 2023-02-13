@@ -16,8 +16,8 @@ public class mainFrame extends javax.swing.JFrame {
         initComponents();
         
         //See panel file browser when at software opening
-        fileChooserPanel.setVisible(true);
-        //metricsPanel.setVisible(false);
+        this.setPaneVisibility(true, false);
+        fileChooserPanel.setFileType(true, false); //First file to choose is fasta
     }
 
     /**
@@ -31,7 +31,7 @@ public class mainFrame extends javax.swing.JFrame {
 
         jLayeredPane = new javax.swing.JLayeredPane();
         fileChooserPanel = new fileChooserPanel();
-        metricsPanel1 = new metricsPanel();
+        metricsPanel = new metricsPanel();
         jMenuBar1 = new javax.swing.JMenuBar();
         newFileMenu = new javax.swing.JMenu();
         newFasta = new javax.swing.JMenuItem();
@@ -41,7 +41,7 @@ public class mainFrame extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLayeredPane.setLayer(fileChooserPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jLayeredPane.setLayer(metricsPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jLayeredPane.setLayer(metricsPanel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jLayeredPaneLayout = new javax.swing.GroupLayout(jLayeredPane);
         jLayeredPane.setLayout(jLayeredPaneLayout);
@@ -54,7 +54,7 @@ public class mainFrame extends javax.swing.JFrame {
             .addGroup(jLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPaneLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(metricsPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(metricsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         jLayeredPaneLayout.setVerticalGroup(
@@ -66,13 +66,18 @@ public class mainFrame extends javax.swing.JFrame {
             .addGroup(jLayeredPaneLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jLayeredPaneLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(metricsPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(metricsPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         newFileMenu.setText("Choose new file");
 
         newFasta.setText("Choose fasta file");
+        newFasta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                newFastaActionPerformed(evt);
+            }
+        });
         newFileMenu.add(newFasta);
 
         newGtf.setText("Choose gtf file");
@@ -86,6 +91,11 @@ public class mainFrame extends javax.swing.JFrame {
         jMenuBar1.add(newFileMenu);
 
         metricsMenu.setText("View metrics");
+        metricsMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                metricsMenuMousePressed(evt);
+            }
+        });
         jMenuBar1.add(metricsMenu);
 
         setJMenuBar(jMenuBar1);
@@ -105,9 +115,27 @@ public class mainFrame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void newGtfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGtfActionPerformed
-        // TODO add your handling code here:
+        //File chooser panel is visible
+        setPaneVisibility(true, false);
+        fileChooserPanel.setFileType(false, true); //Type of file to choose is gtf
     }//GEN-LAST:event_newGtfActionPerformed
 
+    private void newFastaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newFastaActionPerformed
+        //File chooser panel is visible
+        setPaneVisibility(true, false);
+        fileChooserPanel.setFileType(true, false); //Type of file to choose is fasta
+    }//GEN-LAST:event_newFastaActionPerformed
+
+    private void metricsMenuMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metricsMenuMousePressed
+        setPaneVisibility(false, true);
+    }//GEN-LAST:event_metricsMenuMousePressed
+
+    private void setPaneVisibility(boolean fileChoose, boolean metricView){
+        //Set visibility of metrics and fileChooser panel
+        fileChooserPanel.setVisible(fileChoose);
+        metricsPanel.setVisible(metricView);
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -148,7 +176,7 @@ public class mainFrame extends javax.swing.JFrame {
     private javax.swing.JLayeredPane jLayeredPane;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu metricsMenu;
-    private metricsPanel metricsPanel1;
+    private metricsPanel metricsPanel;
     private javax.swing.JMenuItem newFasta;
     private javax.swing.JMenu newFileMenu;
     private javax.swing.JMenuItem newGtf;

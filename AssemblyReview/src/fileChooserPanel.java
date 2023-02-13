@@ -30,7 +30,6 @@ public class fileChooserPanel extends javax.swing.JPanel {
 
         clearBtn.setVisible(false);
         confirmBtn.setVisible(false);
-
     }
     
     //Indicates if chosen file is fasta or gtf. If both are false, no file is chosen.
@@ -195,7 +194,10 @@ public class fileChooserPanel extends javax.swing.JPanel {
 
     private void fileBrowserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileBrowserBtnActionPerformed
         //Fire file chooser when user clicks on button file browser
-        nameBox = new FileDialog(new Frame(), "Open gtf or fasta File", FileDialog.LOAD);
+        if(fastaFile) //Set message according to type of file
+            nameBox = new FileDialog(new Frame(), "Open fasta file", FileDialog.LOAD);
+        else
+            nameBox = new FileDialog(new Frame(), "Open gtf file", FileDialog.LOAD);
 
         //Define search terms according to information in search bar
         searchTerms();
@@ -367,6 +369,12 @@ public class fileChooserPanel extends javax.swing.JPanel {
     //Get fileChosenMessage
     public String getFileChosenMessage() {
         return fileChosenMessage;
+    }
+    
+    //Set fasta file or gtf file to true
+    public void setFileType(boolean isFasta, boolean isGtf){
+        gtfFile = isGtf;
+        fastaFile = isFasta;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

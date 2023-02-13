@@ -13,6 +13,9 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Choose fasta file"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="newFastaActionPerformed"/>
+              </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="newGtf">
               <Properties>
@@ -28,6 +31,9 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="View metrics"/>
           </Properties>
+          <Events>
+            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="metricsMenuMousePressed"/>
+          </Events>
         </Menu>
       </SubComponents>
     </Menu>
@@ -78,7 +84,7 @@
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="metricsPanel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="metricsPanel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -94,7 +100,7 @@
               <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="metricsPanel1" min="-2" max="-2" attributes="0"/>
+                      <Component id="metricsPanel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
@@ -104,7 +110,7 @@
       <SubComponents>
         <Component class="fileChooserPanel" name="fileChooserPanel">
         </Component>
-        <Component class="metricsPanel" name="metricsPanel1">
+        <Component class="metricsPanel" name="metricsPanel">
         </Component>
       </SubComponents>
     </Container>
