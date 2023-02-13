@@ -1,0 +1,127 @@
+ #!/bin/bash
+##
+## MATLAB submission script for PBS on CRESCENT
+## --------------------------------------------
+## 
+## STEP 1:
+##
+## Enter a job name after the -N on the line below:
+##
+#PBS -N tuning
+##
+## STEP 2:
+##
+## Normally you select cpus in chunks of 16 cpus
+## The Maximum value for ncpus is 16 and mpiprocs MUST be the same value as ncpus.
+##
+## PLEASE NOTE
+## ===========
+## The standard matlab application does not run on more than one node
+## This select line must not be altered except that you can use 32 CPUs
+## if you submit your job to the core32 queue and select 2 chunks of 16
+##	32 CPUs: select=2:ncpus=16:mpiprocs=16
+##
+#PBS -l select=1:ncpus=4:mpiprocs=4
+##
+## STEP 3:
+##
+## Select the correct queue by modifying the #PBS -q line below
+##
+## half_hour	-  30 minutes
+## one_hour	-   1 hour
+## three_hour   -   3 hours
+## six_hour     -   6 hours
+## half_day	-  12 hours
+## one_day	-  24 hours
+## two_day	-  48 hours
+## five_day	- 120 hours
+## ten_day	- 240 hours (by special arrangement)
+## core32	-  24 hours (default) maximum 120 hours
+## 		      to increase the walltime modify the #PBS -l walltime line below
+##		      and remove one of the leading # characters 
+##
+#PBS -q half_day
+##
+##PBS -l walltime=24:00:00
+##
+## STEP 4:
+##
+## Replace the hpc@cranfield.ac.uk email address
+## with your Cranfield email address on the #PBS -M line below:
+## Your email address is NOT your username
+##
+#PBS -m abe 
+#PBS -M marie.schmit.143@cranfield.ac.uk
+##
+## ====================================
+## DO NOT CHANGE THE LINES BETWEEN HERE
+## ====================================
+##PBS -l application=matlab
+#PBS -j oe
+#PBS -W sandbox=PRIVATE
+#PBS -k n
+ln -s $PWD $PBS_O_WORKDIR/$PBS_JOBID
+## Change to working directory
+cd $PBS_O_WORKDIR
+## Calculate number of CPUs
+export cpus=`cat $PBS_NODEFILE | wc -l`
+## ========
+## AND HERE
+## ========
+
+module load Singularity 
+
+##Define the values for each parameters
+k=(19)
+NodeCovTh=(1)
+KmerCovTh=(2)
+MinOverlap=(20)
+AdaptativeTh=(0.0001)
+
+cd /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/
+
+for k_param in "${k[@]}"; do
+        for nodeCov_param in "${NodeCovTh[@]}"; do
+                for kmerCov_param in "${KmerCovTh[@]}"; do
+                        for min_param in "${MinOverlap[@]}"; do
+                                for adapt_param in "${AdaptativeTh[@]}"; do
+                                
+                                  ##Create a new folder for the current set of parameters
+                                  echo "params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"
+                                  
+                                  mkdir /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"
+                                  cd /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"
+                                                      
+                                  echo "Execution of sparse assembler"              
+                                  singularity exec /scratch/s388143/gamod/gamod.simg /DBG2OLC/compiled/SparseAssembler GS 5000000 NodeCovTh $nodeCov_param EdgeCovTh 1 k $k_param g 1 f /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq
+                                  
+                                  echo "Execution of DBG2OLC"
+                                  singularity exec /scratch/s388143/gamod/gamod.simg /DBG2OLC/compiled/DBG2OLC k $k_param AdaptiveTh $adapt_param KmerCovTh $kmerCov_param MinOverlap $min_param RemoveChimera 1 Contigs Contigs.txt f /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta
+                                  
+                                  echo "Call pitchfork"
+                                  singularity shell /scratch/s388143/gamod/gamod.simg source /pitchfork/setup-env.sh
+                                  
+                                  ##echo "Cat contigs"
+                                  singularity exec /scratch/s388143/gamod/gamod.simg cat Contigs.txt /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta > ctg_pb.fasta
+                                  
+                                  echo "final consensus"
+                                  /scratch/s388143/gamod/gamod.simg /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/my_split_nrun_sparc.sh /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/backbone_raw.fasta /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/DBG2OLC_Consensus_info.txt /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/ctg_pb.fasta /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/consensusOUT 2
+                                  ##Append parameters to file results
+                                  echo " " >> results.txt
+                                  echo "params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param" >> results.txt
+                                  java -jar /usr/local/bin/gnx.jar ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta >> results.txt
+                                  echo " " >> results.txt
+                                  
+                                  
+        done
+      done
+    done
+  done
+done
+
+##
+## Tidy up the log directory
+## DO NOT CHANGE THE LINE BELOW
+## ============================
+rm $PBS_O_WORKDIR/$PBS_JOBID
+#
