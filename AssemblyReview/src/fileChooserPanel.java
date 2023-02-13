@@ -277,26 +277,53 @@ public class fileChooserPanel extends javax.swing.JPanel {
     //Define search browser according to information (path or filename) entered in search bar
     public void searchTerms() {
         String path = searchBarFile.getText(); //Text entered by user in search bar
-        //If file location entered in text field, set directory
-        if (path.endsWith("\\")) {
-            //Text entered is a path
-            nameBox.setDirectory(path);
-            nameBox.setFile("*.fa;*.gtf");
-        } else if (path.matches(".*[\\.](gtf|fa)")) {
-            //Text entered is a filename
-            nameBox.setFile(path);
-        } else {
-            //User can only choose fasta or gtf file
-            nameBox.setFile("*.fa;*.gtf");
+        if(fastaFile){
+            //If file location entered in text field, set directory
+            if (path.endsWith("\\")) {
+                //Text entered is a path
+                nameBox.setDirectory(path); //Set directory to chosen path
+                nameBox.setFile("*.fa;*.fasta"); //Set extension file to fasta
+            } else if (path.matches(".*[\\.](fa|fasta)")) {
+                //Text entered is a filename
+                nameBox.setFile(path); //Set file name to chosen name
+            } else {
+                //User can only choose fasta
+                nameBox.setFile("*.fa;*.fasta");
+            }
+        }
+        else if(gtfFile){
+            //If file location entered in text field, set directory
+            if (path.endsWith("\\")) {
+                //Text entered is a path
+                nameBox.setDirectory(path); //Set directory to chosen path
+                nameBox.setFile("*.gtf"); //Set file extension to gtf
+            } else if (path.matches(".*[\\.](gtf)")) {
+                //Text entered is a filename
+                nameBox.setFile(path);
+            } else {
+                //User can only choose fasta or gtf file
+                nameBox.setFile("*.gtf");
+            }
         }
     }
 
     //Check the type of the chosen file: it can only be .gtf or .fa
     public void checkFileType(String filename) {
-        if (!filename.matches(".*[\\.](gtf|fa)") | !filename.endsWith("\\")) {
-            falseFileLbl.setText("Please choose a path, or a fasta or gtf file.");
-        } else {
+        if(fastaFile){
+            //Entered file is fasta or is a path name
+            if (!filename.matches(".*[\\.](gtf|fa)") | !filename.endsWith("\\")) {
+            falseFileLbl.setText("Please choose a path, or a fasta file.");
+            } else {
             falseFileLbl.setText("  ");
+            }
+        }
+        else if(gtfFile){
+            //Entered name is gtf or path name
+            if (!filename.matches(".*[\\.](gtf)") | !filename.endsWith("\\")) {
+            falseFileLbl.setText("Please choose a path, or a gtf file.");
+            } else {
+            falseFileLbl.setText("  ");
+            }
         }
     }
 
@@ -375,6 +402,15 @@ public class fileChooserPanel extends javax.swing.JPanel {
     public void setFileType(boolean isFasta, boolean isGtf){
         gtfFile = isGtf;
         fastaFile = isFasta;
+        
+        if(isFasta){
+            //Set label to indicate that fasta must be chosen
+            textLbl.setText("Please choose a fasta file");
+        }
+        else if(isGtf){
+            //Set label to indicate that gtf must be chosen
+            textLbl.setText("Please choose a gtf file");
+        }
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
