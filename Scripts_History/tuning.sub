@@ -72,13 +72,14 @@ export cpus=`cat $PBS_NODEFILE | wc -l`
 module load Singularity 
 
 ##Define the values for each parameters
-k=(19)
-NodeCovTh=(1)
-KmerCovTh=(2)
-MinOverlap=(20)
-AdaptativeTh=(0.0001)
+k=(19 23 27)
+NodeCovTh=(1 2)
+KmerCovTh=(2 3 4 5)
+MinOverlap=(10 20 30)
+AdaptativeTh=(0.0001 0.001 0.01)
 
 cd /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/
+echo " ********** Tuning results ************* " >> /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/results.txt
 
 for k_param in "${k[@]}"; do
         for nodeCov_param in "${NodeCovTh[@]}"; do
@@ -95,22 +96,23 @@ for k_param in "${k[@]}"; do
                                   echo "Execution of sparse assembler"              
                                   singularity exec /scratch/s388143/gamod/gamod.simg /DBG2OLC/compiled/SparseAssembler GS 5000000 NodeCovTh $nodeCov_param EdgeCovTh 1 k $k_param g 1 f /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R1.fastq.gz.cor.single.fq /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_R2.fastq.gz.cor.single.fq
                                   
+                                  echo "Call pitchfork"
+                                  singularity exec /scratch/s388143/gamod/gamod.simg singularity shell /scratch/s388143/gamod/gamod.simg source /pitchfork/setup-env.sh
+                                  
                                   echo "Execution of DBG2OLC"
                                   singularity exec /scratch/s388143/gamod/gamod.simg /DBG2OLC/compiled/DBG2OLC k $k_param AdaptiveTh $adapt_param KmerCovTh $kmerCov_param MinOverlap $min_param RemoveChimera 1 Contigs Contigs.txt f /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta
                                   
-                                  echo "Call pitchfork"
-                                  singularity shell /scratch/s388143/gamod/gamod.simg source /pitchfork/setup-env.sh
-                                  
-                                  ##echo "Cat contigs"
-                                  singularity exec /scratch/s388143/gamod/gamod.simg cat Contigs.txt /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta > ctg_pb.fasta
+                                  echo "Cat contigs"
+                                  cat Contigs.txt /scratch/s388143/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta > ctg_pb.fasta
                                   
                                   echo "final consensus"
                                   /scratch/s388143/gamod/gamod.simg /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/my_split_nrun_sparc.sh /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/backbone_raw.fasta /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/DBG2OLC_Consensus_info.txt /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/ctg_pb.fasta /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/consensusOUT 2
+                                  
                                   ##Append parameters to file results
-                                  echo " " >> results.txt
-                                  echo "params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param" >> results.txt
-                                  java -jar /usr/local/bin/gnx.jar ~/gamod/Assignment/Data_for_Assignment/HS7_pacbioData_cor.fasta >> results.txt
-                                  echo " " >> results.txt
+                                  echo " " >> /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/results.txt
+                                  singularity exec /scratch/s388143/gamod/gamod.simg echo "params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param" >> /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/results.txt
+                                  java -jar /usr/local/bin/gnx.jar /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/"params_$k_param-$nodeCov_param-$kmerCov_param-$min_param-$adapt_param"/consensusOUT/final_assembly.fasta >> /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/results.txt
+                                  echo " " >> /scratch/s388143/gamod/Assignment/Assemblies/hybrid/DBG2OLC/grid_search_tuning/results.txt
                                   
                                   
         done
