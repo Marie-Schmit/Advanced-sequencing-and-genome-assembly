@@ -51,7 +51,7 @@ public class general_statistics extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -77,6 +77,10 @@ public class general_statistics extends javax.swing.JPanel {
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
         statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
+        
+        //Display GC content
+        double GC = getGC(fileContent, statistics[1]);
+        statisticsArea.append("GC%: " + GC + "\n");
         
         //Display Ns value
         statisticsArea.append("Ns: " + statistics[4] + "\n");
@@ -147,10 +151,7 @@ public class general_statistics extends javax.swing.JPanel {
             sum_len += list_len.get(index);
             //Incremente index
             index ++;
-            System.out.println(sum_len);
-            System.out.println(list_len);
         }
-        System.out.println(index);
         //N50 is the length of the contig once half of the genome is obtained
         N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
         return N50;
@@ -203,7 +204,6 @@ public class general_statistics extends javax.swing.JPanel {
         
         return (results);
     }
-    
 
     private ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent){
         ArrayList<String> sequenceContent = new ArrayList<String>();
@@ -226,6 +226,54 @@ public class general_statistics extends javax.swing.JPanel {
             }
         }
         return sequenceContent;
+    }
+    
+    //GC content calculation
+    //Calculate number of G and umber of C characters in one string
+    private int[] numberGC(StringBuffer line) {
+        int numberG = 0;
+        int numberC = 0;
+
+        for (int i = 0; i < line.length(); i++) {
+            if (!line.toString().startsWith(">")) { //Only consider sequences
+                //Count number of g or G in the line
+                if (line.charAt(i) == ('G')) { //If character is a G
+                    numberG++;
+                } //Count number of C and c in the line
+                else if (line.charAt(i) == ('C')) {
+                    numberC++;
+                }
+            }
+        }
+        int counts[] = {numberG, numberC};
+        return counts; //Return a list of number of G and number of C in the considered line
+    }
+
+    //Calculate G/C content of all the sequences of a fasta file
+    public double getGC(ArrayList<StringBuffer> fileContent, int totalLen) {
+        int numberG = 0; //Number of G in all the sequences
+        int numberC = 0; //Number of C in all the sequences
+        double gc; //Value of GC content
+
+        for (int i = 0; i < fileContent.size(); i++) {
+            //Get a list of the number of G and C in the line if the line is a sequence
+            int counts[] = new int[2];
+            counts = numberGC(fileContent.get(i));
+
+            //Actualise number of G and C in all the sequences
+            numberG += counts[0];
+            numberC += counts[1];
+        }
+        
+        //Division by 0 if number of C is null
+        if (totalLen == 0) {
+            gc = 0;
+            //Throw exception
+            throw new IllegalStateException("Division by 0. The length of the fasta file sequence is null. File might be empty, please try with a new file.");
+        } else {
+            gc = 100*(numberG+numberC)/totalLen; //Calculate GC content
+        }
+        return gc;
     }
     
     
