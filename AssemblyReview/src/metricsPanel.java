@@ -21,6 +21,7 @@ public class metricsPanel extends javax.swing.JPanel {
     
     //Show metrics calculated in each little panel
     public void showMetrics(ArrayList<StringBuffer> fileContent, String fileName){
+        this.general_statistics.clearStatistics();
         //General statistics
         this.general_statistics.startCalculation(fileContent, fileName);
     }

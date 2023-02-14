@@ -53,6 +53,8 @@ public class general_statistics extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private final int GENOME_SIZE = 5000000;
+    
     //Clear metrics area
     public void clearStatistics(){
         statisticsArea.setText("");
@@ -71,6 +73,8 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Total length of assembly: " + statistics[1] + "\n");
         
         //Display min and max values
+        statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
+        statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
         
     }
     
@@ -85,10 +89,30 @@ public class general_statistics extends javax.swing.JPanel {
     
     //Calculates lenght of one contig / scaffhold
     private int lengthSequence(int currentLength, String line) {
-            if (line.startsWith(">")) {
-                currentLength++; //Length of sequence increments
+            if (!line.startsWith(">")) {
+                currentLength += line.length(); //Length of sequence increments
             }
         return (currentLength);
+    }
+    
+    private int minSequence(int currentMin, String line){
+        int lenLine = line.length();
+        
+        //If length is minimal, actualise min value
+        if(lenLine < currentMin){
+            currentMin = lenLine;
+        }
+        return(currentMin);
+    }
+    
+    private int maxSequence(int currentMax, String line){
+        int lenLine = line.length();
+        
+        //If length is minimal, actualise min value
+        if(lenLine > currentMax){
+            currentMax = lenLine;
+        }
+        return(currentMax);
     }
     
     //Calculates number of sequences in the fasta file (passed as ArrayList)
@@ -97,6 +121,8 @@ public class general_statistics extends javax.swing.JPanel {
         
         int numberSequence = 0; //Number of sequences
         int totalLen = 0;
+        int min = GENOME_SIZE;
+        int max = 0;
 
         //Check the number of lines starting with > (indicating a new sequence)
         for (int i = 0; i < fileContent.size(); i++) {
@@ -107,9 +133,16 @@ public class general_statistics extends javax.swing.JPanel {
             numberSequence = numberSequence(numberSequence, line);
             //Refresh total length
             totalLen = lengthSequence(totalLen, line);
+            //Refresh min and max values
+            min = minSequence(min, line);
+            max = maxSequence(max, line);
         }
         //Add results to result list
         results[0] = numberSequence;
+        results[1] = totalLen;
+        results[2] = min;
+        results[3] = max;
+        
         return (results);
     }
     

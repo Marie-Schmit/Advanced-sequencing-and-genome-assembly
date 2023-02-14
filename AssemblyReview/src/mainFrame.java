@@ -129,7 +129,7 @@ public class mainFrame extends javax.swing.JFrame {
             metricsPanel.showMetrics(fileChooserPanel.fileContent, fileChooserPanel.fileName);
         }
     }//GEN-LAST:event_metricsMenuMousePressed
-
+    
     private void setPanelVisibility(boolean fileChoose, boolean metricView){
         //Set visibility of metrics and fileChooser panel
         fileChooserPanel.setVisible(fileChoose);
