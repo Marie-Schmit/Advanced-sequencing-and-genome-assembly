@@ -225,12 +225,6 @@ public class general_statistics extends javax.swing.JPanel {
                 newLine = "";
             }
         }
-        /*
-        for (int j = 1; j < sequenceContent.size(); j++){
-            System.out.println(sequenceContent.get(j));
-            System.out.println("-");
-        }
-        */
         return sequenceContent;
     }
     
