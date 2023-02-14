@@ -66,8 +66,7 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Fasta file:" + fileName + "\n");
         
         //Calculate number of sequences, lenght of sequences, min and max
-        int[] statistics = Arrays.copyOf(throughFile(fileContent), 3);
-        int[] statistics_others = Arrays.copyOf(throughContigs(fileContent), 3);
+        int[] statistics = Arrays.copyOf(throughContigs(fileContent), 6);
         
         //Display total number of sequences
         statisticsArea.append("Total number of contigs or scaffholds: " + statistics[0] + "\n");
@@ -82,9 +81,7 @@ public class general_statistics extends javax.swing.JPanel {
         //Display Ns value
         statisticsArea.append("Ns: " + statistics[4] + "\n");
         //Display N50 value
-        statisticsArea.append("Ns: " + statistics[5] + "\n");
-        
-        concatFasta(fileContent);
+        statisticsArea.append("N50: " + statistics[5] + "\n");
     }
     
 
@@ -135,52 +132,66 @@ public class general_statistics extends javax.swing.JPanel {
     }
     
     //Calculate and return N50 from a list of contigs lengths
-    private int calculateN50(ArrayList<Integer> list_len){
+    private int calculateN50(ArrayList<Integer> list_len, int totalLen){
         ArrayList<Integer> sorted_len = list_len;
+        int N50 = 0;
+        int median = totalLen/2; //Half of the genome
+        int index = 0;
+        int sum_len = 0;
         //Sort list by descending order
         Collections.sort(sorted_len, Collections.reverseOrder());
         
-        System.out.println(list_len);
-        System.out.println(sorted_len);
-        
-        return 0;
+        //Go throught the list of length and sum up the length until half of the genome is obtained
+        while (sum_len<median){
+            //Add length to sum
+            sum_len += list_len.get(index);
+            //Incremente index
+            index ++;
+            System.out.println(sum_len);
+            System.out.println(list_len);
+        }
+        System.out.println(index);
+        //N50 is the length of the contig once half of the genome is obtained
+        N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
+        return N50;
     }
     
-    //Calculates number of sequences in the fasta file (passed as ArrayList)
-    private int[] throughFile(ArrayList<StringBuffer> fileContent) {
-        int[] results = new int[6];
+    //Go trhough each contig to calculate the shortest, longest and the N50
+    private int[] throughContigs(ArrayList<StringBuffer> fileContent){
+        //Group lines by contigs, remove \n
+        ArrayList<String> contigLine = concatFasta(fileContent);
         
+        int[] results = new int[6];
         int numberSequence = 0; //Number of sequences
         int totalLen = 0;
+        int nb_Ns = 0; //Number of Ns
         int min = GENOME_SIZE;
         int max = 0;
-        int nb_Ns = 0; //Number of Ns
-        int N50 = 0; //N50 value
         
+        int N50 = 0; //N50 value
         //List of length for N50 calculation
         ArrayList<Integer> list_len = new ArrayList<Integer>();
-
-        //Check the number of lines starting with > (indicating a new sequence)
-        for (int i = 0; i < fileContent.size(); i++) {
-            //Get each line of the file and convert to string
-            String line = fileContent.get(i).toString();
+        
+        //For each contig or header
+        for (int i = 0; i < contigLine.size(); i++) {
+            //Get each line as string
+            String line = contigLine.get(i).toString();
             
             //Refresh number of sequences
             numberSequence = numberSequence(numberSequence, line);
             //Refresh total length
             totalLen = lengthSequence(totalLen, line);
+            //Count the number of Ns
+            sumNs(nb_Ns, line);
             //Refresh min and max values
             min = minSequence(min, line);
             max = maxSequence(max, line);
-            //Count the number of Ns
-            sumNs(nb_Ns, line);
             
-            //Add length to array list of length
+            //Calculate list of length
             list_len.add(line.length());
         }
-        
-        //Calculate N50
-        N50 = calculateN50(list_len);
+        //Calculate N50 with list of length and total length of sequence
+        N50 = calculateN50(list_len, totalLen);
         
         //Add results to result list
         results[0] = numberSequence;
@@ -191,14 +202,6 @@ public class general_statistics extends javax.swing.JPanel {
         results[5] = N50;
         
         return (results);
-    }
-    
-    //Calculate N50
-    private double calculateN50(){
-        double N50 = 0;
-        
-        
-        return N50;
     }
     
 
@@ -222,10 +225,12 @@ public class general_statistics extends javax.swing.JPanel {
                 newLine = "";
             }
         }
+        /*
         for (int j = 1; j < sequenceContent.size(); j++){
             System.out.println(sequenceContent.get(j));
             System.out.println("-");
         }
+        */
         return sequenceContent;
     }
     
