@@ -1,3 +1,6 @@
+
+import java.util.ArrayList;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
@@ -15,6 +18,12 @@ public class metricsPanel extends javax.swing.JPanel {
     public metricsPanel() {
         initComponents();
     }
+    
+    //Show metrics calculated in each little panel
+    public void showMetrics(ArrayList<StringBuffer> fileContent, String fileName){
+        //General statistics
+        this.general_statistics.startCalculation(fileContent, fileName);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -26,7 +35,7 @@ public class metricsPanel extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel3 = new javax.swing.JPanel();
-        general_statistics = new general_statisctis();
+        general_statistics = new general_statistics();
 
         jPanel3.setBackground(new java.awt.Color(153, 255, 51));
         jPanel3.setForeground(new java.awt.Color(153, 255, 102));
@@ -47,22 +56,20 @@ public class metricsPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(general_statistics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(797, Short.MAX_VALUE))
+                .addGap(0, 809, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(general_statistics, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(470, Short.MAX_VALUE))
+                .addGap(0, 483, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private general_statisctis general_statistics;
+    private general_statistics general_statistics;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
 }
