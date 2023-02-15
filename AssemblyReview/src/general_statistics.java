@@ -8,7 +8,6 @@ import java.util.Collections;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-
 /**
  *
  * @author marie
@@ -56,144 +55,80 @@ public class general_statistics extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private final int GENOME_SIZE = 5000000;
-    
+
     //Clear metrics area
-    public void clearStatistics(){
+    public void clearStatistics() {
         statisticsArea.setText("");
     }
-    
-    public void startCalculation(ArrayList<StringBuffer> fileContent, String fileName){
+
+    public void startCalculation(ArrayList<StringBuffer> fileContent, String fileName) {
+        //Create instance of statisticsCalculation for methods
+        statisticsCalculation Stats = new statisticsCalculation();
+        
+        //Write file name in statistics area
         statisticsArea.append("Fasta file:" + fileName + "\n");
-        
+
         //Calculate number of sequences, lenght of sequences, min and max
-        int[] statistics = Arrays.copyOf(throughContigs(fileContent), 6);
-        
+        int[] statistics = Arrays.copyOf(throughContigs(fileContent, Stats), 6);
+
         //Display total number of sequences
         statisticsArea.append("Total number of contigs or scaffholds: " + statistics[0] + "\n");
-        
+
         //Display total length of assembly
         statisticsArea.append("Total length of assembly: " + statistics[1] + "\n");
-        
+
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
         statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
-        
+
         //Display GC content
-        double GC = getGC(fileContent, statistics[1]);
+        double GC = Stats.getGC(fileContent, statistics[1]);
         statisticsArea.append("GC%: " + GC + "\n");
-        
+
         //Display Ns value
         statisticsArea.append("Ns: " + statistics[4] + "\n");
         //Display N50 value
         statisticsArea.append("N50: " + statistics[5] + "\n");
     }
-    
 
-    //Calculates number of sequences in the fasta file (passed as ArrayList)
-    private int numberSequence(int currentNumber, String line) {
-            if (line.startsWith(">")) {
-                currentNumber++; //Number of sequence increments
-            }
-        return (currentNumber);
-    }
-    
-    //Calculates lenght of one contig / scaffhold
-    private int lengthSequence(int currentLength, String line) {
-            if (!line.startsWith(">")) {
-                currentLength += line.length(); //Length of sequence increments
-            }
-        return (currentLength);
-    }
-    
-    //Calculate the mininum between a mim value and a string length
-    private int minSequence(int currentMin, String line){
-        int lenLine = line.length();
-        
-        //If length is minimal, actualise min value
-        if(lenLine < currentMin){
-            currentMin = lenLine;
-        }
-        return(currentMin);
-    }
-    
-    //Calculate the maximum between a max value and a string length
-    private int maxSequence(int currentMax, String line){
-        int lenLine = line.length();
-        
-        //If length is minimal, actualise min value
-        if(lenLine > currentMax){
-            currentMax = lenLine;
-        }
-        return(currentMax);
-    }
-    
-    //Calculates the sum of Ns between existing sum and a line that may contain Ns
-    private int sumNs(int current_Ns, String line) {
-            if (!line.contains("N")) {
-                current_Ns += line.length(); //Length of sequence increments
-            }
-        return (current_Ns);
-    }
-    
-    //Calculate and return N50 from a list of contigs lengths
-    private int calculateN50(ArrayList<Integer> list_len, int totalLen){
-        ArrayList<Integer> sorted_len = list_len;
-        int N50 = 0;
-        int median = totalLen/2; //Half of the genome
-        int index = 0;
-        int sum_len = 0;
-        //Sort list by descending order
-        Collections.sort(sorted_len, Collections.reverseOrder());
-        
-        //Go throught the list of length and sum up the length until half of the genome is obtained
-        while (sum_len<median){
-            //Add length to sum
-            sum_len += list_len.get(index);
-            //Incremente index
-            index ++;
-        }
-        //N50 is the length of the contig once half of the genome is obtained
-        N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
-        return N50;
-    }
-    
     //Go trhough each contig to calculate the shortest, longest and the N50
-    private int[] throughContigs(ArrayList<StringBuffer> fileContent){
+    private int[] throughContigs(ArrayList<StringBuffer> fileContent, statisticsCalculation Stats) {
+        
         //Group lines by contigs, remove \n
         ArrayList<String> contigLine = concatFasta(fileContent);
-        
+
         int[] results = new int[6];
         int numberSequence = 0; //Number of sequences
         int totalLen = 0;
         int nb_Ns = 0; //Number of Ns
         int min = GENOME_SIZE;
         int max = 0;
-        
+
         int N50 = 0; //N50 value
         //List of length for N50 calculation
         ArrayList<Integer> list_len = new ArrayList<Integer>();
-        
+
         //For each contig or header
         for (int i = 0; i < contigLine.size(); i++) {
             //Get each line as string
             String line = contigLine.get(i).toString();
-            
+
             //Refresh number of sequences
-            numberSequence = numberSequence(numberSequence, line);
+            numberSequence = Stats.numberSequence(numberSequence, line);
             //Refresh total length
-            totalLen = lengthSequence(totalLen, line);
+            totalLen = Stats.lengthSequence(totalLen, line);
             //Count the number of Ns
-            sumNs(nb_Ns, line);
+            nb_Ns = Stats.sumNs(nb_Ns, line);
             //Refresh min and max values
-            min = minSequence(min, line);
-            max = maxSequence(max, line);
-            
+            min = Stats.minSequence(min, line);
+            max = Stats.maxSequence(max, line);
+
             //Calculate list of length
             list_len.add(line.length());
         }
         //Calculate N50 with list of length and total length of sequence
-        N50 = calculateN50(list_len, totalLen);
-        
+        N50 = Stats.calculateN50(list_len, totalLen);
+
         //Add results to result list
         results[0] = numberSequence;
         results[1] = totalLen;
@@ -201,25 +136,24 @@ public class general_statistics extends javax.swing.JPanel {
         results[3] = max;
         results[4] = nb_Ns;
         results[5] = N50;
-        
+
         return (results);
     }
 
-    private ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent){
+    private ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent) {
         ArrayList<String> sequenceContent = new ArrayList<String>();
         String newLine = "";
-        
+
         //For each line of the file
         for (int i = 1; i < fileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fileContent.get(i).toString();
             //Remove line return
             line.replaceAll("\\n", "");
-            
-            if(!line.startsWith(">")){ //Concatenate lines that are not headers
+
+            if (!line.startsWith(">")) { //Concatenate lines that are not headers
                 newLine += line;
-            }
-            else{ //When header met, save concatenation and header in ArrayList
+            } else { //When header met, save concatenation and header in ArrayList
                 sequenceContent.add(newLine);
                 sequenceContent.add(line);
                 newLine = "";
@@ -227,56 +161,7 @@ public class general_statistics extends javax.swing.JPanel {
         }
         return sequenceContent;
     }
-    
-    //GC content calculation
-    //Calculate number of G and umber of C characters in one string
-    private int[] numberGC(StringBuffer line) {
-        int numberG = 0;
-        int numberC = 0;
 
-        for (int i = 0; i < line.length(); i++) {
-            if (!line.toString().startsWith(">")) { //Only consider sequences
-                //Count number of g or G in the line
-                if (line.charAt(i) == ('G')) { //If character is a G
-                    numberG++;
-                } //Count number of C and c in the line
-                else if (line.charAt(i) == ('C')) {
-                    numberC++;
-                }
-            }
-        }
-        int counts[] = {numberG, numberC};
-        return counts; //Return a list of number of G and number of C in the considered line
-    }
-
-    //Calculate G/C content of all the sequences of a fasta file
-    public double getGC(ArrayList<StringBuffer> fileContent, int totalLen) {
-        int numberG = 0; //Number of G in all the sequences
-        int numberC = 0; //Number of C in all the sequences
-        double gc; //Value of GC content
-
-        for (int i = 0; i < fileContent.size(); i++) {
-            //Get a list of the number of G and C in the line if the line is a sequence
-            int counts[] = new int[2];
-            counts = numberGC(fileContent.get(i));
-
-            //Actualise number of G and C in all the sequences
-            numberG += counts[0];
-            numberC += counts[1];
-        }
-        
-        //Division by 0 if number of C is null
-        if (totalLen == 0) {
-            gc = 0;
-            //Throw exception
-            throw new IllegalStateException("Division by 0. The length of the fasta file sequence is null. File might be empty, please try with a new file.");
-        } else {
-            gc = 100*(numberG+numberC)/totalLen; //Calculate GC content
-        }
-        return gc;
-    }
-    
-    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
