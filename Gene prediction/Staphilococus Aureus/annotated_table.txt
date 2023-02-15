@@ -1,0 +1,535 @@
+	Tags	SeqName	Description	Length	#Hits	e-Value	sim mean	#GO	GO IDs	GO Names	Enzyme Codes	Enzyme Names	InterPro IDs	InterPro GO IDs	InterPro GO Names
+true	[BLASTED, MAPPED, ANNOTATED]	g1.t1	reverse transcriptase domain-containing protein	837	20	0.0	98.56	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g2.t1	reverse transcriptase domain-containing protein	1446	20	0.0	98.53	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g3.t1	DUF1725 domain-containing protein	603	20	1.3686E-147	99.35								
+true	[NO-BLAST]	g4.t1	---NA---	123											
+true	[BLASTED, MAPPED, ANNOTATED]	g5.t1	reverse transcriptase domain-containing protein	324	20	3.71539E-49	92.51	2	P:GO:0006278; F:GO:0003964	P:RNA-templated DNA biosynthetic process; F:RNA-directed DNA polymerase activity	EC:2.7.7.49	RNA-directed DNA polymerase			
+true	[BLASTED]	g6.t1	reverse transcriptase domain-containing protein	204	20	4.51024E-33	95.45								
+true	[BLASTED]	g7.t1	hypothetical protein, partial	231	20	9.25746E-41	93.68								
+true	[NO-BLAST]	g8.t1	---NA---	165											
+true	[NO-BLAST]	g9.t1	---NA---	90											
+true	[BLASTED]	g10.t1	reverse transcriptase domain-containing protein	162	20	1.80306E-8	75.3								
+true	[NO-BLAST]	g11.t1	---NA---	219											
+true	[NO-BLAST]	g12.t1	---NA---	174											
+true	[NO-BLAST]	g13.t1	---NA---	225											
+true	[NO-BLAST]	g14.t1	---NA---	129											
+true	[NO-BLAST]	g15.t1	---NA---	150											
+true	[NO-BLAST]	g16.t1	---NA---	165											
+true	[NO-BLAST]	g17.t1	---NA---	153											
+true	[NO-BLAST]	g18.t1	---NA---	75											
+true	[NO-BLAST]	g19.t1	---NA---	99											
+true	[BLASTED]	g20.t1	DUF1725 domain-containing protein	201	20	3.41681E-26	82.68								
+true	[BLASTED]	g21.t1	retrovirus-related Pol polyLINE-1 domain protein	171	20	5.05613E-24	92.37								
+true	[BLASTED, MAPPED, ANNOTATED]	g22.t1	reverse transcriptase domain-containing protein	210	20	3.34811E-30	98.39	1	F:GO:0003824	F:catalytic activity					
+true	[BLASTED]	g23.t1	L1 transposable element	303	20	1.19404E-45	78.65								
+true	[NO-BLAST]	g24.t1	---NA---	117											
+true	[BLASTED, MAPPED, ANNOTATED]	g25.t1	reverse transcriptase domain-containing protein	1041	20	0.0	98.05	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED]	g26.t1	reverse transcriptase domain-containing protein	333	20	2.138E-64	93.4								
+true	[BLASTED, MAPPED, ANNOTATED]	g27.t1	reverse transcriptase domain-containing protein	1392	20	0.0	98.02	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g28.t1	---NA---	156											
+true	[BLASTED, MAPPED, ANNOTATED]	g29.t1	reverse transcriptase family protein	402	20	3.29308E-82	93.71	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g30.t1	L1 transposable element	114	20	8.49511E-12	90.32	4	F:GO:0004497; F:GO:0005524; F:GO:0016887; F:GO:0042802	F:monooxygenase activity; F:ATP binding; F:ATP hydrolysis activity; F:identical protein binding	EC:1; EC:3.6.1.15	Oxidoreductases; nucleoside-triphosphate phosphatase			
+true	[NO-BLAST]	g31.t1	---NA---	72											
+true	[BLASTED, MAPPED]	g32.t1	DUF1725 domain-containing protein	561	20	1.35813E-66	68.06	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity					
+true	[BLASTED]	g33.t1	DUF1725 domain-containing protein	153	20	1.23711E-16	85.8								
+true	[BLASTED]	g34.t1	reverse transcriptase family protein	483	20	1.43799E-90	88.83								
+true	[NO-BLAST]	g35.t1	---NA---	96											
+true	[NO-BLAST]	g36.t1	---NA---	75											
+true	[NO-BLAST]	g37.t1	---NA---	252											
+true	[NO-BLAST]	g38.t1	---NA---	240											
+true	[BLASTED]	g39.t1	hypothetical protein	111	20	6.87482E-10	88.0								
+true	[BLASTED]	g40.t1	retrovirus-related Pol polyLINE-1 domain protein	243	20	3.11688E-32	88.9								
+true	[BLASTED]	g41.t1	FLJ44955 protein	177	20	3.20339E-16	74.95								
+true	[NO-BLAST]	g42.t1	---NA---	177											
+true	[NO-BLAST]	g43.t1	---NA---	141											
+true	[NO-BLAST]	g44.t1	---NA---	90											
+true	[NO-BLAST]	g45.t1	---NA---	135											
+true	[NO-BLAST]	g46.t1	---NA---	111											
+true	[BLASTED, MAPPED, ANNOTATED]	g47.t1	diacylglycerol kinase beta isoform X8	303	20	1.86779E-10	100.0	12	P:GO:0006654; P:GO:0007205; P:GO:0030168; P:GO:0035556; P:GO:0046339; P:GO:0046834; F:GO:0004143; F:GO:0005509; F:GO:0005524; F:GO:0008289; C:GO:0005829; C:GO:0045211	P:phosphatidic acid biosynthetic process; P:protein kinase C-activating G protein-coupled receptor signaling pathway; P:platelet activation; P:intracellular signal transduction; P:diacylglycerol metabolic process; P:lipid phosphorylation; F:diacylglycerol kinase activity; F:calcium ion binding; F:ATP binding; F:lipid binding; C:cytosol; C:postsynaptic membrane	EC:2.7.1.107	diacylglycerol kinase (ATP)			
+true	[BLASTED, MAPPED, ANNOTATED]	g48.t1	tigger transposable element-derived protein 1	174	20	8.93357E-23	85.96	3	F:GO:0003677; F:GO:0005515; C:GO:0005634	F:DNA binding; F:protein binding; C:nucleus					
+true	[NO-BLAST]	g49.t1	---NA---	105											
+true	[NO-BLAST]	g50.t1	---NA---	126											
+true	[BLASTED]	g51.t1	glutamate-rich protein 3	246	20	4.12082E-10	56.64								
+true	[NO-BLAST]	g52.t1	---NA---	204											
+true	[NO-BLAST]	g53.t1	---NA---	78											
+true	[NO-BLAST]	g54.t1	---NA---	255											
+true	[BLASTED]	g55.t1	reverse transcriptase domain-containing protein	792	20	3.93864E-177	96.95								
+true	[BLASTED, MAPPED, ANNOTATED]	g56.t1	reverse transcriptase domain-containing protein	2226	20	0.0	99.16	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g57.t1	---NA---	156											
+true	[NO-BLAST]	g58.t1	---NA---	174											
+true	[NO-BLAST]	g59.t1	---NA---	312											
+true	[NO-BLAST]	g60.t1	---NA---	291											
+true	[BLASTED]	g61.t1	hypothetical protein	210	20	4.03782E-22	86.01								
+true	[BLASTED]	g62.t1	hypothetical protein, partial	102	7	5.89195E-6	93.3								
+true	[NO-BLAST]	g63.t1	---NA---	204											
+true	[BLASTED]	g64.t1	Friend virus susceptibility protein 1-like	105	3	4.03796E-5	74.29								
+true	[NO-BLAST]	g65.t1	---NA---	171											
+true	[NO-BLAST]	g66.t1	---NA---	144											
+true	[NO-BLAST]	g67.t1	---NA---	189											
+true	[NO-BLAST]	g68.t1	---NA---	279											
+true	[NO-BLAST]	g69.t1	---NA---	141											
+true	[NO-BLAST]	g70.t1	---NA---	291											
+true	[NO-BLAST]	g71.t1	---NA---	270											
+true	[NO-BLAST]	g72.t1	---NA---	78											
+true	[NO-BLAST]	g73.t1	---NA---	249											
+true	[NO-BLAST]	g74.t1	---NA---	114											
+true	[NO-BLAST]	g75.t1	---NA---	93											
+true	[NO-BLAST]	g76.t1	---NA---	144											
+true	[NO-BLAST]	g77.t1	---NA---	147											
+true	[NO-BLAST]	g78.t1	---NA---	99											
+true	[NO-BLAST]	g79.t1	---NA---	234											
+true	[NO-BLAST]	g80.t1	---NA---	174											
+true	[BLASTED, MAPPED, ANNOTATED]	g81.t1	endonuclease/reverse transcriptase	213	20	3.47751E-17	91.47	8	P:GO:0006278; P:GO:0016236; P:GO:0045324; P:GO:0090305; F:GO:0003964; F:GO:0004519; F:GO:0004674; F:GO:0005515	P:RNA-templated DNA biosynthetic process; P:macroautophagy; P:late endosome to vacuole transport; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity; F:protein serine/threonine kinase activity; F:protein binding	EC:2.7.1; EC:3.1; EC:2.7.7.49	Transferring phosphorus-containing groups; Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g82.t1	---NA---	126											
+true	[NO-BLAST]	g83.t1	---NA---	90											
+true	[NO-BLAST]	g84.t1	---NA---	123											
+true	[NO-BLAST]	g85.t1	---NA---	165											
+true	[BLASTED]	g86.t1	DUF1725 domain-containing protein	252	20	2.31819E-40	85.43								
+true	[BLASTED, MAPPED, ANNOTATED]	g87.t1	reverse transcriptase domain-containing protein	438	20	1.49325E-70	89.49	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g88.t1	DUF1725 domain-containing protein	150	20	5.73543E-16	82.69								
+true	[NO-BLAST]	g89.t1	---NA---	213											
+true	[NO-BLAST]	g90.t1	---NA---	114											
+true	[NO-BLAST]	g91.t1	---NA---	138											
+true	[NO-BLAST]	g92.t1	---NA---	264											
+true	[NO-BLAST]	g93.t1	---NA---	186											
+true	[NO-BLAST]	g94.t1	---NA---	159											
+true	[BLASTED]	g95.t1	hypothetical protein, partial	375	20	1.02548E-51	76.25								
+true	[NO-BLAST]	g96.t1	---NA---	189											
+true	[NO-BLAST]	g97.t1	---NA---	312											
+true	[BLASTED]	g98.t1	DUF1725 domain-containing protein	660	20	2.70406E-128	94.29								
+true	[BLASTED]	g99.t1	reverse transcriptase family protein	348	20	1.56131E-54	88.66								
+true	[NO-BLAST]	g100.t1	---NA---	129											
+true	[NO-BLAST]	g101.t1	---NA---	141											
+true	[NO-BLAST]	g102.t1	---NA---	135											
+true	[BLASTED]	g103.t1	reverse transcriptase domain-containing protein	327	20	9.01793E-38	80.09								
+true	[NO-BLAST]	g104.t1	---NA---	318											
+true	[NO-BLAST]	g105.t1	---NA---	177											
+true	[NO-BLAST]	g106.t1	---NA---	90											
+true	[BLASTED]	g107.t1	B lymphocyte activation-related protein BC-2048	219	10	5.64571E-15	74.84								
+true	[BLASTED]	g108.t1	L1 transposable element	570	20	6.25523E-85	78.61								
+true	[BLASTED, MAPPED, ANNOTATED]	g109.t1	endonuclease/exonuclease/phosphatase family protein	270	20	6.21257E-41	85.4	2	P:GO:0090305; F:GO:0004527	P:nucleic acid phosphodiester bond hydrolysis; F:exonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g110.t1	E3 ubiquitin-protein ligase CCNB1IP1 isoform X1	324	20	1.36326E-38	82.71								
+true	[NO-BLAST]	g111.t1	---NA---	81											
+true	[BLASTED, MAPPED, ANNOTATED]	g112.t1	reverse transcriptase domain-containing protein	78	20	4.56339E-8	96.0	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g113.t1	ankyrin repeat domain 28, isoform CRA_g	318	20	1.60975E-25	70.74								
+true	[NO-BLAST]	g114.t1	---NA---	135											
+true	[BLASTED, MAPPED, ANNOTATED]	g115.t1	electroneutral sodium bicarbonate exchanger 1 isoform X3	225	20	1.09135E-18	87.19	22	P:GO:0006851; P:GO:0015701; P:GO:0035725; P:GO:0042391; P:GO:0051453; P:GO:0150104; P:GO:1902476; P:GO:2000302; F:GO:0005452; F:GO:0005509; F:GO:0008510; F:GO:0015108; C:GO:0008021; C:GO:0030425; C:GO:0032279; C:GO:0032280; C:GO:0032809; C:GO:0042734; C:GO:0043195; C:GO:0097386; C:GO:0097457; C:GO:0098978	P:mitochondrial calcium ion transmembrane transport; P:bicarbonate transport; P:sodium ion transmembrane transport; P:regulation of membrane potential; P:regulation of intracellular pH; P:transport across blood-brain barrier; P:chloride transmembrane transport; P:positive regulation of synaptic vesicle exocytosis; F:solute:inorganic anion antiporter activity; F:calcium ion binding; F:sodium:bicarbonate symporter activity; F:chloride transmembrane transporter activity; C:synaptic vesicle; C:dendrite; C:asymmetric synapse; C:symmetric synapse; C:neuronal cell body membrane; C:presynaptic membrane; C:terminal bouton; C:glial cell projection; C:hippocampal mossy fiber; C:glutamatergic synapse					
+true	[BLASTED]	g116.t1	hypothetical protein	75	3	2.15094E-5	91.67								
+true	[NO-BLAST]	g117.t1	---NA---	225											
+true	[BLASTED, MAPPED, ANNOTATED]	g118.t1	alkylglycerol monooxygenase	81	20	7.13645E-9	100.0	7	P:GO:0006643; P:GO:0019432; P:GO:0046485; F:GO:0005506; F:GO:0005515; F:GO:0050479; C:GO:0005789	P:membrane lipid metabolic process; P:triglyceride biosynthetic process; P:ether lipid metabolic process; F:iron ion binding; F:protein binding; F:glyceryl-ether monooxygenase activity; C:endoplasmic reticulum membrane	EC:1.14.16.5	alkylglycerol monooxygenase			
+true	[NO-BLAST]	g119.t1	---NA---	141											
+true	[NO-BLAST]	g120.t1	---NA---	276											
+true	[NO-BLAST]	g121.t1	---NA---	69											
+true	[NO-BLAST]	g122.t1	---NA---	99											
+true	[NO-BLAST]	g123.t1	---NA---	507											
+true	[BLASTED, MAPPED, ANNOTATED]	g124.t1	reverse transcriptase family protein	426	20	1.65368E-66	93.13	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g125.t1	Retron-type reverse transcriptase	141	20	7.3397E-22	93.59								
+true	[NO-BLAST]	g126.t1	---NA---	174											
+true	[NO-BLAST]	g127.t1	---NA---	318											
+true	[NO-BLAST]	g128.t1	---NA---	150											
+true	[BLASTED, MAPPED, ANNOTATED]	g129.t1	RNA-binding protein	249	20	8.34459E-32	87.98	1	P:GO:0007411	P:axon guidance					
+true	[BLASTED]	g130.t1	endonuclease/exonuclease/phosphatase family protein	333	20	1.6946E-43	88.78								
+true	[BLASTED, MAPPED, ANNOTATED]	g131.t1	reverse transcriptase family protein	456	20	2.62923E-84	89.67	2	P:GO:0006278; F:GO:0003964	P:RNA-templated DNA biosynthetic process; F:RNA-directed DNA polymerase activity	EC:2.7.7.49	RNA-directed DNA polymerase			
+true	[BLASTED]	g132.t1	reverse transcriptase domain-containing protein	411	20	1.367E-68	85.69								
+true	[BLASTED]	g133.t1	reverse transcriptase family protein	258	20	2.47006E-25	87.79								
+true	[BLASTED, MAPPED, ANNOTATED]	g134.t1	tigger transposable element-derived protein 1	198	20	8.73942E-17	70.15	3	F:GO:0003677; F:GO:0005515; C:GO:0005634	F:DNA binding; F:protein binding; C:nucleus					
+true	[BLASTED, MAPPED, ANNOTATED]	g135.t1	tigger transposable element-derived protein 1	306	20	2.20466E-24	82.14	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[NO-BLAST]	g136.t1	---NA---	126											
+true	[BLASTED, MAPPED, ANNOTATED]	g137.t1	DHRS7 isoform 6	219	20	1.90563E-18	77.0	1	F:GO:0016491	F:oxidoreductase activity	EC:1	Oxidoreductases			
+true	[BLASTED, MAPPED, ANNOTATED]	g138.t1	lupus La protein	558	20	1.27881E-85	94.17	13	P:GO:0001682; P:GO:0006409; P:GO:0042780; P:GO:0071045; P:GO:0075522; P:GO:1903608; F:GO:0000049; F:GO:0003677; F:GO:0008266; F:GO:1990825; C:GO:0005634; C:GO:0005737; C:GO:1990904	P:tRNA 5'-leader removal; P:tRNA export from nucleus; P:tRNA 3'-end processing; P:nuclear histone mRNA catabolic process; P:IRES-dependent viral translational initiation; P:protein localization to cytoplasmic stress granule; F:tRNA binding; F:DNA binding; F:poly(U) RNA binding; F:sequence-specific mRNA binding; C:nucleus; C:cytoplasm; C:ribonucleoprotein complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g139.t1	small RNA binding exonuclease protection factor La	297	20	1.80373E-29	95.69	17	P:GO:0001682; P:GO:0006400; P:GO:0006409; P:GO:0042780; P:GO:0071045; P:GO:0075522; P:GO:0090305; P:GO:1903608; F:GO:0000049; F:GO:0003677; F:GO:0004527; F:GO:0008266; F:GO:0008270; F:GO:1990825; C:GO:0005634; C:GO:0005737; C:GO:1990904	P:tRNA 5'-leader removal; P:tRNA modification; P:tRNA export from nucleus; P:tRNA 3'-end processing; P:nuclear histone mRNA catabolic process; P:IRES-dependent viral translational initiation; P:nucleic acid phosphodiester bond hydrolysis; P:protein localization to cytoplasmic stress granule; F:tRNA binding; F:DNA binding; F:exonuclease activity; F:poly(U) RNA binding; F:zinc ion binding; F:sequence-specific mRNA binding; C:nucleus; C:cytoplasm; C:ribonucleoprotein complex	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g140.t1	hypothetical protein	204	2	3.22025E-4	62.5								
+true	[BLASTED]	g141.t1	hypothetical protein, partial	378	20	1.82733E-60	92.71								
+true	[BLASTED, MAPPED, ANNOTATED]	g142.t1	reverse transcriptase domain-containing protein	1020	20	0.0	96.42	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g143.t1	---NA---	138											
+true	[BLASTED]	g144.t1	reverse transcriptase domain-containing protein	78	20	1.64131E-6	92.2								
+true	[BLASTED, MAPPED, ANNOTATED]	g145.t1	Retron-type reverse transcriptase	363	20	1.19719E-50	88.43	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g146.t1	---NA---	63											
+true	[NO-BLAST]	g147.t1	---NA---	273											
+true	[BLASTED, MAPPED, ANNOTATED]	g148.t1	von Willebrand factor D and EGF domains	1014	20	0.0	98.8	5	P:GO:0048856; F:GO:0005102; F:GO:0005509; C:GO:0005576; C:GO:0009986	P:anatomical structure development; F:signaling receptor binding; F:calcium ion binding; C:extracellular region; C:cell surface					
+true	[NO-BLAST]	g149.t1	---NA---	129											
+true	[NO-BLAST]	g150.t1	---NA---	99											
+true	[BLASTED, MAPPED, ANNOTATED]	g151.t1	von Willebrand factor D and EGF domains	195	20	6.96944E-34	99.33	5	P:GO:0048856; F:GO:0005102; F:GO:0005509; C:GO:0005576; C:GO:0009986	P:anatomical structure development; F:signaling receptor binding; F:calcium ion binding; C:extracellular region; C:cell surface					
+true	[NO-BLAST]	g152.t1	---NA---	72											
+true	[BLASTED, MAPPED, ANNOTATED]	g153.t1	reverse transcriptase family protein	387	20	2.84308E-84	89.07	1	F:GO:0003824	F:catalytic activity					
+true	[NO-BLAST]	g154.t1	---NA---	114											
+true	[BLASTED, MAPPED, ANNOTATED]	g155.t1	DUF1725 domain-containing protein	345	20	4.08819E-40	96.63	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g156.t1	---NA---	75											
+true	[BLASTED, MAPPED, ANNOTATED]	g157.t1	hCG2041040, partial	447	20	2.21341E-28	66.11	6	P:GO:0006259; P:GO:0090502; F:GO:0003676; F:GO:0004523; F:GO:0016740; F:GO:0046872	P:DNA metabolic process; P:RNA phosphodiester bond hydrolysis, endonucleolytic; F:nucleic acid binding; F:RNA-DNA hybrid ribonuclease activity; F:transferase activity; F:metal ion binding	EC:3.1.30; EC:2; EC:3.1.26.4	Acting on ester bonds; Transferases; ribonuclease H			
+true	[NO-BLAST]	g158.t1	---NA---	237											
+true	[BLASTED]	g159.t1	Retron-type reverse transcriptase	201	20	3.47854E-18	73.72								
+true	[BLASTED, MAPPED, ANNOTATED]	g160.t1	small integral membrane protein 8 isoform X1	147	20	1.36095E-12	80.75	1	F:GO:0003677	F:DNA binding					
+true	[NO-BLAST]	g161.t1	---NA---	90											
+true	[NO-BLAST]	g162.t1	---NA---	150											
+true	[BLASTED]	g163.t1	DUF1725 domain-containing protein	252	20	2.32219E-37	79.52								
+true	[BLASTED]	g164.t1	reverse transcriptase family protein	672	20	7.67874E-100	92.9								
+true	[NO-BLAST]	g165.t1	---NA---	141											
+true	[NO-BLAST]	g166.t1	---NA---	84											
+true	[NO-BLAST]	g167.t1	---NA---	117											
+true	[BLASTED, MAPPED, ANNOTATED]	g168.t1	tigger transposable element-derived protein 1	312	20	3.73755E-31	75.87	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[BLASTED, MAPPED, ANNOTATED]	g169.t1	tigger transposable element-derived protein 1	276	20	2.76314E-24	63.08	1	F:GO:0003676	F:nucleic acid binding					
+true	[BLASTED]	g170.t1	reverse transcriptase family protein	453	20	1.8354E-71	90.97								
+true	[NO-BLAST]	g171.t1	---NA---	96											
+true	[BLASTED, MAPPED, ANNOTATED]	g172.t1	transmembrane protein 106B	321	20	5.37849E-38	98.48	12	P:GO:0007041; P:GO:0007042; P:GO:0032418; P:GO:0048813; P:GO:0051345; P:GO:0070050; P:GO:1900006; P:GO:1905146; P:GO:1905671; F:GO:0051117; C:GO:0005765; C:GO:0031902	P:lysosomal transport; P:lysosomal lumen acidification; P:lysosome localization; P:dendrite morphogenesis; P:positive regulation of hydrolase activity; P:neuron cellular homeostasis; P:positive regulation of dendrite development; P:lysosomal protein catabolic process; P:regulation of lysosome organization; F:ATPase binding; C:lysosomal membrane; C:late endosome membrane					
+true	[BLASTED]	g173.t1	apoptosis related protein APR-4	114	1	8.73033E-5	76.67								
+true	[BLASTED]	g174.t1	hypothetical protein G6F54_012450	474	20	2.50955E-87	87.51								
+true	[NO-BLAST]	g175.t1	---NA---	159											
+true	[BLASTED]	g176.t1	hypothetical protein, partial	456	20	4.43366E-25	56.04								
+true	[BLASTED, MAPPED, ANNOTATED]	g177.t1	reverse transcriptase domain-containing protein	1734	20	0.0	98.34	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g178.t1	---NA---	177											
+true	[BLASTED]	g179.t1	DUF1725 domain-containing protein	396	20	3.77015E-64	84.92								
+true	[NO-BLAST]	g180.t1	---NA---	78											
+true	[NO-BLAST]	g181.t1	---NA---	108											
+true	[BLASTED]	g182.t1	hypothetical protein, partial	291	20	9.05178E-37	92.64								
+true	[NO-BLAST]	g183.t1	---NA---	126											
+true	[NO-BLAST]	g184.t1	---NA---	213											
+true	[NO-BLAST]	g185.t1	---NA---	186											
+true	[NO-BLAST]	g186.t1	---NA---	126											
+true	[NO-BLAST]	g187.t1	---NA---	138											
+true	[NO-BLAST]	g188.t1	---NA---	216											
+true	[NO-BLAST]	g189.t1	---NA---	255											
+true	[BLASTED, MAPPED, ANNOTATED]	g190.t1	tigger transposable element-derived protein 1-like	138	20	4.2205E-7	83.73	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[BLASTED, MAPPED, ANNOTATED]	g191.t1	tigger transposable element-derived protein 1	267	20	8.70857E-23	78.33	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[NO-BLAST]	g192.t1	---NA---	147											
+true	[NO-BLAST]	g193.t1	---NA---	96											
+true	[BLASTED, MAPPED, ANNOTATED]	g194.t1	endonuclease/exonuclease/phosphatase family protein	603	20	1.02139E-36	69.3	1	F:GO:0016779	F:nucleotidyltransferase activity	EC:2.7.7	Transferring phosphorus-containing groups			
+true	[BLASTED, MAPPED, ANNOTATED]	g195.t1	endonuclease/exonuclease/phosphatase family protein	159	20	1.03988E-7	86.8	1	F:GO:0003824	F:catalytic activity					
+true	[NO-BLAST]	g196.t1	---NA---	225											
+true	[NO-BLAST]	g197.t1	---NA---	147											
+true	[NO-BLAST]	g198.t1	---NA---	156											
+true	[NO-BLAST]	g199.t1	---NA---	267											
+true	[NO-BLAST]	g200.t1	---NA---	114											
+true	[NO-BLAST]	g201.t1	---NA---	132											
+true	[BLASTED, MAPPED, ANNOTATED]	g202.t1	homeobox protein MOX-2	177	20	2.10338E-10	94.4	12	P:GO:0001757; P:GO:0007519; P:GO:0045944; P:GO:0060021; P:GO:0060173; P:GO:0090051; F:GO:0000978; F:GO:0001228; F:GO:0005515; C:GO:0000785; C:GO:0005737; C:GO:0016607	P:somite specification; P:skeletal muscle tissue development; P:positive regulation of transcription by RNA polymerase II; P:roof of mouth development; P:limb development; P:negative regulation of cell migration involved in sprouting angiogenesis; F:RNA polymerase II cis-regulatory region sequence-specific DNA binding; F:DNA-binding transcription activator activity, RNA polymerase II-specific; F:protein binding; C:chromatin; C:cytoplasm; C:nuclear speck					
+true	[BLASTED, MAPPED]	g203.t1	endonuclease/exonuclease/phosphatase family protein	270	20	3.60102E-9	62.7	1	F:GO:0003824	F:catalytic activity					
+true	[NO-BLAST]	g204.t1	---NA---	159											
+true	[NO-BLAST]	g205.t1	---NA---	63											
+true	[NO-BLAST]	g206.t1	---NA---	108											
+true	[NO-BLAST]	g207.t1	---NA---	174											
+true	[NO-BLAST]	g208.t1	---NA---	309											
+true	[BLASTED]	g209.t1	DUF1725 domain-containing protein	561	20	4.65795E-119	98.88								
+true	[BLASTED, MAPPED, ANNOTATED]	g210.t1	reverse transcriptase domain-containing protein	1497	20	0.0	94.23	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g211.t1	reverse transcriptase domain-containing protein	366	20	7.33674E-76	96.28	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g212.t1	L1 transposable element	528	20	9.71929E-116	95.97								
+true	[NO-BLAST]	g213.t1	---NA---	138											
+true	[NO-BLAST]	g214.t1	---NA---	162											
+true	[NO-BLAST]	g215.t1	---NA---	141											
+true	[NO-BLAST]	g216.t1	---NA---	252											
+true	[BLASTED, MAPPED, ANNOTATED]	g217.t1	4930579E17Rik protein	333	1	3.90222E-38	86.84	6	P:GO:0007411; P:GO:0008299; P:GO:0035269; F:GO:0042803; F:GO:0047349; C:GO:0005829	P:axon guidance; P:isoprenoid biosynthetic process; P:protein O-linked mannosylation; F:protein homodimerization activity; F:D-ribitol-5-phosphate cytidylyltransferase activity; C:cytosol	EC:2.7.7.40	D-ribitol-5-phosphate cytidylyltransferase			
+true	[BLASTED, MAPPED, ANNOTATED]	g218.t1	CDP-L-ribitol pyrophosphorylase A	270	20	5.64722E-50	97.98	6	P:GO:0007411; P:GO:0008299; P:GO:0035269; F:GO:0042803; F:GO:0047349; C:GO:0005829	P:axon guidance; P:isoprenoid biosynthetic process; P:protein O-linked mannosylation; F:protein homodimerization activity; F:D-ribitol-5-phosphate cytidylyltransferase activity; C:cytosol	EC:2.7.7.40	D-ribitol-5-phosphate cytidylyltransferase			
+true	[NO-BLAST]	g219.t1	---NA---	120											
+true	[NO-BLAST]	g220.t1	---NA---	105											
+true	[BLASTED, MAPPED, ANNOTATED]	g221.t1	reverse transcriptase domain-containing protein	138	20	4.12148E-10	68.75	2	P:GO:0090304; F:GO:0003824	P:nucleic acid metabolic process; F:catalytic activity					
+true	[BLASTED]	g222.t1	transmembrane and coiled-coil domain protein 3 isoform X4	312	20	1.52211E-8	69.7								
+true	[BLASTED]	g223.t1	LINE-1 retrotransposable element ORF2 protein	246	20	1.13571E-20	76.72								
+true	[BLASTED, MAPPED, ANNOTATED]	g224.t1	ZNF670-ZNF695 readthrough (NMD candidate)	219	20	1.37257E-11	71.17	2	P:GO:0006355; C:GO:0016020	P:regulation of DNA-templated transcription; C:membrane					
+true	[BLASTED]	g225.t1	LORF2 protein	252	20	7.52772E-13	58.16								
+true	[NO-BLAST]	g226.t1	---NA---	69											
+true	[NO-BLAST]	g227.t1	---NA---	123											
+true	[NO-BLAST]	g228.t1	---NA---	195											
+true	[NO-BLAST]	g229.t1	---NA---	216											
+true	[NO-BLAST]	g230.t1	---NA---	72											
+true	[NO-BLAST]	g231.t1	---NA---	138											
+true	[NO-BLAST]	g232.t1	---NA---	141											
+true	[NO-BLAST]	g233.t1	---NA---	156											
+true	[NO-BLAST]	g234.t1	---NA---	126											
+true	[BLASTED]	g235.t1	hypothetical protein, partial	255	20	7.34897E-43	88.87								
+true	[NO-BLAST]	g236.t1	---NA---	225											
+true	[NO-BLAST]	g237.t1	---NA---	153											
+true	[BLASTED]	g238.t1	leucine-rich repeat-containing protein 72	138	20	2.94936E-22	99.3								
+true	[BLASTED]	g239.t1	Retron-type reverse transcriptase	141	20	3.92731E-22	93.8								
+true	[BLASTED]	g240.t1	hypothetical protein, partial	222	20	3.09065E-35	87.38								
+true	[BLASTED]	g241.t1	DUF1725 domain-containing protein	180	20	7.07534E-30	91.64								
+true	[BLASTED, MAPPED, ANNOTATED]	g242.t1	ataxin-2-like protein isoform X19	315	20	6.71689E-35	92.38	1	F:GO:0003723	F:RNA binding					
+true	[NO-BLAST]	g243.t1	---NA---	132											
+true	[NO-BLAST]	g244.t1	---NA---	69											
+true	[NO-BLAST]	g245.t1	---NA---	84											
+true	[NO-BLAST]	g246.t1	---NA---	201											
+true	[NO-BLAST]	g247.t1	---NA---	240											
+true	[NO-BLAST]	g248.t1	---NA---	216											
+true	[NO-BLAST]	g249.t1	---NA---	183											
+true	[NO-BLAST]	g250.t1	---NA---	150											
+true	[NO-BLAST]	g251.t1	---NA---	282											
+true	[NO-BLAST]	g252.t1	---NA---	123											
+true	[NO-BLAST]	g253.t1	---NA---	105											
+true	[BLASTED, MAPPED, ANNOTATED]	g254.t1	zinc finger protein 91 isoform X1	288	20	2.42755E-9	93.62	8	P:GO:0006355; P:GO:0017157; P:GO:0048791; F:GO:0016746; F:GO:0031267; F:GO:0046872; C:GO:0016020; C:GO:0048786	P:regulation of DNA-templated transcription; P:regulation of exocytosis; P:calcium ion-regulated exocytosis of neurotransmitter; F:acyltransferase activity; F:small GTPase binding; F:metal ion binding; C:membrane; C:presynaptic active zone	EC:2.3	Acyltransferases			
+true	[NO-BLAST]	g255.t1	---NA---	111											
+true	[NO-BLAST]	g256.t1	---NA---	174											
+true	[NO-BLAST]	g257.t1	---NA---	189											
+true	[NO-BLAST]	g258.t1	---NA---	180											
+true	[NO-BLAST]	g259.t1	---NA---	144											
+true	[BLASTED]	g260.t1	uncharacterized protein LOC105474789	189	1	2.73554E-4	57.14								
+true	[BLASTED]	g261.t1	hypothetical protein FACS1894125_7470	114	1	1.34367E-5	75.68								
+true	[BLASTED, MAPPED, ANNOTATED]	g262.t1	cell cycle checkpoint protein RAD17 isoform X1	255	20	2.44417E-46	94.29	13	P:GO:0006281; P:GO:0008156; P:GO:0031573; P:GO:0033314; P:GO:0042325; F:GO:0003682; F:GO:0003689; F:GO:0005515; F:GO:0005524; C:GO:0000781; C:GO:0005654; C:GO:0005730; C:GO:0031389	P:DNA repair; P:negative regulation of DNA replication; P:mitotic intra-S DNA damage checkpoint signaling; P:mitotic DNA replication checkpoint signaling; P:regulation of phosphorylation; F:chromatin binding; F:DNA clamp loader activity; F:protein binding; F:ATP binding; C:chromosome, telomeric region; C:nucleoplasm; C:nucleolus; C:Rad17 RFC-like complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g263.t1	cell cycle checkpoint protein RAD17 isoform X3	246	20	1.88461E-47	95.06	13	P:GO:0006281; P:GO:0008156; P:GO:0031573; P:GO:0033314; P:GO:0042325; F:GO:0003682; F:GO:0003689; F:GO:0005515; F:GO:0005524; C:GO:0000781; C:GO:0005654; C:GO:0005730; C:GO:0031389	P:DNA repair; P:negative regulation of DNA replication; P:mitotic intra-S DNA damage checkpoint signaling; P:mitotic DNA replication checkpoint signaling; P:regulation of phosphorylation; F:chromatin binding; F:DNA clamp loader activity; F:protein binding; F:ATP binding; C:chromosome, telomeric region; C:nucleoplasm; C:nucleolus; C:Rad17 RFC-like complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g264.t1	cell cycle checkpoint protein RAD17 isoform X2	576	20	4.82666E-105	89.76	13	P:GO:0006281; P:GO:0008156; P:GO:0031573; P:GO:0033314; P:GO:0042325; F:GO:0003682; F:GO:0003689; F:GO:0005515; F:GO:0005524; C:GO:0000781; C:GO:0005654; C:GO:0005730; C:GO:0031389	P:DNA repair; P:negative regulation of DNA replication; P:mitotic intra-S DNA damage checkpoint signaling; P:mitotic DNA replication checkpoint signaling; P:regulation of phosphorylation; F:chromatin binding; F:DNA clamp loader activity; F:protein binding; F:ATP binding; C:chromosome, telomeric region; C:nucleoplasm; C:nucleolus; C:Rad17 RFC-like complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g265.t1	cell cycle checkpoint protein RAD17 isoform X1	300	20	1.21581E-51	93.03	10	P:GO:0006281; P:GO:0008156; P:GO:0031573; P:GO:0042325; F:GO:0003689; F:GO:0005524; C:GO:0000781; C:GO:0005654; C:GO:0005730; C:GO:0031389	P:DNA repair; P:negative regulation of DNA replication; P:mitotic intra-S DNA damage checkpoint signaling; P:regulation of phosphorylation; F:DNA clamp loader activity; F:ATP binding; C:chromosome, telomeric region; C:nucleoplasm; C:nucleolus; C:Rad17 RFC-like complex					
+true	[NO-BLAST]	g266.t1	---NA---	120											
+true	[NO-BLAST]	g267.t1	---NA---	180											
+true	[NO-BLAST]	g268.t1	---NA---	159											
+true	[NO-BLAST]	g269.t1	---NA---	81											
+true	[BLASTED]	g270.t1	Retron-type reverse transcriptase	222	20	2.98091E-22	87.48								
+true	[BLASTED, MAPPED, ANNOTATED]	g271.t1	reverse transcriptase domain-containing protein	186	20	6.99894E-18	87.26	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g272.t1	tyrosine 3/tryptophan 5 -monooxygenase activation protein, eta polypeptide (predicted)	318	20	2.44031E-33	78.26	5	F:GO:0004497; F:GO:0005507; F:GO:0005524; F:GO:0016887; F:GO:0042802	F:monooxygenase activity; F:copper ion binding; F:ATP binding; F:ATP hydrolysis activity; F:identical protein binding	EC:1; EC:3.6.1.15	Oxidoreductases; nucleoside-triphosphate phosphatase			
+true	[NO-BLAST]	g273.t1	---NA---	135											
+true	[BLASTED]	g274.t1	hypothetical protein	210	1	3.07907E-9	72.46								
+true	[BLASTED]	g275.t1	Class E basic helix-loop-helix protein 22	267	20	6.73938E-23	70.65								
+true	[BLASTED]	g276.t1	hypothetical protein, partial	345	20	1.09412E-33	75.0								
+true	[NO-BLAST]	g277.t1	---NA---	120											
+true	[NO-BLAST]	g278.t1	---NA---	384											
+true	[BLASTED, MAPPED, ANNOTATED]	g279.t1	tigger transposable element-derived protein 1	498	20	7.29854E-58	75.14	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[NO-BLAST]	g280.t1	---NA---	156											
+true	[NO-BLAST]	g281.t1	---NA---	102											
+true	[NO-BLAST]	g282.t1	---NA---	195											
+true	[BLASTED]	g283.t1	hypothetical protein, partial	342	20	6.3987E-61	90.82								
+true	[BLASTED, MAPPED, ANNOTATED]	g284.t1	Adenomatous polyposis protein	264	20	8.40872E-25	75.09	24	P:GO:0000281; P:GO:0006974; P:GO:0007026; P:GO:0007269; P:GO:0008285; P:GO:0016477; P:GO:0017156; P:GO:0030178; P:GO:0043065; P:GO:0051726; P:GO:0097091; F:GO:0005524; F:GO:0008013; F:GO:0008017; F:GO:0042802; C:GO:0005634; C:GO:0005874; C:GO:0005886; C:GO:0014069; C:GO:0030672; C:GO:0031201; C:GO:0070161; C:GO:0098685; C:GO:0098978	P:mitotic cytokinesis; P:cellular response to DNA damage stimulus; P:negative regulation of microtubule depolymerization; P:neurotransmitter secretion; P:negative regulation of cell population proliferation; P:cell migration; P:calcium-ion regulated exocytosis; P:negative regulation of Wnt signaling pathway; P:positive regulation of apoptotic process; P:regulation of cell cycle; P:synaptic vesicle clustering; F:ATP binding; F:beta-catenin binding; F:microtubule binding; F:identical protein binding; C:nucleus; C:microtubule; C:plasma membrane; C:postsynaptic density; C:synaptic vesicle membrane; C:SNARE complex; C:anchoring junction; C:Schaffer collateral - CA1 synapse; C:glutamatergic synapse					
+true	[NO-BLAST]	g285.t1	---NA---	189											
+true	[BLASTED, MAPPED, ANNOTATED]	g286.t1	histone-lysine N-methyltransferase SETMAR isoform X1	618	20	2.04886E-82	76.32	24	P:GO:0000729; P:GO:0000737; P:GO:0006325; P:GO:0008283; P:GO:0015074; P:GO:0031297; P:GO:0044774; P:GO:0051568; P:GO:0090305; P:GO:0097676; P:GO:2000373; P:GO:2001034; P:GO:2001251; F:GO:0000014; F:GO:0003690; F:GO:0003697; F:GO:0008270; F:GO:0042800; F:GO:0042803; F:GO:0044547; F:GO:0046975; C:GO:0000793; C:GO:0005730; C:GO:0035861	P:DNA double-strand break processing; P:DNA catabolic process, endonucleolytic; P:chromatin organization; P:cell population proliferation; P:DNA integration; P:replication fork processing; P:mitotic DNA integrity checkpoint signaling; P:histone H3-K4 methylation; P:nucleic acid phosphodiester bond hydrolysis; P:histone H3-K36 dimethylation; P:positive regulation of DNA topoisomerase (ATP-hydrolyzing) activity; P:positive regulation of double-strand break repair via nonhomologous end joining; P:negative regulation of chromosome organization; F:single-stranded DNA endodeoxyribonuclease activity; F:double-stranded DNA binding; F:single-stranded DNA binding; F:zinc ion binding; F:histone H3K4 methyltransferase activity; F:protein homodimerization activity; F:DNA topoisomerase binding; F:histone H3K36 methyltransferase activity; C:condensed chromosome; C:nucleolus; C:site of double-strand break	EC:3.1; EC:2.1.1.354	Acting on ester bonds; [histone H3]-lysine(4) N-trimethyltransferase			
+true	[BLASTED]	g287.t1	mitochondrial enolase superfamily member 1 isoform X1	195	20	7.76108E-26	83.91								
+true	[NO-BLAST]	g288.t1	---NA---	75											
+true	[NO-BLAST]	g289.t1	---NA---	93											
+true	[NO-BLAST]	g290.t1	---NA---	141											
+true	[NO-BLAST]	g291.t1	---NA---	177											
+true	[NO-BLAST]	g292.t1	---NA---	198											
+true	[BLASTED, MAPPED, ANNOTATED]	g293.t1	reverse transcriptase domain-containing protein	855	20	0.0	98.6	1	F:GO:0003824	F:catalytic activity					
+true	[BLASTED, MAPPED, ANNOTATED]	g294.t1	DUF1725 domain-containing protein	363	20	2.04199E-67	98.58	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g295.t1	---NA---	99											
+true	[NO-BLAST]	g296.t1	---NA---	291											
+true	[NO-BLAST]	g297.t1	---NA---	144											
+true	[BLASTED, MAPPED, ANNOTATED]	g298.t1	Bromodomain and WD repeat domain containing 1	186	20	7.2727E-13	78.43	7	P:GO:0006357; P:GO:0007010; P:GO:0008360; F:GO:0005515; C:GO:0005654; C:GO:0005730; C:GO:0005829	P:regulation of transcription by RNA polymerase II; P:cytoskeleton organization; P:regulation of cell shape; F:protein binding; C:nucleoplasm; C:nucleolus; C:cytosol					
+true	[BLASTED]	g299.t1	DUF1725 domain-containing protein	603	20	1.07616E-142	97.45								
+true	[BLASTED, MAPPED, ANNOTATED]	g300.t1	reverse transcriptase domain-containing protein	1944	20	0.0	98.31	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED]	g301.t1	retrovirus-related Pol polyLINE-1 domain protein	267	20	1.41173E-52	96.27								
+true	[BLASTED, MAPPED, ANNOTATED]	g302.t1	L1 transposable element	906	20	0.0	98.43	9	P:GO:0032197; F:GO:0000166; F:GO:0003697; F:GO:0003727; F:GO:0004803; F:GO:0042802; C:GO:0005730; C:GO:0010494; C:GO:1990904	P:transposition, RNA-mediated; F:nucleotide binding; F:single-stranded DNA binding; F:single-stranded RNA binding; F:transposase activity; F:identical protein binding; C:nucleolus; C:cytoplasmic stress granule; C:ribonucleoprotein complex					
+true	[NO-BLAST]	g303.t1	---NA---	150											
+true	[NO-BLAST]	g304.t1	---NA---	159											
+true	[BLASTED, MAPPED, ANNOTATED]	g305.t1	DUF1725 domain-containing protein	468	20	5.73611E-109	99.61	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g306.t1	reverse transcriptase domain-containing protein	1431	20	0.0	97.57	5	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519; F:GO:0005515	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity; F:protein binding	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED]	g307.t1	L1 transposable element	192	20	8.02674E-34	98.25								
+true	[NO-BLAST]	g308.t1	---NA---	159											
+true	[NO-BLAST]	g309.t1	---NA---	264											
+true	[NO-BLAST]	g310.t1	---NA---	246											
+true	[BLASTED]	g311.t1	hypothetical protein C9925_02015	165	5	7.01338E-9	80.37								
+true	[BLASTED]	g312.t1	hypothetical protein HJG63_012246	108	1	7.58265E-4	82.76								
+true	[BLASTED]	g313.t1	DUF1725 domain-containing protein	270	20	9.64348E-52	91.97								
+true	[BLASTED]	g314.t1	hCG1777113, isoform CRA_a	249	20	5.68361E-29	75.98								
+true	[NO-BLAST]	g315.t1	---NA---	153											
+true	[NO-BLAST]	g316.t1	---NA---	75											
+true	[NO-BLAST]	g317.t1	---NA---	192											
+true	[NO-BLAST]	g318.t1	---NA---	165											
+true	[NO-BLAST]	g319.t1	---NA---	96											
+true	[BLASTED]	g320.t1	FLJ44955 protein	309	20	1.51933E-20	66.46								
+true	[BLASTED]	g321.t1	hypothetical protein G6F54_012450	198	20	1.60005E-29	89.43								
+true	[BLASTED]	g322.t1	Uncharacterised protein	186	13	3.51164E-12	64.21								
+true	[BLASTED, MAPPED]	g323.t1	receptor tyrosine-protein kinase erbB-4 isoform X3	315	20	4.69067E-11	61.23	1	F:GO:0003824	F:catalytic activity					
+true	[BLASTED]	g324.t1	reverse transcriptase domain-containing protein	228	20	4.63762E-29	89.52								
+true	[NO-BLAST]	g325.t1	---NA---	189											
+true	[BLASTED]	g326.t1	Hypothetical predicted protein	138	9	1.37498E-5	71.3								
+true	[BLASTED, MAPPED, ANNOTATED]	g327.t1	endonuclease/exonuclease/phosphatase family protein	219	20	1.63971E-33	88.16	2	P:GO:0090305; F:GO:0004527	P:nucleic acid phosphodiester bond hydrolysis; F:exonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g328.t1	reverse transcriptase family protein	222	20	3.47807E-16	80.73	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g329.t1	DUF1725 domain-containing protein	168	20	4.42954E-15	87.69								
+true	[BLASTED]	g330.t1	Uncharacterised protein	135	2	1.72904E-5	79.69								
+true	[NO-BLAST]	g331.t1	---NA---	87											
+true	[NO-BLAST]	g332.t1	---NA---	138											
+true	[BLASTED]	g333.t1	receptor tyrosine-protein kinase erbB-4 isoform X3	165	20	6.24175E-10	76.05								
+true	[BLASTED, MAPPED, ANNOTATED]	g334.t1	Retron-type reverse transcriptase	324	20	1.39555E-20	73.58	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g335.t1	hypothetical protein	144	1	1.73884E-4	73.81								
+true	[BLASTED]	g336.t1	DUF1725 domain-containing protein	240	20	1.22919E-29	83.57								
+true	[BLASTED, MAPPED, ANNOTATED]	g337.t1	reverse transcriptase domain-containing protein	264	20	2.6932E-18	83.61	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g338.t1	endonuclease/exonuclease/phosphatase family protein	345	20	4.25926E-36	83.79	2	P:GO:0090305; F:GO:0004527	P:nucleic acid phosphodiester bond hydrolysis; F:exonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g339.t1	hypothetical protein	147	6	3.20579E-16	92.54								
+true	[BLASTED, MAPPED, ANNOTATED]	g340.t1	reverse transcriptase family protein	441	20	4.68554E-47	78.78	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g341.t1	---NA---	96											
+true	[NO-BLAST]	g342.t1	---NA---	75											
+true	[BLASTED, MAPPED, ANNOTATED]	g343.t1	tigger transposable element-derived protein 1	156	20	1.25426E-11	68.8	1	F:GO:0003676	F:nucleic acid binding					
+true	[BLASTED, MAPPED, ANNOTATED]	g344.t1	tigger transposable element-derived protein 1	180	20	1.01934E-17	83.49	2	F:GO:0003677; C:GO:0005634	F:DNA binding; C:nucleus					
+true	[BLASTED, MAPPED]	g345.t1	reverse transcriptase family protein	258	20	1.17337E-12	64.31	1	F:GO:0003824	F:catalytic activity					
+true	[NO-BLAST]	g346.t1	---NA---	75											
+true	[NO-BLAST]	g347.t1	---NA---	279											
+true	[NO-BLAST]	g348.t1	---NA---	81											
+true	[BLASTED, MAPPED, ANNOTATED]	g349.t1	L1 transposable element	426	20	1.07766E-68	97.11	8	P:GO:0032197; F:GO:0000166; F:GO:0003697; F:GO:0003727; F:GO:0042802; C:GO:0005730; C:GO:0010494; C:GO:1990904	P:transposition, RNA-mediated; F:nucleotide binding; F:single-stranded DNA binding; F:single-stranded RNA binding; F:identical protein binding; C:nucleolus; C:cytoplasmic stress granule; C:ribonucleoprotein complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g350.t1	reverse transcriptase domain-containing protein	366	20	1.03098E-76	97.15	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g351.t1	reverse transcriptase family protein	516	20	2.71023E-115	98.27								
+true	[BLASTED]	g352.t1	DUF1725 domain-containing protein	603	20	2.70991E-143	98.03								
+true	[BLASTED]	g353.t1	serine/threonine-protein kinase VRK2 isoform X2	168	15	1.23919E-11	76.81								
+true	[BLASTED]	g354.t1	Retron-type reverse transcriptase	267	20	2.58247E-43	88.04								
+true	[NO-BLAST]	g355.t1	---NA---	84											
+true	[NO-BLAST]	g356.t1	---NA---	99											
+true	[BLASTED]	g357.t1	Hypothetical predicted protein	363	1	4.2778E-4	75.0								
+true	[NO-BLAST]	g358.t1	---NA---	177											
+true	[NO-BLAST]	g359.t1	---NA---	111											
+true	[NO-BLAST]	g360.t1	---NA---	177											
+true	[NO-BLAST]	g361.t1	---NA---	249											
+true	[NO-BLAST]	g362.t1	---NA---	174											
+true	[NO-BLAST]	g363.t1	---NA---	243											
+true	[NO-BLAST]	g364.t1	---NA---	201											
+true	[BLASTED, MAPPED, ANNOTATED]	g365.t1	reverse transcriptase domain-containing protein	903	20	0.0	97.48	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g366.t1	reverse transcriptase domain-containing protein	975	20	0.0	98.38	5	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519; F:GO:0005515	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity; F:protein binding	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[NO-BLAST]	g367.t1	---NA---	69											
+true	[NO-BLAST]	g368.t1	---NA---	72											
+true	[NO-BLAST]	g369.t1	---NA---	195											
+true	[NO-BLAST]	g370.t1	---NA---	174											
+true	[BLASTED, MAPPED]	g371.t1	tigger transposable element-derived protein 1	132	20	1.54119E-9	77.87	3	F:GO:0003676; F:GO:0003677; C:GO:0005634	F:nucleic acid binding; F:DNA binding; C:nucleus					
+true	[BLASTED]	g372.t1	reverse transcriptase family protein	849	20	1.624E-178	93.79								
+true	[NO-BLAST]	g373.t1	---NA---	207											
+true	[NO-BLAST]	g374.t1	---NA---	156											
+true	[BLASTED]	g375.t1	hypothetical protein	411	20	3.58403E-69	83.63								
+true	[NO-BLAST]	g376.t1	---NA---	75											
+true	[NO-BLAST]	g377.t1	---NA---	282											
+true	[NO-BLAST]	g378.t1	---NA---	96											
+true	[BLASTED]	g379.t1	endonuclease/exonuclease/phosphatase family protein	144	5	7.58156E-5	79.62								
+true	[NO-BLAST]	g380.t1	---NA---	231											
+true	[NO-BLAST]	g381.t1	---NA---	261											
+true	[BLASTED, MAPPED]	g382.t1	serine incorporator 5	108	20	3.73101E-7	77.52	6	P:GO:0006658; P:GO:0006665; P:GO:0042552; C:GO:0005886; C:GO:0016020; C:GO:0016020	P:phosphatidylserine metabolic process; P:sphingolipid metabolic process; P:myelination; C:plasma membrane; C:membrane; C:membrane					
+true	[BLASTED, MAPPED, ANNOTATED]	g383.t1	reverse transcriptase domain-containing protein	2049	20	0.0	96.77	5	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519; F:GO:0005515	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity; F:protein binding	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g384.t1	reverse transcriptase domain-containing protein	288	20	3.84592E-12	88.26	1	C:GO:0016020	C:membrane					
+true	[NO-BLAST]	g385.t1	---NA---	99											
+true	[NO-BLAST]	g386.t1	---NA---	84											
+true	[BLASTED, MAPPED, ANNOTATED]	g387.t1	DUF1725 domain-containing protein	147	20	4.86402E-12	83.25	2	P:GO:0006278; F:GO:0003964	P:RNA-templated DNA biosynthetic process; F:RNA-directed DNA polymerase activity	EC:2.7.7.49	RNA-directed DNA polymerase			
+true	[BLASTED]	g388.t1	hypothetical protein, partial	231	8	5.22181E-11	77.88								
+true	[NO-BLAST]	g389.t1	---NA---	177											
+true	[NO-BLAST]	g390.t1	---NA---	141											
+true	[BLASTED]	g391.t1	endonuclease/exonuclease/phosphatase family protein	237	20	4.92758E-21	70.09								
+true	[NO-BLAST]	g392.t1	---NA---	198											
+true	[NO-BLAST]	g393.t1	---NA---	114											
+true	[NO-BLAST]	g394.t1	---NA---	102											
+true	[NO-BLAST]	g395.t1	---NA---	291											
+true	[NO-BLAST]	g396.t1	---NA---	90											
+true	[NO-BLAST]	g397.t1	---NA---	153											
+true	[NO-BLAST]	g398.t1	---NA---	108											
+true	[NO-BLAST]	g399.t1	---NA---	66											
+true	[BLASTED]	g400.t1	hypothetical protein, partial	225	20	4.99674E-16	88.41								
+true	[BLASTED, MAPPED, ANNOTATED]	g401.t1	reverse transcriptase family protein	402	20	2.69862E-82	96.4	1	P:GO:0071897	P:DNA biosynthetic process					
+true	[NO-BLAST]	g402.t1	---NA---	189											
+true	[NO-BLAST]	g403.t1	---NA---	81											
+true	[NO-BLAST]	g404.t1	---NA---	123											
+true	[NO-BLAST]	g405.t1	---NA---	69											
+true	[BLASTED]	g406.t1	DUF1725 domain-containing protein	165	20	1.58891E-20	80.47								
+true	[NO-BLAST]	g407.t1	---NA---	120											
+true	[NO-BLAST]	g408.t1	---NA---	120											
+true	[NO-BLAST]	g409.t1	---NA---	291											
+true	[NO-BLAST]	g410.t1	---NA---	333											
+true	[BLASTED, MAPPED, ANNOTATED]	g411.t1	ORF1 codes for a 40 kDa product	219	20	1.9711E-19	88.07	8	P:GO:0032197; F:GO:0000166; F:GO:0003697; F:GO:0003727; F:GO:0042802; C:GO:0005730; C:GO:0010494; C:GO:1990904	P:transposition, RNA-mediated; F:nucleotide binding; F:single-stranded DNA binding; F:single-stranded RNA binding; F:identical protein binding; C:nucleolus; C:cytoplasmic stress granule; C:ribonucleoprotein complex					
+true	[BLASTED]	g412.t1	reverse transcriptase domain-containing protein	288	20	1.1855E-18	77.1								
+true	[BLASTED, MAPPED, ANNOTATED]	g413.t1	reverse transcriptase family protein	312	20	2.80776E-25	75.0	1	F:GO:0003824	F:catalytic activity					
+true	[NO-BLAST]	g414.t1	---NA---	210											
+true	[BLASTED, MAPPED, ANNOTATED]	g415.t1	zinc finger protein 429 isoform X1	402	20	2.96504E-11	89.25	3	P:GO:0006355; F:GO:0046872; C:GO:0016020	P:regulation of DNA-templated transcription; F:metal ion binding; C:membrane					
+true	[NO-BLAST]	g416.t1	---NA---	114											
+true	[NO-BLAST]	g417.t1	---NA---	318											
+true	[BLASTED, MAPPED, ANNOTATED]	g418.t1	PIR Superfamily Protein	288	20	8.82344E-9	93.67	1	C:GO:0016020	C:membrane					
+true	[BLASTED, MAPPED, ANNOTATED]	g419.t1	DUF1725 domain-containing protein	465	20	3.44421E-105	99.5	2	P:GO:0006278; F:GO:0003964	P:RNA-templated DNA biosynthetic process; F:RNA-directed DNA polymerase activity	EC:2.7.7.49	RNA-directed DNA polymerase			
+true	[NO-BLAST]	g420.t1	---NA---	108											
+true	[NO-BLAST]	g421.t1	---NA---	186											
+true	[NO-BLAST]	g422.t1	---NA---	123											
+true	[NO-BLAST]	g423.t1	---NA---	153											
+true	[BLASTED, MAPPED, ANNOTATED]	g424.t1	DUF1725 domain-containing protein	495	20	1.43607E-114	99.18	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g425.t1	reverse transcriptase domain-containing protein	516	20	1.54644E-108	95.17	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g426.t1	Gag-Pol polyprotein	207	20	3.49967E-13	77.1	3	P:GO:0019068; F:GO:0003676; F:GO:0008270	P:virion assembly; F:nucleic acid binding; F:zinc ion binding					
+true	[BLASTED, MAPPED]	g427.t1	hypothetical protein	327	20	1.08312E-6	60.73	4	P:GO:0016032; P:GO:0019068; F:GO:0003676; F:GO:0008270	P:viral process; P:virion assembly; F:nucleic acid binding; F:zinc ion binding					
+true	[NO-BLAST]	g428.t1	---NA---	159											
+true	[NO-BLAST]	g429.t1	---NA---	111											
+true	[NO-BLAST]	g430.t1	---NA---	123											
+true	[NO-BLAST]	g431.t1	---NA---	144											
+true	[NO-BLAST]	g432.t1	---NA---	69											
+true	[NO-BLAST]	g433.t1	---NA---	81											
+true	[BLASTED, MAPPED, ANNOTATED]	g434.t1	reverse transcriptase domain-containing protein	996	20	0.0	95.12	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g435.t1	reverse transcriptase family protein	834	20	0.0	97.35	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g436.t1	DUF1725 domain-containing protein	600	20	4.45323E-136	95.6								
+true	[NO-BLAST]	g437.t1	---NA---	96											
+true	[NO-BLAST]	g438.t1	---NA---	339											
+true	[BLASTED]	g439.t1	DUF1725 domain-containing protein	261	20	7.15262E-32	75.26								
+true	[BLASTED, MAPPED, ANNOTATED]	g440.t1	DUF1725 domain-containing protein	366	20	9.58721E-70	90.61	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g441.t1	---NA---	141											
+true	[NO-BLAST]	g442.t1	---NA---	108											
+true	[BLASTED]	g443.t1	DUF1725 domain-containing protein	834	20	0.0	97.8								
+true	[BLASTED, MAPPED, ANNOTATED]	g444.t1	reverse transcriptase domain-containing protein	1740	20	0.0	97.18	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED]	g445.t1	hypothetical protein	336	20	5.80536E-59	88.13								
+true	[NO-BLAST]	g446.t1	---NA---	363											
+true	[NO-BLAST]	g447.t1	---NA---	141											
+true	[BLASTED]	g448.t1	uncharacterized protein LOC118545533 isoform X1	384	2	8.00368E-5	68.42								
+true	[BLASTED]	g449.t1	DUF1725 domain-containing protein	198	20	1.06085E-8	90.98								
+true	[NO-BLAST]	g450.t1	---NA---	132											
+true	[NO-BLAST]	g451.t1	---NA---	216											
+true	[NO-BLAST]	g452.t1	---NA---	87											
+true	[NO-BLAST]	g453.t1	---NA---	117											
+true	[NO-BLAST]	g454.t1	---NA---	147											
+true	[NO-BLAST]	g455.t1	---NA---	174											
+true	[NO-BLAST]	g456.t1	---NA---	162											
+true	[NO-BLAST]	g457.t1	---NA---	177											
+true	[NO-BLAST]	g458.t1	---NA---	138											
+true	[NO-BLAST]	g459.t1	---NA---	201											
+true	[NO-BLAST]	g460.t1	---NA---	210											
+true	[BLASTED]	g461.t1	DUF1725 domain-containing protein	387	20	4.09409E-74	94.91								
+true	[NO-BLAST]	g462.t1	---NA---	210											
+true	[NO-BLAST]	g463.t1	---NA---	267											
+true	[BLASTED, MAPPED]	g464.t1	Transposase type 1	168	9	3.30883E-9	71.9	4	P:GO:0008150; F:GO:0003674; F:GO:0003676; C:GO:0005575	P:biological_process; F:molecular_function; F:nucleic acid binding; C:cellular_component					
+true	[BLASTED, MAPPED, ANNOTATED]	g465.t1	pumilio homolog 2 isoform X6	249	17	1.45748E-8	80.45	1	F:GO:0003676	F:nucleic acid binding					
+true	[NO-BLAST]	g466.t1	---NA---	66											
+true	[NO-BLAST]	g467.t1	---NA---	84											
+true	[NO-BLAST]	g468.t1	---NA---	69											
+true	[NO-BLAST]	g469.t1	---NA---	150											
+true	[NO-BLAST]	g470.t1	---NA---	276											
+true	[NO-BLAST]	g471.t1	---NA---	99											
+true	[BLASTED]	g472.t1	reverse transcriptase domain-containing protein	330	20	4.56952E-40	78.31								
+true	[BLASTED]	g473.t1	reverse transcriptase domain-containing protein	279	20	1.15762E-41	93.58								
+true	[NO-BLAST]	g474.t1	---NA---	222											
+true	[BLASTED, MAPPED, ANNOTATED]	g475.t1	elongation factor 1-alpha 1-like	375	20	4.85734E-48	82.3	4	P:GO:0006414; F:GO:0003746; F:GO:0003924; F:GO:0005525	P:translational elongation; F:translation elongation factor activity; F:GTPase activity; F:GTP binding	EC:3.6.1.15	nucleoside-triphosphate phosphatase			
+true	[NO-BLAST]	g476.t1	---NA---	114											
+true	[NO-BLAST]	g477.t1	---NA---	225											
+true	[NO-BLAST]	g478.t1	---NA---	213											
+true	[NO-BLAST]	g479.t1	---NA---	147											
+true	[NO-BLAST]	g480.t1	---NA---	114											
+true	[BLASTED, MAPPED, ANNOTATED]	g481.t1	hypothetical protein M513_10937	216	20	1.38681E-17	72.32	2	F:GO:0046872; C:GO:0016020	F:metal ion binding; C:membrane					
+true	[NO-BLAST]	g482.t1	---NA---	162											
+true	[BLASTED, MAPPED, ANNOTATED]	g483.t1	L1 transposable element	375	20	2.65755E-64	99.08	8	P:GO:0032197; F:GO:0000166; F:GO:0003697; F:GO:0003727; F:GO:0042802; C:GO:0005730; C:GO:0010494; C:GO:1990904	P:transposition, RNA-mediated; F:nucleotide binding; F:single-stranded DNA binding; F:single-stranded RNA binding; F:identical protein binding; C:nucleolus; C:cytoplasmic stress granule; C:ribonucleoprotein complex					
+true	[BLASTED, MAPPED, ANNOTATED]	g484.t1	L1 transposable element	375	20	9.21989E-66	98.73	8	P:GO:0032197; F:GO:0000166; F:GO:0003697; F:GO:0003727; F:GO:0042802; C:GO:0005730; C:GO:0010494; C:GO:1990904	P:transposition, RNA-mediated; F:nucleotide binding; F:single-stranded DNA binding; F:single-stranded RNA binding; F:identical protein binding; C:nucleolus; C:cytoplasmic stress granule; C:ribonucleoprotein complex					
+true	[BLASTED]	g485.t1	DUF1725 domain-containing protein	303	20	1.29113E-9	62.69								
+true	[NO-BLAST]	g486.t1	---NA---	156											
+true	[BLASTED, MAPPED, ANNOTATED]	g487.t1	reverse transcriptase domain-containing protein	2928	20	0.0	98.25	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED]	g488.t1	tigger transposable element-derived protein 1	180	20	1.27766E-6	74.28	3	F:GO:0003676; F:GO:0003677; C:GO:0005634	F:nucleic acid binding; F:DNA binding; C:nucleus					
+true	[BLASTED, MAPPED, ANNOTATED]	g489.t1	endonuclease/exonuclease/phosphatase family protein	216	20	8.90734E-17	81.08	6	P:GO:0006310; P:GO:0032197; P:GO:0090305; F:GO:0003964; F:GO:0009036; F:GO:0046872	P:DNA recombination; P:transposition, RNA-mediated; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:type II site-specific deoxyribonuclease activity; F:metal ion binding	EC:3.1.30; EC:2.7.7.49; EC:3.1.21.4	Acting on ester bonds; RNA-directed DNA polymerase; type II site-specific deoxyribonuclease			
+true	[BLASTED, MAPPED, ANNOTATED]	g490.t1	reverse transcriptase domain-containing protein	354	20	7.56777E-68	93.5	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g491.t1	reverse transcriptase domain-containing protein	465	20	3.60083E-98	96.36	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g492.t1	DUF1725 domain-containing protein	825	20	3.84034E-178	92.37								
+true	[BLASTED, MAPPED, ANNOTATED]	g493.t1	reverse transcriptase family protein	711	20	3.90856E-124	90.68	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g494.t1	Retron-type reverse transcriptase	237	20	9.00211E-30	90.3								
+true	[BLASTED]	g495.t1	DUF1725 domain-containing protein	312	20	1.6411E-55	91.43								
+true	[NO-BLAST]	g496.t1	---NA---	99											
+true	[NO-BLAST]	g497.t1	---NA---	228											
+true	[BLASTED, MAPPED, ANNOTATED]	g498.t1	apolipoprotein L6 isoform X4	153	20	5.40095E-15	82.86	1	F:GO:0106274	F:NAD+-protein-arginine ADP-ribosyltransferase activity	EC:2.4.2.31	NAD(+)--protein-arginine ADP-ribosyltransferase			
+true	[BLASTED, MAPPED, ANNOTATED]	g499.t1	PDZ and LIM domain 5	159	20	1.49643E-10	68.94	14	P:GO:0030036; P:GO:0051963; P:GO:0061001; P:GO:0061049; F:GO:0003779; F:GO:0005080; F:GO:0051371; C:GO:0001725; C:GO:0005829; C:GO:0005912; C:GO:0014069; C:GO:0016020; C:GO:0030018; C:GO:0031941	P:actin cytoskeleton organization; P:regulation of synapse assembly; P:regulation of dendritic spine morphogenesis; P:cell growth involved in cardiac muscle cell development; F:actin binding; F:protein kinase C binding; F:muscle alpha-actinin binding; C:stress fiber; C:cytosol; C:adherens junction; C:postsynaptic density; C:membrane; C:Z disc; C:filamentous actin					
+true	[BLASTED, MAPPED, ANNOTATED]	g500.t1	reverse transcriptase domain-containing protein	1113	20	0.0	88.65	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED]	g501.t1	hypothetical protein, partial	201	20	8.53478E-32	87.4								
+true	[BLASTED]	g502.t1	hCG1772243, partial	186	1	1.17171E-8	68.75								
+true	[NO-BLAST]	g503.t1	---NA---	132											
+true	[NO-BLAST]	g504.t1	---NA---	114											
+true	[NO-BLAST]	g505.t1	---NA---	183											
+true	[BLASTED, MAPPED]	g506.t1	tigger transposable element-derived protein 1-like	249	2	1.75037E-5	92.45	6	P:GO:0051604; F:GO:0003677; C:GO:0005783; C:GO:0005789; C:GO:0016020; C:GO:0016020	P:protein maturation; F:DNA binding; C:endoplasmic reticulum; C:endoplasmic reticulum membrane; C:membrane; C:membrane					
+true	[NO-BLAST]	g507.t1	---NA---	228											
+true	[BLASTED, MAPPED, ANNOTATED]	g508.t1	ADP-ribosylation factor-like protein 4A	615	20	1.35789E-136	99.95	10	P:GO:0006886; P:GO:0016192; P:GO:0050873; F:GO:0003924; F:GO:0005515; F:GO:0005525; C:GO:0005654; C:GO:0005730; C:GO:0005829; C:GO:0005886	P:intracellular protein transport; P:vesicle-mediated transport; P:brown fat cell differentiation; F:GTPase activity; F:protein binding; F:GTP binding; C:nucleoplasm; C:nucleolus; C:cytosol; C:plasma membrane	EC:3.6.1.15	nucleoside-triphosphate phosphatase			
+true	[NO-BLAST]	g509.t1	---NA---	228											
+true	[BLASTED]	g510.t1	protein O-mannosyl-transferase TMTC3 isoform X1	198	5	1.97984E-10	70.8								
+true	[NO-BLAST]	g511.t1	---NA---	120											
+true	[NO-BLAST]	g512.t1	---NA---	93											
+true	[NO-BLAST]	g513.t1	---NA---	87											
+true	[BLASTED, MAPPED, ANNOTATED]	g514.t1	adseverin isoform X2	330	20	3.15995E-45	98.86	22	P:GO:0007417; P:GO:0008285; P:GO:0017156; P:GO:0030031; P:GO:0032330; P:GO:0042989; P:GO:0043065; P:GO:0045654; P:GO:0051014; P:GO:0051016; P:GO:0051047; P:GO:0051127; F:GO:0001786; F:GO:0005509; F:GO:0005545; F:GO:0005546; F:GO:0051015; C:GO:0002102; C:GO:0005903; C:GO:0005938; C:GO:0042995; C:GO:0070161	P:central nervous system development; P:negative regulation of cell population proliferation; P:calcium-ion regulated exocytosis; P:cell projection assembly; P:regulation of chondrocyte differentiation; P:sequestering of actin monomers; P:positive regulation of apoptotic process; P:positive regulation of megakaryocyte differentiation; P:actin filament severing; P:barbed-end actin filament capping; P:positive regulation of secretion; P:positive regulation of actin nucleation; F:phosphatidylserine binding; F:calcium ion binding; F:1-phosphatidylinositol binding; F:phosphatidylinositol-4,5-bisphosphate binding; F:actin filament binding; C:podosome; C:brush border; C:cell cortex; C:cell projection; C:anchoring junction					
+true	[NO-BLAST]	g515.t1	---NA---	138											
+true	[NO-BLAST]	g516.t1	---NA---	180											
+true	[NO-BLAST]	g517.t1	---NA---	108											
+true	[BLASTED]	g518.t1	DUF1725 domain-containing protein	198	20	2.07967E-14	72.74								
+true	[BLASTED]	g519.t1	probable histone-lysine N-methyltransferase PRDM7	198	1	7.14315E-5	70.59								
+true	[NO-BLAST]	g520.t1	---NA---	159											
+true	[NO-BLAST]	g521.t1	---NA---	120											
+true	[BLASTED]	g522.t1	hypothetical protein G6F68_021707	183	20	8.79751E-16	87.17								
+true	[BLASTED]	g523.t1	Uncharacterised protein	144	20	2.82063E-22	94.5								
+true	[BLASTED, MAPPED, ANNOTATED]	g524.t1	reverse transcriptase domain-containing protein	861	20	0.0	97.36	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g525.t1	reverse transcriptase family protein	159	20	1.08106E-15	84.21	2	P:GO:0006278; F:GO:0003964	P:RNA-templated DNA biosynthetic process; F:RNA-directed DNA polymerase activity	EC:2.7.7.49	RNA-directed DNA polymerase			
+true	[BLASTED, MAPPED, ANNOTATED]	g526.t1	reverse transcriptase family protein	486	20	3.48191E-94	92.02	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[BLASTED, MAPPED, ANNOTATED]	g527.t1	DUF1725 domain-containing protein	387	20	8.68096E-56	89.87	2	P:GO:0090305; F:GO:0004519	P:nucleic acid phosphodiester bond hydrolysis; F:endonuclease activity	EC:3.1	Acting on ester bonds			
+true	[NO-BLAST]	g528.t1	---NA---	87											
+true	[BLASTED, MAPPED, ANNOTATED]	g529.t1	DNA excision repair protein ERCC-6-like protein	297	20	1.21342E-36	72.08	1	F:GO:0000166	F:nucleotide binding					
+true	[BLASTED]	g530.t1	hypothetical protein	312	20	1.91905E-55	86.18								
+true	[NO-BLAST]	g531.t1	---NA---	87											
+true	[BLASTED]	g532.t1	reverse transcriptase domain-containing protein	114	8	1.00901E-6	88.86								
+true	[BLASTED, MAPPED, ANNOTATED]	g533.t1	reverse transcriptase domain-containing protein	861	20	0.0	98.41	4	P:GO:0006278; P:GO:0090305; F:GO:0003964; F:GO:0004519	P:RNA-templated DNA biosynthetic process; P:nucleic acid phosphodiester bond hydrolysis; F:RNA-directed DNA polymerase activity; F:endonuclease activity	EC:3.1; EC:2.7.7.49	Acting on ester bonds; RNA-directed DNA polymerase			
+true	[BLASTED]	g534.t1	Uncharacterised protein	144	20	6.8187E-25	98.4								

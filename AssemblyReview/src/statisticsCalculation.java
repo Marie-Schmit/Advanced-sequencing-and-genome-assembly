@@ -67,7 +67,10 @@ public class statisticsCalculation {
     }
 
     //Calculate and return N50 from a list of contigs lengths
-    public int calculateN50(ArrayList<Integer> list_len, int totalLen) {
+    public int[] calculateN50(ArrayList<Integer> list_len, int totalLen) {
+        //Results contains the N50 value and its index
+        int[] results = new int[2];
+        
         ArrayList<Integer> sorted_len = list_len;
         int N50 = 0;
         int median = totalLen / 2; //Half of the genome
@@ -85,7 +88,11 @@ public class statisticsCalculation {
         }
         //N50 is the length of the contig once half of the genome is obtained
         N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
-        return N50;
+        
+        //Add values to result list
+        results[0] = N50;
+        results[1] = index;
+        return results;
     }
     
     //GC content calculation
@@ -136,5 +143,27 @@ public class statisticsCalculation {
         return gc;
     }
     
+    //Save each contig (lines between two header) as a single string in an array list.
+    public ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent) {
+        ArrayList<String> sequenceContent = new ArrayList<String>();
+        String newLine = "";
+
+        //For each line of the file
+        for (int i = 1; i < fileContent.size(); i++) {
+            //Get each line of the file and convert to string
+            String line = fileContent.get(i).toString();
+            //Remove line return
+            line.replaceAll("\\n", "");
+
+            if (!line.startsWith(">")) { //Concatenate lines that are not headers
+                newLine += line;
+            } else { //When header met, save concatenation and header in ArrayList
+                sequenceContent.add(newLine);
+                sequenceContent.add(line);
+                newLine = "";
+            }
+        }
+        return sequenceContent;
+    }
     
 }

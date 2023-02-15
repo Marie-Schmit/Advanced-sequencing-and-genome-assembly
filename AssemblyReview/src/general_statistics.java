@@ -64,7 +64,7 @@ public class general_statistics extends javax.swing.JPanel {
     public void startCalculation(ArrayList<StringBuffer> fileContent, String fileName) {
         //Create instance of statisticsCalculation for methods
         statisticsCalculation Stats = new statisticsCalculation();
-        
+
         //Write file name in statistics area
         statisticsArea.append("Fasta file:" + fileName + "\n");
 
@@ -76,9 +76,9 @@ public class general_statistics extends javax.swing.JPanel {
 
         //Display total length of assembly
         statisticsArea.append("Total length of contigs / scaffold: " + statistics[1] + "\n");
-        
+
         //Display average length
-        statisticsArea.append("Average contig or scaffhold length: " + (statistics[1]/statistics[0]) + "\n");
+        statisticsArea.append("Average contig or scaffhold length: " + (statistics[1] / statistics[0]) + "\n");
 
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
@@ -96,9 +96,9 @@ public class general_statistics extends javax.swing.JPanel {
 
     //Go trhough each contig to calculate the shortest, longest and the N50
     private int[] throughContigs(ArrayList<StringBuffer> fileContent, statisticsCalculation Stats) {
-        
+
         //Group lines by contigs, remove \n
-        ArrayList<String> contigLine = concatFasta(fileContent);
+        ArrayList<String> contigLine = Stats.concatFasta(fileContent);
 
         int[] results = new int[6];
         int numberSequence = 0; //Number of sequences
@@ -120,17 +120,19 @@ public class general_statistics extends javax.swing.JPanel {
             numberSequence = Stats.numberSequence(numberSequence, line);
             //Refresh total length
             totalLen = Stats.lengthSequence(totalLen, line);
-            //Count the number of Ns
-            nb_Ns = Stats.sumNs(nb_Ns, line);
-            //Refresh min and max values
-            min = Stats.minSequence(min, line);
-            max = Stats.maxSequence(max, line);
 
-            //Calculate list of length
-            list_len.add(line.length());
+            if (!line.startsWith(">")) {
+                //Calculate list of length
+                list_len.add(line.length());
+                //Count the number of Ns
+                nb_Ns = Stats.sumNs(nb_Ns, line);
+                //Refresh min and max values
+                min = Stats.minSequence(min, line);
+                max = Stats.maxSequence(max, line);
+            }
         }
         //Calculate N50 with list of length and total length of sequence
-        N50 = Stats.calculateN50(list_len, totalLen);
+        N50 = Stats.calculateN50(list_len, totalLen)[0];
 
         //Add results to result list
         results[0] = numberSequence;
@@ -141,28 +143,6 @@ public class general_statistics extends javax.swing.JPanel {
         results[5] = N50;
 
         return (results);
-    }
-
-    private ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent) {
-        ArrayList<String> sequenceContent = new ArrayList<String>();
-        String newLine = "";
-
-        //For each line of the file
-        for (int i = 1; i < fileContent.size(); i++) {
-            //Get each line of the file and convert to string
-            String line = fileContent.get(i).toString();
-            //Remove line return
-            line.replaceAll("\\n", "");
-
-            if (!line.startsWith(">")) { //Concatenate lines that are not headers
-                newLine += line;
-            } else { //When header met, save concatenation and header in ArrayList
-                sequenceContent.add(newLine);
-                sequenceContent.add(line);
-                newLine = "";
-            }
-        }
-        return sequenceContent;
     }
 
 
