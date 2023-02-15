@@ -38,6 +38,10 @@ public class fileChooserPanel extends javax.swing.JPanel {
     public ArrayList<StringBuffer> fileContent; //content of the file
     public String fileName; //Name of the selected file
     public String fileChosenMessage; //Message to display in actionFrame, indicating the name of the chosen file
+    
+    //For gtf files selection
+    public String gtfFileName;
+    public String gtfFileContent;
 
     private String fileDirectory; //Name of the selected file directory
     private FileDialog nameBox; //File browser

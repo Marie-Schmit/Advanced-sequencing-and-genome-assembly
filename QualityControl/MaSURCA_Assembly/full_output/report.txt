@@ -1,0 +1,22 @@
+Assembly                    Masurca_cor_beforePolishing_genome.scf
+# contigs (>= 0 bp)         16                                    
+# contigs (>= 1000 bp)      16                                    
+# contigs (>= 5000 bp)      16                                    
+# contigs (>= 10000 bp)     16                                    
+# contigs (>= 25000 bp)     14                                    
+# contigs (>= 50000 bp)     11                                    
+Total length (>= 0 bp)      4957066                               
+Total length (>= 1000 bp)   4957066                               
+Total length (>= 5000 bp)   4957066                               
+Total length (>= 10000 bp)  4957066                               
+Total length (>= 25000 bp)  4921711                               
+Total length (>= 50000 bp)  4822717                               
+# contigs                   16                                    
+Largest contig              1434334                               
+Total length                4957066                               
+GC (%)                      36.26                                 
+N50                         1349311                               
+N75                         361696                                
+L50                         2                                     
+L75                         5                                     
+# N's per 100 kbp           0.00                                  

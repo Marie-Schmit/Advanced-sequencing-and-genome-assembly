@@ -51,7 +51,7 @@ public class general_statistics extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -66,8 +66,7 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Fasta file:" + fileName + "\n");
         
         //Calculate number of sequences, lenght of sequences, min and max
-        int[] statistics = Arrays.copyOf(throughFile(fileContent), 3);
-        int[] statistics_others = Arrays.copyOf(throughContigs(fileContent), 3);
+        int[] statistics = Arrays.copyOf(throughContigs(fileContent), 6);
         
         //Display total number of sequences
         statisticsArea.append("Total number of contigs or scaffholds: " + statistics[0] + "\n");
@@ -79,12 +78,14 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
         statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
         
+        //Display GC content
+        double GC = getGC(fileContent, statistics[1]);
+        statisticsArea.append("GC%: " + GC + "\n");
+        
         //Display Ns value
         statisticsArea.append("Ns: " + statistics[4] + "\n");
         //Display N50 value
-        statisticsArea.append("Ns: " + statistics[5] + "\n");
-        
-        concatFasta(fileContent);
+        statisticsArea.append("N50: " + statistics[5] + "\n");
     }
     
 
@@ -135,52 +136,63 @@ public class general_statistics extends javax.swing.JPanel {
     }
     
     //Calculate and return N50 from a list of contigs lengths
-    private int calculateN50(ArrayList<Integer> list_len){
+    private int calculateN50(ArrayList<Integer> list_len, int totalLen){
         ArrayList<Integer> sorted_len = list_len;
+        int N50 = 0;
+        int median = totalLen/2; //Half of the genome
+        int index = 0;
+        int sum_len = 0;
         //Sort list by descending order
         Collections.sort(sorted_len, Collections.reverseOrder());
         
-        System.out.println(list_len);
-        System.out.println(sorted_len);
-        
-        return 0;
+        //Go throught the list of length and sum up the length until half of the genome is obtained
+        while (sum_len<median){
+            //Add length to sum
+            sum_len += list_len.get(index);
+            //Incremente index
+            index ++;
+        }
+        //N50 is the length of the contig once half of the genome is obtained
+        N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
+        return N50;
     }
     
-    //Calculates number of sequences in the fasta file (passed as ArrayList)
-    private int[] throughFile(ArrayList<StringBuffer> fileContent) {
-        int[] results = new int[6];
+    //Go trhough each contig to calculate the shortest, longest and the N50
+    private int[] throughContigs(ArrayList<StringBuffer> fileContent){
+        //Group lines by contigs, remove \n
+        ArrayList<String> contigLine = concatFasta(fileContent);
         
+        int[] results = new int[6];
         int numberSequence = 0; //Number of sequences
         int totalLen = 0;
+        int nb_Ns = 0; //Number of Ns
         int min = GENOME_SIZE;
         int max = 0;
-        int nb_Ns = 0; //Number of Ns
-        int N50 = 0; //N50 value
         
+        int N50 = 0; //N50 value
         //List of length for N50 calculation
         ArrayList<Integer> list_len = new ArrayList<Integer>();
-
-        //Check the number of lines starting with > (indicating a new sequence)
-        for (int i = 0; i < fileContent.size(); i++) {
-            //Get each line of the file and convert to string
-            String line = fileContent.get(i).toString();
+        
+        //For each contig or header
+        for (int i = 0; i < contigLine.size(); i++) {
+            //Get each line as string
+            String line = contigLine.get(i).toString();
             
             //Refresh number of sequences
             numberSequence = numberSequence(numberSequence, line);
             //Refresh total length
             totalLen = lengthSequence(totalLen, line);
+            //Count the number of Ns
+            sumNs(nb_Ns, line);
             //Refresh min and max values
             min = minSequence(min, line);
             max = maxSequence(max, line);
-            //Count the number of Ns
-            sumNs(nb_Ns, line);
             
-            //Add length to array list of length
+            //Calculate list of length
             list_len.add(line.length());
         }
-        
-        //Calculate N50
-        N50 = calculateN50(list_len);
+        //Calculate N50 with list of length and total length of sequence
+        N50 = calculateN50(list_len, totalLen);
         
         //Add results to result list
         results[0] = numberSequence;
@@ -192,15 +204,6 @@ public class general_statistics extends javax.swing.JPanel {
         
         return (results);
     }
-    
-    //Calculate N50
-    private double calculateN50(){
-        double N50 = 0;
-        
-        
-        return N50;
-    }
-    
 
     private ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent){
         ArrayList<String> sequenceContent = new ArrayList<String>();
@@ -222,11 +225,55 @@ public class general_statistics extends javax.swing.JPanel {
                 newLine = "";
             }
         }
-        for (int j = 1; j < sequenceContent.size(); j++){
-            System.out.println(sequenceContent.get(j));
-            System.out.println("-");
-        }
         return sequenceContent;
+    }
+    
+    //GC content calculation
+    //Calculate number of G and umber of C characters in one string
+    private int[] numberGC(StringBuffer line) {
+        int numberG = 0;
+        int numberC = 0;
+
+        for (int i = 0; i < line.length(); i++) {
+            if (!line.toString().startsWith(">")) { //Only consider sequences
+                //Count number of g or G in the line
+                if (line.charAt(i) == ('G')) { //If character is a G
+                    numberG++;
+                } //Count number of C and c in the line
+                else if (line.charAt(i) == ('C')) {
+                    numberC++;
+                }
+            }
+        }
+        int counts[] = {numberG, numberC};
+        return counts; //Return a list of number of G and number of C in the considered line
+    }
+
+    //Calculate G/C content of all the sequences of a fasta file
+    public double getGC(ArrayList<StringBuffer> fileContent, int totalLen) {
+        int numberG = 0; //Number of G in all the sequences
+        int numberC = 0; //Number of C in all the sequences
+        double gc; //Value of GC content
+
+        for (int i = 0; i < fileContent.size(); i++) {
+            //Get a list of the number of G and C in the line if the line is a sequence
+            int counts[] = new int[2];
+            counts = numberGC(fileContent.get(i));
+
+            //Actualise number of G and C in all the sequences
+            numberG += counts[0];
+            numberC += counts[1];
+        }
+        
+        //Division by 0 if number of C is null
+        if (totalLen == 0) {
+            gc = 0;
+            //Throw exception
+            throw new IllegalStateException("Division by 0. The length of the fasta file sequence is null. File might be empty, please try with a new file.");
+        } else {
+            gc = 100*(numberG+numberC)/totalLen; //Calculate GC content
+        }
+        return gc;
     }
     
     
