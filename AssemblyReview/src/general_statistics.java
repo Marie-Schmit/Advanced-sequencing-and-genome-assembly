@@ -46,11 +46,11 @@ public class general_statistics extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -75,7 +75,10 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Total number of contigs or scaffholds: " + statistics[0] + "\n");
 
         //Display total length of assembly
-        statisticsArea.append("Total length of assembly: " + statistics[1] + "\n");
+        statisticsArea.append("Total length of contigs / scaffold: " + statistics[1] + "\n");
+        
+        //Display average length
+        statisticsArea.append("Average contig or scaffhold length: " + (statistics[1]/statistics[0]) + "\n");
 
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
