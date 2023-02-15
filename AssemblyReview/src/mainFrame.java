@@ -126,7 +126,7 @@ public class mainFrame extends javax.swing.JFrame {
         //If file is chosen
         if(fileChooserPanel.fileName != null){
             //Start calculation of metrics for metricsPanel
-            metricsPanel.showMetrics(fileChooserPanel.fileContent, fileChooserPanel.fileName);
+            metricsPanel.showMetrics(fileChooserPanel.fastaFileContent, fileChooserPanel.fileName);
         }
     }//GEN-LAST:event_metricsMenuMousePressed
     

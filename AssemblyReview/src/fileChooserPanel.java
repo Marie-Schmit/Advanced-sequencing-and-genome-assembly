@@ -41,7 +41,9 @@ public class fileChooserPanel extends javax.swing.JPanel {
     
     //For gtf files selection
     public String gtfFileName;
-    public String gtfFileContent;
+    public ArrayList<StringBuffer> gtfFileContent;
+    public String fastaFileName;
+    public ArrayList<StringBuffer> fastaFileContent;
 
     private String fileDirectory; //Name of the selected file directory
     private FileDialog nameBox; //File browser
@@ -194,10 +196,13 @@ public class fileChooserPanel extends javax.swing.JPanel {
     private void fileBrowserBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fileBrowserBtnActionPerformed
         //Fire file chooser when user clicks on button file browser
         if(fastaFile) //Set message according to type of file
+        {
             nameBox = new FileDialog(new Frame(), "Open fasta file", FileDialog.LOAD);
+        }
         else
+        {
             nameBox = new FileDialog(new Frame(), "Open gtf file", FileDialog.LOAD);
-
+        }
         //Define search terms according to information in search bar
         searchTerms();
 
@@ -295,13 +300,13 @@ public class fileChooserPanel extends javax.swing.JPanel {
             if (path.endsWith("\\")) {
                 //Text entered is a path
                 nameBox.setDirectory(path); //Set directory to chosen path
-                nameBox.setFile("*.gtf"); //Set file extension to gtf
-            } else if (path.matches(".*[\\.](gtf)")) {
+                nameBox.setFile("*.gtf;*.gff"); //Set file extension to gtf
+            } else if (path.matches(".*[\\.](gtf|gff)")) {
                 //Text entered is a filename
                 nameBox.setFile(path);
             } else {
                 //User can only choose fasta or gtf file
-                nameBox.setFile("*.gtf");
+                nameBox.setFile("*.gtf;*.gff");
             }
         }
     }
@@ -310,7 +315,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
     public void checkFileType(String filename) {
         if(fastaFile){
             //Entered file is fasta or is a path name
-            if (!filename.matches(".*[\\.](gtf|fa)") | !filename.endsWith("\\")) {
+            if (!filename.matches(".*[\\.](fasta|fa)") | !filename.endsWith("\\")) {
             falseFileLbl.setText("Please choose a path, or a fasta file.");
             } else {
             falseFileLbl.setText("  ");
@@ -318,7 +323,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
         }
         else if(gtfFile){
             //Entered name is gtf or path name
-            if (!filename.matches(".*[\\.](gtf)") | !filename.endsWith("\\")) {
+            if (!filename.matches(".*[\\.](gtf|gff)") | !filename.endsWith("\\")) {
             falseFileLbl.setText("Please choose a path, or a gtf file.");
             } else {
             falseFileLbl.setText("  ");
@@ -366,6 +371,15 @@ public class fileChooserPanel extends javax.swing.JPanel {
     
     //When confirmation of selected file, save variables of file
     public void confirm(){
+        //Assign file content and name accoridng to file type
+        if(fastaFile){
+            fastaFileContent = fileContent;
+            fastaFileName = fileName;
+        }
+        else if(gtfFile){
+            gtfFileContent = fileContent;
+            gtfFileName = fileName;
+        }    
         //Open metrics panel and display results panel
         this.setVisible(false);
     }
