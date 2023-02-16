@@ -7,22 +7,35 @@ import java.util.HashMap;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
 /**
  *
  * @author marie
  */
 public class statisticsCalculation {
-    public statisticsCalculation(){
-        
+
+    public statisticsCalculation() {
+
     }
-    
+
     //Calculates number of sequences in the fasta file (passed as ArrayList)
     public int numberSequence(int currentNumber, String line) {
         if (line.startsWith(">")) {
             currentNumber++; //Number of sequence increments
         }
         return (currentNumber);
+    }
+
+    //Override
+    private int numberSequence(ArrayList<StringBuffer> fileContent) {
+        int sum = 0;
+        for (int i = 0; i < fileContent.size(); i++) {
+            //Get current line
+            String line = fileContent.get(i).toString();
+            if (line.startsWith(">")) {
+                sum++; //Number of sequence increments
+            }
+        }
+        return (sum);
     }
 
     //Calculates lenght of one contig / scaffhold
@@ -71,7 +84,7 @@ public class statisticsCalculation {
     public int[] calculateN50(ArrayList<Integer> list_len, int totalLen) {
         //Results contains the N50 value and its index
         int[] results = new int[2];
-        
+
         ArrayList<Integer> sorted_len = new ArrayList<Integer>(list_len);
         int N50 = 0;
         int median = totalLen / 2; //Half of the genome
@@ -88,13 +101,13 @@ public class statisticsCalculation {
             index++;
         }
         //N50 is the length of the contig once half of the genome is obtained
-        N50 = sorted_len.get(index-1); //Index is the indice of the last contig for which the median is obtained
+        N50 = sorted_len.get(index - 1); //Index is the indice of the last contig for which the median is obtained
         //Add values to result list
         results[0] = N50;
-        results[1] = index-1;
+        results[1] = index - 1;
         return results;
     }
-    
+
     //GC content calculation
     //Calculate number of G and umber of C characters in one string
     public int[] numberGC(StringBuffer line) {
@@ -138,11 +151,11 @@ public class statisticsCalculation {
             //Throw exception
             throw new IllegalStateException("Division by 0. The length of the fasta file sequence is null. File might be empty, please try with a new file.");
         } else {
-            gc = 100 * (numberG + numberC) / (double)totalLen; //Calculate GC content
+            gc = 100 * (numberG + numberC) / (double) totalLen; //Calculate GC content
         }
         return gc;
     }
-    
+
     //Save each contig (lines between two header) as a single string in an array list.
     public ArrayList<String> concatFasta(ArrayList<StringBuffer> fileContent) {
         ArrayList<String> sequenceContent = new ArrayList<String>();
@@ -158,19 +171,21 @@ public class statisticsCalculation {
             if (!line.startsWith(">")) { //Concatenate lines that are not headers
                 newLine += line;
             } else { //When header met, save concatenation and header in ArrayList
-                if(newLine != "")
+                if (newLine != "") {
                     sequenceContent.add(new String(newLine));
+                }
                 sequenceContent.add(new String(line));
                 newLine = "";
             }
         }
         //Add last sequence
-        if(newLine != "")
-                    sequenceContent.add(new String(newLine));
-        
+        if (newLine != "") {
+            sequenceContent.add(new String(newLine));
+        }
+
         return sequenceContent;
     }
-    
+
     //Store every header in an array list
     public ArrayList<String> listHeaders(ArrayList<StringBuffer> fileContent) {
         ArrayList<String> headers = new ArrayList<String>();
@@ -178,13 +193,13 @@ public class statisticsCalculation {
         for (int i = 0; i < fileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fileContent.get(i).toString();
-            if(line.startsWith(">")){
+            if (line.startsWith(">")) {
                 headers.add(line);
             }
         }
         return headers;
     }
-    
+
     //Get a list of length of the entered fasta file
     public ArrayList<Integer> getLength(ArrayList<StringBuffer> fastaFileContent) {
         //Create instance of statisticsCalculation for methods
@@ -210,13 +225,12 @@ public class statisticsCalculation {
         list_len.add(totalLen); //Last value of the list is the total length
         return list_len;
     }
-    
-    
+
     //Get a hashmap of contigs. Each key is a contig header
     public HashMap<String, String> contigsHashMap(ArrayList<StringBuffer> fastaFileContent) {
         //Hashmap initialisation
         HashMap<String, String> contigsHash = new HashMap<String, String>();
-        
+
         //For each contigs, add hader as key and sequence as value
         String newLine = ""; //Sequence value
         String key = "";
@@ -238,34 +252,44 @@ public class statisticsCalculation {
         }
         return contigsHash;
     }
-    
+
     //Get a string of contigs and a string of contigs header
     public String[][] contigsArrays(ArrayList<StringBuffer> fastaFileContent) {
-        int lenFile = fastaFileContent.size();
+        int nbSequence = numberSequence(fastaFileContent)+1;
         //Strings initialisation
-        String[][] contigsAll = new String[2][lenFile];
-        String
+        String[][] contigsAll = new String[2][nbSequence];
+        String[] contigsSeq = new String[nbSequence];
+        String[] contigsHeaders = new String[nbSequence];
         
         //For each contigs, add header as key and sequence as value
         String newLine = ""; //Sequence value
         String key = "";
+        int index = 0;
 
         //For each line of the file
         for (int i = 0; i < fastaFileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fastaFileContent.get(i).toString();
 
-            if (line.startsWith(">")) { //Header
-                //New header met: end of previous contig, add contig and key value to HashMap
-                contigsHash.put(new String(key), new String(newLine));
+            if (!line.startsWith(">")) {
+                newLine += line; //Concatenate lines that are not headers
+            } else { //When header met, save concatenation and header
+                if (newLine != "") {
+                    contigsSeq[index-1] = newLine;
+                }
+                //Save header in list of headers
+                contigsHeaders[index] = line;
                 newLine = "";
-                //Create new key for current header
-                key = line;
-            } else { //Add lines between two headers to the same sequence
-                newLine += line;
+                index ++;
             }
         }
-        return contigsHash;
+        //Add last sequence
+        if (newLine != "") {
+            contigsSeq[nbSequence-1] = new String(newLine);
+        }
+        contigsAll[0] = contigsHeaders;
+        contigsAll[1] = contigsSeq;
+        return contigsAll;
     }
-    
+
 }

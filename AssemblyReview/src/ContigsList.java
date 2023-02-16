@@ -23,8 +23,9 @@ public class ContigsList extends javax.swing.JPanel {
     
     //Panel that will show the metrics of the selected contig
     contigsMetrics contigShowStats = new contigsMetrics();
-    //Hashmap of contigs header and their corresponding sequence
-    private HashMap<String, String> contigsHash = new HashMap<String, String>();
+    //Arrays of contigs header and their corresponding sequence
+    String[] contigsHeaders;
+    String[] contigsSeq;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,7 +69,7 @@ public class ContigsList extends javax.swing.JPanel {
 
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
         //Pass value to contigs metric corresponding text area, to get the metrics displayed
-        contigShowStats.setSequence(contigsHash.get(jList1.getSelectedValuesList().get(0)));
+        contigShowStats.setSequence(contigsSeq[jList1.getSelectedIndex()]);
     }//GEN-LAST:event_jList1ValueChanged
 
     public void setContigMetrics(contigsMetrics metrics){
@@ -80,22 +81,19 @@ public class ContigsList extends javax.swing.JPanel {
     public void setList(ArrayList<StringBuffer> fastaFileContent) {
         //Instance of statisticsCalculation
         statisticsCalculation Stats = new statisticsCalculation();
-        //Get arrayList of headers, and list of sequences
-        HashMap<String, String>[] hashResults = Stats.contigsHashMap(fastaFileContent);
-        contigsHash = hashResults[0];
-        //Make and array of keys
-        String[] keys = contigsHash.keySet().toArray(String[]::new);
-
+        //Get list of headers, and list of sequences
+        String[][] contigsAll = Stats.contigsArrays(fastaFileContent);
+        contigsHeaders = contigsAll[0];
+        contigsSeq = contigsAll[1];
         //Put values into GUI panel list
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             public int getSize() {
-                return keys.length;
+                return contigsHeaders.length;
             }
 
             public String getElementAt(int i) {
-                return keys[i];
+                return contigsHeaders[i];
             }
-            
         });
     }
 
