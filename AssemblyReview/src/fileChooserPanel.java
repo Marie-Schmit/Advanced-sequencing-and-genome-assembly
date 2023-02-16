@@ -374,11 +374,11 @@ public class fileChooserPanel extends javax.swing.JPanel {
         //Assign file content and name accoridng to file type
         if(fastaFile){
             fastaFileContent = fileContent;
-            fastaFileName = fileName;
+            fastaFileName = nameBox.getFile();
         }
         else if(gtfFile){
             gtfFileContent = fileContent;
-            gtfFileName = fileName;
+            gtfFileName = nameBox.getFile();
         }    
         //Open metrics panel and display results panel
         this.setVisible(false);

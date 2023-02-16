@@ -39,6 +39,7 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.setColumns(20);
         statisticsArea.setRows(5);
         statisticsArea.setBorder(null);
+        statisticsArea.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         statisticsArea.setEnabled(false);
         jScrollPane1.setViewportView(statisticsArea);
 
@@ -46,7 +47,7 @@ public class general_statistics extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 343, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

@@ -1,5 +1,9 @@
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
+import java.util.Collections;
+import javax.swing.JPanel;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -18,6 +22,14 @@ public class barplotPanel extends javax.swing.JPanel {
         initComponents();
     }
 
+    //Bar coordinates
+    private int[] xCoord;
+    private int[] heights;
+    private int width;
+    private final int yCoord = 0;
+    private int N50_index;
+    private int numberBars = 0;
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,40 +39,88 @@ public class barplotPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setBorder(javax.swing.BorderFactory.createTitledBorder("Barplot of contigs lenght"));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 780, Short.MAX_VALUE)
+            .addGap(0, 428, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 258, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
-    public void drawBarplot(ArrayList<StringBuffer> fastaFileContent) {
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
 
+        //N50 and other contigs have different colors
+        Color N50_color = new Color(100, 55, 41);
+        Color other_color = new Color(68, 85, 90);
+
+        //Set color and rectangles
+        g.setColor(other_color);
+
+        //For every coordinate, draw a rectangle
+        for (int i = 0; i < numberBars; i++) {
+            System.out.println("COORD ");
+            System.out.println("COORD " + xCoord[0]);
+            if (i == N50_index) {
+                g.setColor(N50_color);
+            }
+            g.fillRect(xCoord[i], 0, width, heights[i]);
+        }
     }
 
-    private ArrayList<Integer> getLength(ArrayList<StringBuffer> fastaFileContent) {
+    //Calculate each bar coordinates
+    private void setCoordinates(ArrayList<Integer> list_len) {
+        if (list_len.size() < 30) {
+            numberBars = list_len.size();
+        } else {
+            numberBars = 30;
+        }
+        //Initialisation
+        int[] xCoord = new int[numberBars];
+        int[] heights = new int[numberBars];
+        System.out.println(numberBars);
+        int width;
+
+        //Width calculation
+        width = (int) (this.getWidth() / (1.5 * numberBars));
+        System.out.println(this.getWidth());
+        System.out.println("w: " + width);
+
+        //For each contig, calculate the corresponding bar x coordinate and height
+        for (int i = 0; i < numberBars; i++) {
+            //Set x
+            double x = i * 1.5 * width;
+            xCoord[i] = (int) x;
+            System.out.println("x " + xCoord[i]);
+
+            //Set height
+            double h = this.getHeight() * list_len.get(i) / list_len.get(0);
+            heights[i] = (int) h;
+            System.out.println("h " + heights[i]);
+            System.out.println();
+        }
+
+        repaint();
+    }
+
+    //Repaint the barplot when required
+    public void repaintBarPlot(ArrayList<StringBuffer> fastaFileContent) {
         //Create instance of statisticsCalculation for methods
         statisticsCalculation Stats = new statisticsCalculation();
-        //Group lines by contigs, remove \n
-        ArrayList<String> contigLine = Stats.concatFasta(fastaFileContent);
-        //List of length
-        ArrayList<Integer> list_len = new ArrayList<Integer>();
+        //Calculate list of length and sort it
+        ArrayList<Integer> sorted_len = new ArrayList<Integer>(Stats.getLength(fastaFileContent));
+        Collections.sort(sorted_len, Collections.reverseOrder());
+        //Calculate N50
+        N50_index = Stats.calculateN50(sorted_len, sorted_len.size())[1];
 
-        //For each contig or header
-        for (int i = 0; i < contigLine.size(); i++) {
-            //Get each line as string
-            String line = contigLine.get(i).toString();
-            if (!line.startsWith(">")) {
-                //Calculate list of length
-                list_len.add(line.length());
-            }
-        }
-        return list_len;
+        setCoordinates(sorted_len);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

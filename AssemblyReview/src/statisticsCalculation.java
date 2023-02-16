@@ -71,7 +71,7 @@ public class statisticsCalculation {
         //Results contains the N50 value and its index
         int[] results = new int[2];
         
-        ArrayList<Integer> sorted_len = list_len;
+        ArrayList<Integer> sorted_len = new ArrayList<Integer>(list_len);
         int N50 = 0;
         int median = totalLen / 2; //Half of the genome
         int index = 0;
@@ -164,6 +164,27 @@ public class statisticsCalculation {
             }
         }
         return sequenceContent;
+    }
+    
+    //Get a list of length of the entered fasta file
+    public ArrayList<Integer> getLength(ArrayList<StringBuffer> fastaFileContent) {
+        //Create instance of statisticsCalculation for methods
+        statisticsCalculation Stats = new statisticsCalculation();
+        //Group lines by contigs, remove \n
+        ArrayList<String> contigLine = Stats.concatFasta(fastaFileContent);
+        //List of length
+        ArrayList<Integer> list_len = new ArrayList<Integer>();
+
+        //For each contig or header
+        for (int i = 0; i < contigLine.size(); i++) {
+            //Get each line as string
+            String line = contigLine.get(i).toString();
+            if (!line.startsWith(">")) {
+                //Calculate list of length
+                list_len.add(line.length());
+            }
+        }
+        return list_len;
     }
     
 }
