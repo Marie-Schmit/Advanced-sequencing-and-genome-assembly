@@ -1,5 +1,6 @@
 
 import java.awt.Color;
+import java.awt.Font;
 import java.awt.Graphics;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -70,7 +71,7 @@ public class barplotPanel extends javax.swing.JPanel {
         for (int i = 0; i < numberBars; i++) {
             if (i == N50_index) {
                 g.setColor(N50_color);
-                g.drawString(sorted_len.get(i).toString(), xCoord.get(i), getHeight() - heights.get(i) - 15);
+                g.drawString(sorted_len.get(i).toString(), xCoord.get(i), getHeight() - heights.get(i) - 20);
             }
             else{
                 g.setColor(other_color);

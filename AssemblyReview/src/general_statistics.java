@@ -116,10 +116,6 @@ public class general_statistics extends javax.swing.JPanel {
         //List of length for N50 calculation
         ArrayList<Integer> list_len = new ArrayList<Integer>();
         
-        
-        System.out.println(contigLine.get(0));
-        System.out.println(contigLine.get(1));
-        
         //For each contig or header
         for (int i = 0; i < contigLine.size(); i++) {
             //Get each line as string
@@ -139,6 +135,7 @@ public class general_statistics extends javax.swing.JPanel {
                 max = Stats.maxSequence(max, line);
             }
         }
+        
         //Calculate N50 with list of length and total length of sequence
         N50 = Stats.calculateN50(list_len, totalLen)[0];
 

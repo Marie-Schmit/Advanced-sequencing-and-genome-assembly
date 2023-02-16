@@ -88,10 +88,10 @@ public class statisticsCalculation {
             index++;
         }
         //N50 is the length of the contig once half of the genome is obtained
-        N50 = sorted_len.get(index); //Index is the indice of the last contig for which the median is obtained
+        N50 = sorted_len.get(index-1); //Index is the indice of the last contig for which the median is obtained
         //Add values to result list
         results[0] = N50;
-        results[1] = index;
+        results[1] = index-1;
         return results;
     }
     
@@ -164,6 +164,10 @@ public class statisticsCalculation {
                 newLine = "";
             }
         }
+        //Add last sequence
+        if(newLine != "")
+                    sequenceContent.add(new String(newLine));
+        
         return sequenceContent;
     }
     

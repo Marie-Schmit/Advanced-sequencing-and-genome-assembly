@@ -82,8 +82,6 @@ public class contigsMetrics extends javax.swing.JPanel {
         }
         else
                GC = -1;
-        System.out.println(numberGC[0]+numberGC[1]);
-        System.out.println(length);
         sequenceStatArea.append("GC content of scaffold or contig: " + GC + "\t");
     }
     
