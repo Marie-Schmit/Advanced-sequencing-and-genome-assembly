@@ -99,7 +99,7 @@ public class gtfContent extends javax.swing.JPanel {
         DefaultTableModel tableModel = (DefaultTableModel) jTable1.getModel();
         tableModel.addRow(row);
         //Resize col 8 (attributes) of table
-        setColSize(jTable1, 8);
+        //setColSize(jTable1, 8);
     }
     
     //Resize colulumn of index colNumber of JTable table
