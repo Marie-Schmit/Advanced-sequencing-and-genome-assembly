@@ -91,6 +91,7 @@ public class general_statistics extends javax.swing.JPanel {
 
         //Display GC content
         double GC = Stats.getGC(fileContent, statistics[1]);
+        GC = (int)(GC*100)/100.; //Round to the nearest cent
         statisticsArea.append("GC%: " + GC + "\n");
 
         //Display Ns value

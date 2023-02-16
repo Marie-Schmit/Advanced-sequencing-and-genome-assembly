@@ -138,7 +138,7 @@ public class statisticsCalculation {
             //Throw exception
             throw new IllegalStateException("Division by 0. The length of the fasta file sequence is null. File might be empty, please try with a new file.");
         } else {
-            gc = 100 * (numberG + numberC) / totalLen; //Calculate GC content
+            gc = 100 * (numberG + numberC) / (double)totalLen; //Calculate GC content
         }
         return gc;
     }

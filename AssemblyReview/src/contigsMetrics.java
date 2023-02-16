@@ -74,7 +74,17 @@ public class contigsMetrics extends javax.swing.JPanel {
         int numberGC[] = Stats.numberGC(new StringBuffer(sequence));
         //Display GC and length of selected scaffold / contig
         sequenceStatArea.setText("Length of scaffold or contig: " + length + "\t");
-        sequenceStatArea.append("GC content of scaffold or contig: " + ((numberGC[0]+numberGC[1])/length) + "\t");
+        double GC;
+        if(length != 0){
+            GC = 100*(numberGC[0]+numberGC[1])/(double)length;
+            //Round to the nearest cent
+            GC = (int)(GC*100)/100.;
+        }
+        else
+               GC = -1;
+        System.out.println(numberGC[0]+numberGC[1]);
+        System.out.println(length);
+        sequenceStatArea.append("GC content of scaffold or contig: " + GC + "\t");
     }
     
     public String getSequence(){
