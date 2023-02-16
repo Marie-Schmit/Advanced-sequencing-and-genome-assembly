@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -157,8 +158,8 @@ public class statisticsCalculation {
             if (!line.startsWith(">")) { //Concatenate lines that are not headers
                 newLine += line;
             } else { //When header met, save concatenation and header in ArrayList
-                sequenceContent.add(newLine);
-                sequenceContent.add(line);
+                sequenceContent.add(new String(newLine));
+                sequenceContent.add(new String(line));
                 newLine = "";
             }
         }
@@ -203,6 +204,36 @@ public class statisticsCalculation {
         }
         list_len.add(totalLen); //Last value of the list is the total length
         return list_len;
+    }
+    
+    
+    //Get a hashmap of contigs. Each key is a contig header
+    public HashMap<String, String> contigsHashMap(ArrayList<StringBuffer> fastaFileContent) {
+        //Hashmap initialisation
+        HashMap<String, String> contigsHash = new HashMap<String, String>();
+        
+        //For each contigs, add hader as key and sequence as value
+        String newLine = ""; //Sequence value
+        String key = "";
+
+        //For each line of the file
+        for (int i = 0; i < fastaFileContent.size(); i++) {
+            //Get each line of the file and convert to string
+            String line = fastaFileContent.get(i).toString();
+            //Remove line return
+            line.replaceAll("\\n", "");
+
+            if (line.startsWith(">")) { //Header
+                //New header met: end of previous contig, add contig and key value to HashMap
+                contigsHash.put(new String(key), new String(newLine));
+                newLine = "";
+                //Create new key for current header
+                key = line;
+            } else { //Add lines between two headers to the same sequence
+                newLine += line;
+            }
+        }
+        return contigsHash;
     }
     
 }

@@ -1,6 +1,7 @@
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.HashMap;
 import javax.swing.AbstractListModel;
 
 /*
@@ -19,9 +20,11 @@ public class ContigsList extends javax.swing.JPanel {
     public ContigsList() {
         initComponents();
     }
+    
+    
 
-    //List content
-    //ArrayList<String> listContent = new ArrayList<String>();
+    //Hashmap of contigs header and their corresponding sequence
+    private HashMap<String, String> contigsHash = new HashMap<String, String>();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -42,6 +45,12 @@ public class ContigsList extends javax.swing.JPanel {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        jList1.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jList1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
+            public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
+                jList1ValueChanged(evt);
+            }
+        });
         jScrollPane1.setViewportView(jList1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -56,25 +65,34 @@ public class ContigsList extends javax.swing.JPanel {
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
+        //Get selected index of contig
+        System.out.println(jList1.getSelectedValuesList().get(0));
+        System.out.println(contigsHash.get(jList1.getSelectedValuesList().get(0)));
+        
+    }//GEN-LAST:event_jList1ValueChanged
+
     //Set list values when fasta file is selected
     public void setList(ArrayList<StringBuffer> fastaFileContent) {
         //Instance of statisticsCalculation
         statisticsCalculation Stats = new statisticsCalculation();
-        //Get arrayList of headers
-        ArrayList<String> headerList = Stats.listHeaders(fastaFileContent);
-        //Initialise listContent, an array of strings containing the headers
-        //String[] listContent = new String[headerList.size()];
-        //listContent = headerList.toArray();
+        //Get arrayList of headers, and list of sequences
+        //headerList = Stats.listHeaders(fastaFileContent);
+        //sequenceList = Stats.concatFasta(fastaFileContent);
+        contigsHash = Stats.contigsHashMap(fastaFileContent);
+        //Make and array of keys
+        String[] keys = contigsHash.keySet().toArray(String[]::new);
 
         //Put values into GUI panel list
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             public int getSize() {
-                return headerList.size();
+                return keys.length;
             }
 
             public String getElementAt(int i) {
-                return headerList.get(i);
+                return keys[i];
             }
+            
         });
     }
 

@@ -69,7 +69,6 @@ public class general_statistics extends javax.swing.JPanel {
         
         //Write file name in statistics area
         this.setBorder(javax.swing.BorderFactory.createTitledBorder("General statistics, " + fileName));
-        //statisticsArea.append("Fasta file:" + fileName + "\n");
 
         //Calculate number of sequences, lenght of sequences, min and max
         int[] statistics = Arrays.copyOf(throughContigs(fileContent, Stats), 6);
@@ -81,7 +80,10 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Total length of contigs / scaffold: " + statistics[1] + "\t");
 
         //Display average length
-        statisticsArea.append("Average contig or scaffhold length: " + (statistics[1] / statistics[0]) + "\n");
+        if(statistics[0] != 0)
+            statisticsArea.append("\t Average contig or scaffhold length: " + (statistics[1] / statistics[0]) + "\n");
+        else
+            statisticsArea.append("\n");
 
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\t");
