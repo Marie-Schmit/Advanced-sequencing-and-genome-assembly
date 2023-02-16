@@ -165,6 +165,20 @@ public class statisticsCalculation {
         return sequenceContent;
     }
     
+    //Store every header in an array list
+    public ArrayList<String> listHeaders(ArrayList<StringBuffer> fileContent) {
+        ArrayList<String> headers = new ArrayList<String>();
+        //For each line of the file, store the one starting with ">"
+        for (int i = 1; i < fileContent.size(); i++) {
+            //Get each line of the file and convert to string
+            String line = fileContent.get(i).toString();
+            if(line.startsWith(">")){
+                headers.add(line);
+            }
+        }
+        return headers;
+    }
+    
     //Get a list of length of the entered fasta file
     public ArrayList<Integer> getLength(ArrayList<StringBuffer> fastaFileContent) {
         //Create instance of statisticsCalculation for methods
