@@ -69,7 +69,8 @@ public class ContigsList extends javax.swing.JPanel {
 
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
         //Pass value to contigs metric corresponding text area, to get the metrics displayed
-        contigShowStats.setSequence(contigsSeq[jList1.getSelectedIndex()]);
+        if(jList1.getSelectedIndex() != -1) //Element is selected
+            contigShowStats.setSequence(contigsSeq[jList1.getSelectedIndex()]);
     }//GEN-LAST:event_jList1ValueChanged
 
     public void setContigMetrics(contigsMetrics metrics){

@@ -285,7 +285,7 @@ public class statisticsCalculation {
         }
         //Add last sequence
         if (newLine != "") {
-            contigsSeq[nbSequence-1] = new String(newLine);
+            contigsSeq[index-1] = new String(newLine);
         }
         contigsAll[0] = contigsHeaders;
         contigsAll[1] = contigsSeq;
