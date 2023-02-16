@@ -26,57 +26,43 @@ public class contigsMetrics extends javax.swing.JPanel {
     private void initComponents() {
 
         jScrollPane1 = new javax.swing.JScrollPane();
-        area = new javax.swing.JTextArea();
-        jButton1 = new javax.swing.JButton();
+        sequenceTextArea = new javax.swing.JTextArea();
 
-        setBorder(javax.swing.BorderFactory.createTitledBorder("Contig metrics"));
+        setBorder(javax.swing.BorderFactory.createTitledBorder("Contig / scaffold metrics"));
 
-        area.setBackground(new java.awt.Color(255, 0, 255));
-        area.setColumns(20);
-        area.setRows(5);
-        area.setText("test");
-        jScrollPane1.setViewportView(area);
-
-        jButton1.setText("jButton1");
+        sequenceTextArea.setBackground(new java.awt.Color(240, 240, 240));
+        sequenceTextArea.setColumns(20);
+        sequenceTextArea.setRows(5);
+        sequenceTextArea.setBorder(null);
+        jScrollPane1.setViewportView(sequenceTextArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(147, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 397, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(154, 154, 154)
-                .addComponent(jButton1)
-                .addGap(77, 77, 77))
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 852, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(57, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(105, 105, 105))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(136, 136, 136)
-                .addComponent(jButton1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(63, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     public void setSequence(String sequence){
-        area.append(sequence);
+        sequenceTextArea.setText(sequence);
         System.out.println(sequence);
     }
     
     public String getSequence(){
-        System.out.println(area.getText());
-        return area.getText();
+        return sequenceTextArea.getText();
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextArea area;
-    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea sequenceTextArea;
     // End of variables declaration//GEN-END:variables
 }
