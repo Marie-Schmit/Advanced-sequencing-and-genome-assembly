@@ -27,6 +27,8 @@ public class metricsPanel extends javax.swing.JPanel {
             //Create barplot
             this.barplotPanel.repaintBarPlot(fastaFileContent);
             //Create contigs list
+            this.contigsMetrics1.setSequence("KHVDKVCKHVWKHCKWVKCBWJKWBBBBBBBBBBBBBBBBBB");
+            this.contigsList1.setContigMetrics(this.contigsMetrics1);
             this.contigsList1.setList(fastaFileContent);
         }
         //Display gtf results if gtf file choosen
@@ -51,9 +53,9 @@ public class metricsPanel extends javax.swing.JPanel {
         jPanel3 = new javax.swing.JPanel();
         general_statistics = new general_statistics();
         barplotPanel = new barplotPanel();
-        jTextField4 = new javax.swing.JTextField();
         gtfContent = new gtfContent();
         contigsList1 = new ContigsList();
+        contigsMetrics1 = new contigsMetrics();
 
         jPanel3.setBackground(new java.awt.Color(153, 255, 51));
         jPanel3.setForeground(new java.awt.Color(153, 255, 102));
@@ -80,16 +82,15 @@ public class metricsPanel extends javax.swing.JPanel {
             .addGap(0, 294, Short.MAX_VALUE)
         );
 
-        jTextField4.setText("contigs info");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(contigsList1, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 74, Short.MAX_VALUE)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 797, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(contigsMetrics1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(gtfContent, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -108,12 +109,10 @@ public class metricsPanel extends javax.swing.JPanel {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
                         .addComponent(barplotPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(contigsList1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTextField4)))
+                    .addComponent(contigsList1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(contigsMetrics1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -121,9 +120,9 @@ public class metricsPanel extends javax.swing.JPanel {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private barplotPanel barplotPanel;
     private ContigsList contigsList1;
+    private contigsMetrics contigsMetrics1;
     private general_statistics general_statistics;
     private gtfContent gtfContent;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField4;
     // End of variables declaration//GEN-END:variables
 }

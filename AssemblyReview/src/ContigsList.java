@@ -21,8 +21,8 @@ public class ContigsList extends javax.swing.JPanel {
         initComponents();
     }
     
-    
-
+    //Panel that will show the metrics of the selected contig
+    contigsMetrics contigShowStats = new contigsMetrics();
     //Hashmap of contigs header and their corresponding sequence
     private HashMap<String, String> contigsHash = new HashMap<String, String>();
 
@@ -70,8 +70,15 @@ public class ContigsList extends javax.swing.JPanel {
         System.out.println(jList1.getSelectedValuesList().get(0));
         System.out.println(contigsHash.get(jList1.getSelectedValuesList().get(0)));
         
+        contigShowStats.setSequence(contigsHash.get(jList1.getSelectedValuesList().get(0)));
+        
     }//GEN-LAST:event_jList1ValueChanged
 
+    public void setContigMetrics(contigsMetrics metrics){
+        contigShowStats = metrics;
+        this.contigShowStats.getSequence();
+    }
+    
     //Set list values when fasta file is selected
     public void setList(ArrayList<StringBuffer> fastaFileContent) {
         //Instance of statisticsCalculation
