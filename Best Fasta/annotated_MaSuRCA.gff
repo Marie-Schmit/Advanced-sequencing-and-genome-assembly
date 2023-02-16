@@ -1,0 +1,536 @@
+##gff3
+##source-version OmicsBox
+g1.t1	Blast2GO	CDS	1	837	.	.	.	ID=g1.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=HPHPP4_1732;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g2.t1	Blast2GO	CDS	1	1446	.	.	.	ID=g2.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=A5647_00010;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g3.t1	Blast2GO	CDS	1	603	.	.	.	ID=g3.t1;Description=DUF1725 domain-containing protein
+g4.t1	Blast2GO	CDS	1	123	.	.	.	ID=g4.t1;Description=---NA---
+g5.t1	Blast2GO	CDS	1	324	.	.	.	ID=g5.t1;Description=reverse transcriptase domain-containing protein;Gene=E5F30_05330;Gene=J139_20494;Ontology_term=RNA-directed DNA polymerase activity,RNA-templated DNA biosynthetic process;Ontology_id=GO:0003964,GO:0006278;Enzyme_code=EC:2.7.7.49;Enzyme_name=RNA-directed DNA polymerase
+g6.t1	Blast2GO	CDS	1	204	.	.	.	ID=g6.t1;Description=reverse transcriptase domain-containing protein
+g7.t1	Blast2GO	CDS	1	231	.	.	.	ID=g7.t1;Description=hypothetical protein, partial
+g8.t1	Blast2GO	CDS	1	165	.	.	.	ID=g8.t1;Description=---NA---
+g9.t1	Blast2GO	CDS	1	90	.	.	.	ID=g9.t1;Description=---NA---
+g10.t1	Blast2GO	CDS	1	162	.	.	.	ID=g10.t1;Description=reverse transcriptase domain-containing protein
+g11.t1	Blast2GO	CDS	1	219	.	.	.	ID=g11.t1;Description=---NA---
+g12.t1	Blast2GO	CDS	1	174	.	.	.	ID=g12.t1;Description=---NA---
+g13.t1	Blast2GO	CDS	1	225	.	.	.	ID=g13.t1;Description=---NA---
+g14.t1	Blast2GO	CDS	1	129	.	.	.	ID=g14.t1;Description=---NA---
+g15.t1	Blast2GO	CDS	1	150	.	.	.	ID=g15.t1;Description=---NA---
+g16.t1	Blast2GO	CDS	1	165	.	.	.	ID=g16.t1;Description=---NA---
+g17.t1	Blast2GO	CDS	1	153	.	.	.	ID=g17.t1;Description=---NA---
+g18.t1	Blast2GO	CDS	1	75	.	.	.	ID=g18.t1;Description=---NA---
+g19.t1	Blast2GO	CDS	1	99	.	.	.	ID=g19.t1;Description=---NA---
+g20.t1	Blast2GO	CDS	1	201	.	.	.	ID=g20.t1;Description=DUF1725 domain-containing protein
+g21.t1	Blast2GO	CDS	1	171	.	.	.	ID=g21.t1;Description=retrovirus-related Pol polyLINE-1 domain protein
+g22.t1	Blast2GO	CDS	1	210	.	.	.	ID=g22.t1;Description=reverse transcriptase domain-containing protein;Gene=O00360;Gene=O00375;Gene=O00378;Ontology_term=catalytic activity;Ontology_id=GO:0003824
+g23.t1	Blast2GO	CDS	1	303	.	.	.	ID=g23.t1;Description=L1 transposable element
+g24.t1	Blast2GO	CDS	1	117	.	.	.	ID=g24.t1;Description=---NA---
+g25.t1	Blast2GO	CDS	1	1041	.	.	.	ID=g25.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g26.t1	Blast2GO	CDS	1	333	.	.	.	ID=g26.t1;Description=reverse transcriptase domain-containing protein
+g27.t1	Blast2GO	CDS	1	1392	.	.	.	ID=g27.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=O00360;Gene=T06_8113;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g28.t1	Blast2GO	CDS	1	156	.	.	.	ID=g28.t1;Description=---NA---
+g29.t1	Blast2GO	CDS	1	402	.	.	.	ID=g29.t1;Description=reverse transcriptase family protein;Gene=D1Z90_20885;Gene=DJ532_16045;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g30.t1	Blast2GO	CDS	1	114	.	.	.	ID=g30.t1;Description=L1 transposable element;Gene=LACE1;Gene=YWHAH;Ontology_term=monooxygenase activity,ATP binding,ATP hydrolysis activity,identical protein binding;Ontology_id=GO:0004497,GO:0005524,GO:0016887,GO:0042802;Enzyme_code=EC:1,EC:3.6.1.15;Enzyme_name=Oxidoreductases,nucleoside-triphosphate phosphatase
+g31.t1	Blast2GO	CDS	1	72	.	.	.	ID=g31.t1;Description=---NA---
+g32.t1	Blast2GO	CDS	1	561	.	.	.	ID=g32.t1;Description=DUF1725 domain-containing protein;Gene=A0A096XIB8
+g33.t1	Blast2GO	CDS	1	153	.	.	.	ID=g33.t1;Description=DUF1725 domain-containing protein
+g34.t1	Blast2GO	CDS	1	483	.	.	.	ID=g34.t1;Description=reverse transcriptase family protein
+g35.t1	Blast2GO	CDS	1	96	.	.	.	ID=g35.t1;Description=---NA---
+g36.t1	Blast2GO	CDS	1	75	.	.	.	ID=g36.t1;Description=---NA---
+g37.t1	Blast2GO	CDS	1	252	.	.	.	ID=g37.t1;Description=---NA---
+g38.t1	Blast2GO	CDS	1	240	.	.	.	ID=g38.t1;Description=---NA---
+g39.t1	Blast2GO	CDS	1	111	.	.	.	ID=g39.t1;Description=hypothetical protein
+g40.t1	Blast2GO	CDS	1	243	.	.	.	ID=g40.t1;Description=retrovirus-related Pol polyLINE-1 domain protein
+g41.t1	Blast2GO	CDS	1	177	.	.	.	ID=g41.t1;Description=FLJ44955 protein
+g42.t1	Blast2GO	CDS	1	177	.	.	.	ID=g42.t1;Description=---NA---
+g43.t1	Blast2GO	CDS	1	141	.	.	.	ID=g43.t1;Description=---NA---
+g44.t1	Blast2GO	CDS	1	90	.	.	.	ID=g44.t1;Description=---NA---
+g45.t1	Blast2GO	CDS	1	135	.	.	.	ID=g45.t1;Description=---NA---
+g46.t1	Blast2GO	CDS	1	111	.	.	.	ID=g46.t1;Description=---NA---
+g47.t1	Blast2GO	CDS	1	303	.	.	.	ID=g47.t1;Description=diacylglycerol kinase beta isoform X8;Gene=DGKB;Gene=EGM_12725;Ontology_term=cytosol,postsynaptic membrane,diacylglycerol kinase activity,calcium ion binding,ATP binding,lipid binding,phosphatidic acid biosynthetic process,protein kinase C-activating G protein-coupled receptor signaling pathway,platelet activation,intracellular signal transduction,diacylglycerol metabolic process,lipid phosphorylation;Ontology_id=GO:0005829,GO:0045211,GO:0004143,GO:0005509,GO:0005524,GO:0008289,GO:0006654,GO:0007205,GO:0030168,GO:0035556,GO:0046339,GO:0046834;Enzyme_code=EC:2.7.1.107;Enzyme_name=diacylglycerol kinase (ATP)
+g48.t1	Blast2GO	CDS	1	174	.	.	.	ID=g48.t1;Description=tigger transposable element-derived protein 1;Gene=EGK_04903;Gene=O76040;Gene=CK820_G0010825;Gene=TIGD1;Ontology_term=nucleus,DNA binding,protein binding;Ontology_id=GO:0005634,GO:0003677,GO:0005515
+g49.t1	Blast2GO	CDS	1	105	.	.	.	ID=g49.t1;Description=---NA---
+g50.t1	Blast2GO	CDS	1	126	.	.	.	ID=g50.t1;Description=---NA---
+g51.t1	Blast2GO	CDS	1	246	.	.	.	ID=g51.t1;Description=glutamate-rich protein 3
+g52.t1	Blast2GO	CDS	1	204	.	.	.	ID=g52.t1;Description=---NA---
+g53.t1	Blast2GO	CDS	1	78	.	.	.	ID=g53.t1;Description=---NA---
+g54.t1	Blast2GO	CDS	1	255	.	.	.	ID=g54.t1;Description=---NA---
+g55.t1	Blast2GO	CDS	1	792	.	.	.	ID=g55.t1;Description=reverse transcriptase domain-containing protein
+g56.t1	Blast2GO	CDS	1	2226	.	.	.	ID=g56.t1;Description=reverse transcriptase domain-containing protein;Gene=A5647_00010;Gene=T06_8113;Gene=O00378;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g57.t1	Blast2GO	CDS	1	156	.	.	.	ID=g57.t1;Description=---NA---
+g58.t1	Blast2GO	CDS	1	174	.	.	.	ID=g58.t1;Description=---NA---
+g59.t1	Blast2GO	CDS	1	312	.	.	.	ID=g59.t1;Description=---NA---
+g60.t1	Blast2GO	CDS	1	291	.	.	.	ID=g60.t1;Description=---NA---
+g61.t1	Blast2GO	CDS	1	210	.	.	.	ID=g61.t1;Description=hypothetical protein
+g62.t1	Blast2GO	CDS	1	102	.	.	.	ID=g62.t1;Description=hypothetical protein, partial
+g63.t1	Blast2GO	CDS	1	204	.	.	.	ID=g63.t1;Description=---NA---
+g64.t1	Blast2GO	CDS	1	105	.	.	.	ID=g64.t1;Description=Friend virus susceptibility protein 1-like
+g65.t1	Blast2GO	CDS	1	171	.	.	.	ID=g65.t1;Description=---NA---
+g66.t1	Blast2GO	CDS	1	144	.	.	.	ID=g66.t1;Description=---NA---
+g67.t1	Blast2GO	CDS	1	189	.	.	.	ID=g67.t1;Description=---NA---
+g68.t1	Blast2GO	CDS	1	279	.	.	.	ID=g68.t1;Description=---NA---
+g69.t1	Blast2GO	CDS	1	141	.	.	.	ID=g69.t1;Description=---NA---
+g70.t1	Blast2GO	CDS	1	291	.	.	.	ID=g70.t1;Description=---NA---
+g71.t1	Blast2GO	CDS	1	270	.	.	.	ID=g71.t1;Description=---NA---
+g72.t1	Blast2GO	CDS	1	78	.	.	.	ID=g72.t1;Description=---NA---
+g73.t1	Blast2GO	CDS	1	249	.	.	.	ID=g73.t1;Description=---NA---
+g74.t1	Blast2GO	CDS	1	114	.	.	.	ID=g74.t1;Description=---NA---
+g75.t1	Blast2GO	CDS	1	93	.	.	.	ID=g75.t1;Description=---NA---
+g76.t1	Blast2GO	CDS	1	144	.	.	.	ID=g76.t1;Description=---NA---
+g77.t1	Blast2GO	CDS	1	147	.	.	.	ID=g77.t1;Description=---NA---
+g78.t1	Blast2GO	CDS	1	99	.	.	.	ID=g78.t1;Description=---NA---
+g79.t1	Blast2GO	CDS	1	234	.	.	.	ID=g79.t1;Description=---NA---
+g80.t1	Blast2GO	CDS	1	174	.	.	.	ID=g80.t1;Description=---NA---
+g81.t1	Blast2GO	CDS	1	213	.	.	.	ID=g81.t1;Description=endonuclease/reverse transcriptase;Gene=M91_15199;Gene=M91_14132;Gene=A5Z0F6;Gene=M91_16623;Gene=FD755_013955;Gene=M91_12677;Gene=M91_14726;Gene=M91_12925;Gene=M91_11778;Gene=M91_01141;Gene=M91_02398;Gene=M91_03782;Gene=M91_10420;Gene=M91_08335;Gene=M91_03766;Gene=M91_02115;Gene=M91_00785;Gene=M91_20604;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,protein serine/threonine kinase activity,protein binding,RNA-templated DNA biosynthetic process,macroautophagy,late endosome to vacuole transport,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0004674,GO:0005515,GO:0006278,GO:0016236,GO:0045324,GO:0090305;Enzyme_code=EC:2.7.1,EC:3.1,EC:2.7.7.49;Enzyme_name=Transferring phosphorus-containing groups,Acting on ester bonds,RNA-directed DNA polymerase
+g82.t1	Blast2GO	CDS	1	126	.	.	.	ID=g82.t1;Description=---NA---
+g83.t1	Blast2GO	CDS	1	90	.	.	.	ID=g83.t1;Description=---NA---
+g84.t1	Blast2GO	CDS	1	123	.	.	.	ID=g84.t1;Description=---NA---
+g85.t1	Blast2GO	CDS	1	165	.	.	.	ID=g85.t1;Description=---NA---
+g86.t1	Blast2GO	CDS	1	252	.	.	.	ID=g86.t1;Description=DUF1725 domain-containing protein
+g87.t1	Blast2GO	CDS	1	438	.	.	.	ID=g87.t1;Description=reverse transcriptase domain-containing protein;Gene=DJ526_10605;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g88.t1	Blast2GO	CDS	1	150	.	.	.	ID=g88.t1;Description=DUF1725 domain-containing protein
+g89.t1	Blast2GO	CDS	1	213	.	.	.	ID=g89.t1;Description=---NA---
+g90.t1	Blast2GO	CDS	1	114	.	.	.	ID=g90.t1;Description=---NA---
+g91.t1	Blast2GO	CDS	1	138	.	.	.	ID=g91.t1;Description=---NA---
+g92.t1	Blast2GO	CDS	1	264	.	.	.	ID=g92.t1;Description=---NA---
+g93.t1	Blast2GO	CDS	1	186	.	.	.	ID=g93.t1;Description=---NA---
+g94.t1	Blast2GO	CDS	1	159	.	.	.	ID=g94.t1;Description=---NA---
+g95.t1	Blast2GO	CDS	1	375	.	.	.	ID=g95.t1;Description=hypothetical protein, partial
+g96.t1	Blast2GO	CDS	1	189	.	.	.	ID=g96.t1;Description=---NA---
+g97.t1	Blast2GO	CDS	1	312	.	.	.	ID=g97.t1;Description=---NA---
+g98.t1	Blast2GO	CDS	1	660	.	.	.	ID=g98.t1;Description=DUF1725 domain-containing protein
+g99.t1	Blast2GO	CDS	1	348	.	.	.	ID=g99.t1;Description=reverse transcriptase family protein
+g100.t1	Blast2GO	CDS	1	129	.	.	.	ID=g100.t1;Description=---NA---
+g101.t1	Blast2GO	CDS	1	141	.	.	.	ID=g101.t1;Description=---NA---
+g102.t1	Blast2GO	CDS	1	135	.	.	.	ID=g102.t1;Description=---NA---
+g103.t1	Blast2GO	CDS	1	327	.	.	.	ID=g103.t1;Description=reverse transcriptase domain-containing protein
+g104.t1	Blast2GO	CDS	1	318	.	.	.	ID=g104.t1;Description=---NA---
+g105.t1	Blast2GO	CDS	1	177	.	.	.	ID=g105.t1;Description=---NA---
+g106.t1	Blast2GO	CDS	1	90	.	.	.	ID=g106.t1;Description=---NA---
+g107.t1	Blast2GO	CDS	1	219	.	.	.	ID=g107.t1;Description=B lymphocyte activation-related protein BC-2048
+g108.t1	Blast2GO	CDS	1	570	.	.	.	ID=g108.t1;Description=L1 transposable element
+g109.t1	Blast2GO	CDS	1	270	.	.	.	ID=g109.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=EGM_05775;Gene=A0AR24;Ontology_term=exonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004527,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g110.t1	Blast2GO	CDS	1	324	.	.	.	ID=g110.t1;Description=E3 ubiquitin-protein ligase CCNB1IP1 isoform X1
+g111.t1	Blast2GO	CDS	1	81	.	.	.	ID=g111.t1;Description=---NA---
+g112.t1	Blast2GO	CDS	1	78	.	.	.	ID=g112.t1;Description=reverse transcriptase domain-containing protein;Gene=EHQ86_15905;Gene=D9V96_21310;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g113.t1	Blast2GO	CDS	1	318	.	.	.	ID=g113.t1;Description=ankyrin repeat domain 28, isoform CRA_g
+g114.t1	Blast2GO	CDS	1	135	.	.	.	ID=g114.t1;Description=---NA---
+g115.t1	Blast2GO	CDS	1	225	.	.	.	ID=g115.t1;Description=electroneutral sodium bicarbonate exchanger 1 isoform X3;Gene=SLC4A8;Gene=CR201_G0030271;Gene=B4DS29;Gene=CK820_G0039632;Gene=CR201_G0039421;Ontology_term=synaptic vesicle,dendrite,asymmetric synapse,symmetric synapse,neuronal cell body membrane,presynaptic membrane,terminal bouton,glial cell projection,hippocampal mossy fiber,glutamatergic synapse,solute:inorganic anion antiporter activity,calcium ion binding,sodium:bicarbonate symporter activity,chloride transmembrane transporter activity,mitochondrial calcium ion transmembrane transport,bicarbonate transport,sodium ion transmembrane transport,regulation of membrane potential,regulation of intracellular pH,transport across blood-brain barrier,chloride transmembrane transport,positive regulation of synaptic vesicle exocytosis;Ontology_id=GO:0008021,GO:0030425,GO:0032279,GO:0032280,GO:0032809,GO:0042734,GO:0043195,GO:0097386,GO:0097457,GO:0098978,GO:0005452,GO:0005509,GO:0008510,GO:0015108,GO:0006851,GO:0015701,GO:0035725,GO:0042391,GO:0051453,GO:0150104,GO:1902476,GO:2000302
+g116.t1	Blast2GO	CDS	1	75	.	.	.	ID=g116.t1;Description=hypothetical protein
+g117.t1	Blast2GO	CDS	1	225	.	.	.	ID=g117.t1;Description=---NA---
+g118.t1	Blast2GO	CDS	1	81	.	.	.	ID=g118.t1;Description=alkylglycerol monooxygenase;Gene=AGMO;Gene=LOC389466;Gene=CR201_G0009917;Gene=CK820_G0021302;Ontology_term=endoplasmic reticulum membrane,iron ion binding,protein binding,glyceryl-ether monooxygenase activity,membrane lipid metabolic process,triglyceride biosynthetic process,ether lipid metabolic process;Ontology_id=GO:0005789,GO:0005506,GO:0005515,GO:0050479,GO:0006643,GO:0019432,GO:0046485;Enzyme_code=EC:1.14.16.5;Enzyme_name=alkylglycerol monooxygenase
+g119.t1	Blast2GO	CDS	1	141	.	.	.	ID=g119.t1;Description=---NA---
+g120.t1	Blast2GO	CDS	1	276	.	.	.	ID=g120.t1;Description=---NA---
+g121.t1	Blast2GO	CDS	1	69	.	.	.	ID=g121.t1;Description=---NA---
+g122.t1	Blast2GO	CDS	1	99	.	.	.	ID=g122.t1;Description=---NA---
+g123.t1	Blast2GO	CDS	1	507	.	.	.	ID=g123.t1;Description=---NA---
+g124.t1	Blast2GO	CDS	1	426	.	.	.	ID=g124.t1;Description=reverse transcriptase family protein;Gene=DJ526_10605;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g125.t1	Blast2GO	CDS	1	141	.	.	.	ID=g125.t1;Description=Retron-type reverse transcriptase
+g126.t1	Blast2GO	CDS	1	174	.	.	.	ID=g126.t1;Description=---NA---
+g127.t1	Blast2GO	CDS	1	318	.	.	.	ID=g127.t1;Description=---NA---
+g128.t1	Blast2GO	CDS	1	150	.	.	.	ID=g128.t1;Description=---NA---
+g129.t1	Blast2GO	CDS	1	249	.	.	.	ID=g129.t1;Description=RNA-binding protein;Gene=O00364;Ontology_term=axon guidance;Ontology_id=GO:0007411
+g130.t1	Blast2GO	CDS	1	333	.	.	.	ID=g130.t1;Description=endonuclease/exonuclease/phosphatase family protein
+g131.t1	Blast2GO	CDS	1	456	.	.	.	ID=g131.t1;Description=reverse transcriptase family protein;Gene=J139_20494;Ontology_term=RNA-directed DNA polymerase activity,RNA-templated DNA biosynthetic process;Ontology_id=GO:0003964,GO:0006278;Enzyme_code=EC:2.7.7.49;Enzyme_name=RNA-directed DNA polymerase
+g132.t1	Blast2GO	CDS	1	411	.	.	.	ID=g132.t1;Description=reverse transcriptase domain-containing protein
+g133.t1	Blast2GO	CDS	1	258	.	.	.	ID=g133.t1;Description=reverse transcriptase family protein
+g134.t1	Blast2GO	CDS	1	198	.	.	.	ID=g134.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=CK820_G0010825;Gene=CR201_G0033185;Gene=TIGD1;Gene=FD755_010685;Ontology_term=nucleus,DNA binding,protein binding;Ontology_id=GO:0005634,GO:0003677,GO:0005515
+g135.t1	Blast2GO	CDS	1	306	.	.	.	ID=g135.t1;Description=tigger transposable element-derived protein 1;Gene=Q13537;Gene=NYPRO_LOCUS23286;Gene=Tigd1_16;Gene=GNE10_35215;Gene=TIGD1;Gene=LOC109274148;Gene=LYPA_23C015701;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g136.t1	Blast2GO	CDS	1	126	.	.	.	ID=g136.t1;Description=---NA---
+g137.t1	Blast2GO	CDS	1	219	.	.	.	ID=g137.t1;Description=DHRS7 isoform 6;Gene=CR201_G0009735;Gene=CK820_G0002581;Ontology_term=oxidoreductase activity;Ontology_id=GO:0016491;Enzyme_code=EC:1;Enzyme_name=Oxidoreductases
+g138.t1	Blast2GO	CDS	1	558	.	.	.	ID=g138.t1;Description=lupus La protein;Gene=A0A2K5HW83;Gene=SSB;Gene=Q25NQ2;Gene=KLHL23;Gene=EGM_04041;Ontology_term=nucleus,cytoplasm,ribonucleoprotein complex,tRNA binding,DNA binding,poly(U) RNA binding,sequence-specific mRNA binding,tRNA 5'-leader removal,tRNA export from nucleus,tRNA 3'-end processing,nuclear histone mRNA catabolic process,IRES-dependent viral translational initiation,protein localization to cytoplasmic stress granule;Ontology_id=GO:0005634,GO:0005737,GO:1990904,GO:0000049,GO:0003677,GO:0008266,GO:1990825,GO:0001682,GO:0006409,GO:0042780,GO:0071045,GO:0075522,GO:1903608
+g139.t1	Blast2GO	CDS	1	297	.	.	.	ID=g139.t1;Description=small RNA binding exonuclease protection factor La;Gene=G1SZ76;Gene=SSB;Gene=Q14730;Gene=mMyoMyo1_018386;Gene=HJG59_017424;Gene=KLHL23;Gene=MONAX_5E025604;Gene=CB1_000638001;Gene=CK820_G0001444;Ontology_term=nucleus,cytoplasm,ribonucleoprotein complex,tRNA binding,DNA binding,exonuclease activity,poly(U) RNA binding,zinc ion binding,sequence-specific mRNA binding,tRNA 5'-leader removal,tRNA modification,tRNA export from nucleus,tRNA 3'-end processing,nuclear histone mRNA catabolic process,IRES-dependent viral translational initiation,nucleic acid phosphodiester bond hydrolysis,protein localization to cytoplasmic stress granule;Ontology_id=GO:0005634,GO:0005737,GO:1990904,GO:0000049,GO:0003677,GO:0004527,GO:0008266,GO:0008270,GO:1990825,GO:0001682,GO:0006400,GO:0006409,GO:0042780,GO:0071045,GO:0075522,GO:0090305,GO:1903608;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g140.t1	Blast2GO	CDS	1	204	.	.	.	ID=g140.t1;Description=hypothetical protein
+g141.t1	Blast2GO	CDS	1	378	.	.	.	ID=g141.t1;Description=hypothetical protein, partial
+g142.t1	Blast2GO	CDS	1	1020	.	.	.	ID=g142.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=DF188_09940;Gene=A5647_00010;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g143.t1	Blast2GO	CDS	1	138	.	.	.	ID=g143.t1;Description=---NA---
+g144.t1	Blast2GO	CDS	1	78	.	.	.	ID=g144.t1;Description=reverse transcriptase domain-containing protein
+g145.t1	Blast2GO	CDS	1	363	.	.	.	ID=g145.t1;Description=Retron-type reverse transcriptase;Gene=E5F35_17515;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g146.t1	Blast2GO	CDS	1	63	.	.	.	ID=g146.t1;Description=---NA---
+g147.t1	Blast2GO	CDS	1	273	.	.	.	ID=g147.t1;Description=---NA---
+g148.t1	Blast2GO	CDS	1	1014	.	.	.	ID=g148.t1;Description=von Willebrand factor D and EGF domains;Gene=CK820_G0021276;Gene=VWDE;Ontology_term=extracellular region,cell surface,signaling receptor binding,calcium ion binding,anatomical structure development;Ontology_id=GO:0005576,GO:0009986,GO:0005102,GO:0005509,GO:0048856
+g149.t1	Blast2GO	CDS	1	129	.	.	.	ID=g149.t1;Description=---NA---
+g150.t1	Blast2GO	CDS	1	99	.	.	.	ID=g150.t1;Description=---NA---
+g151.t1	Blast2GO	CDS	1	195	.	.	.	ID=g151.t1;Description=von Willebrand factor D and EGF domains;Gene=CK820_G0021276;Gene=VWDE;Ontology_term=extracellular region,cell surface,signaling receptor binding,calcium ion binding,anatomical structure development;Ontology_id=GO:0005576,GO:0009986,GO:0005102,GO:0005509,GO:0048856
+g152.t1	Blast2GO	CDS	1	72	.	.	.	ID=g152.t1;Description=---NA---
+g153.t1	Blast2GO	CDS	1	387	.	.	.	ID=g153.t1;Description=reverse transcriptase family protein;Gene=O00360;Ontology_term=catalytic activity;Ontology_id=GO:0003824
+g154.t1	Blast2GO	CDS	1	114	.	.	.	ID=g154.t1;Description=---NA---
+g155.t1	Blast2GO	CDS	1	345	.	.	.	ID=g155.t1;Description=DUF1725 domain-containing protein;Gene=DF188_09940;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g156.t1	Blast2GO	CDS	1	75	.	.	.	ID=g156.t1;Description=---NA---
+g157.t1	Blast2GO	CDS	1	447	.	.	.	ID=g157.t1;Description=hCG2041040, partial;Gene=DUI87_23615;Gene=DUI87_13567;Gene=DUI87_30724;Gene=DUI87_01230;Gene=DUI87_01440;Gene=DUI87_01231;Gene=DUI87_05102;Gene=DUI87_30651;Gene=DUI87_01391;Gene=DUI87_01480;Gene=DUI87_27121;Gene=FD754_003624;Gene=FD754_022255;Gene=FD755_013180;Gene=DUI87_01697;Gene=DUI87_01287;Ontology_term=nucleic acid binding,RNA-DNA hybrid ribonuclease activity,transferase activity,metal ion binding,DNA metabolic process,RNA phosphodiester bond hydrolysis, endonucleolytic;Ontology_id=GO:0003676,GO:0004523,GO:0016740,GO:0046872,GO:0006259,GO:0090502;Enzyme_code=EC:3.1.30,EC:2,EC:3.1.26.4;Enzyme_name=Acting on ester bonds,Transferases,ribonuclease H
+g158.t1	Blast2GO	CDS	1	237	.	.	.	ID=g158.t1;Description=---NA---
+g159.t1	Blast2GO	CDS	1	201	.	.	.	ID=g159.t1;Description=Retron-type reverse transcriptase
+g160.t1	Blast2GO	CDS	1	147	.	.	.	ID=g160.t1;Description=small integral membrane protein 8 isoform X1;Gene=EGM_06027;Gene=EGK_06676;Gene=A0A7N9D8X5;Gene=Smim8;Ontology_term=DNA binding;Ontology_id=GO:0003677
+g161.t1	Blast2GO	CDS	1	90	.	.	.	ID=g161.t1;Description=---NA---
+g162.t1	Blast2GO	CDS	1	150	.	.	.	ID=g162.t1;Description=---NA---
+g163.t1	Blast2GO	CDS	1	252	.	.	.	ID=g163.t1;Description=DUF1725 domain-containing protein
+g164.t1	Blast2GO	CDS	1	672	.	.	.	ID=g164.t1;Description=reverse transcriptase family protein
+g165.t1	Blast2GO	CDS	1	141	.	.	.	ID=g165.t1;Description=---NA---
+g166.t1	Blast2GO	CDS	1	84	.	.	.	ID=g166.t1;Description=---NA---
+g167.t1	Blast2GO	CDS	1	117	.	.	.	ID=g167.t1;Description=---NA---
+g168.t1	Blast2GO	CDS	1	312	.	.	.	ID=g168.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=M91_16513;Gene=FD754_001147;Gene=TIGD1;Gene=FD755_010685;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g169.t1	Blast2GO	CDS	1	276	.	.	.	ID=g169.t1;Description=tigger transposable element-derived protein 1;Gene=EGK_04903;Gene=O76040;Gene=CK820_G0010825;Gene=LOC106979073;Gene=CR201_G0033185;Gene=TIGD1;Ontology_term=nucleic acid binding;Ontology_id=GO:0003676
+g170.t1	Blast2GO	CDS	1	453	.	.	.	ID=g170.t1;Description=reverse transcriptase family protein
+g171.t1	Blast2GO	CDS	1	96	.	.	.	ID=g171.t1;Description=---NA---
+g172.t1	Blast2GO	CDS	1	321	.	.	.	ID=g172.t1;Description=transmembrane protein 106B;Gene=EGK_21444;Gene=CK820_G0021275;Gene=CR201_G0009946;Gene=TMEM106B;Gene=A0A2K5JW07;Ontology_term=lysosomal membrane,late endosome membrane,ATPase binding,lysosomal transport,lysosomal lumen acidification,lysosome localization,dendrite morphogenesis,positive regulation of hydrolase activity,neuron cellular homeostasis,positive regulation of dendrite development,lysosomal protein catabolic process,regulation of lysosome organization;Ontology_id=GO:0005765,GO:0031902,GO:0051117,GO:0007041,GO:0007042,GO:0032418,GO:0048813,GO:0051345,GO:0070050,GO:1900006,GO:1905146,GO:1905671
+g173.t1	Blast2GO	CDS	1	114	.	.	.	ID=g173.t1;Description=apoptosis related protein APR-4
+g174.t1	Blast2GO	CDS	1	474	.	.	.	ID=g174.t1;Description=hypothetical protein G6F54_012450
+g175.t1	Blast2GO	CDS	1	159	.	.	.	ID=g175.t1;Description=---NA---
+g176.t1	Blast2GO	CDS	1	456	.	.	.	ID=g176.t1;Description=hypothetical protein, partial
+g177.t1	Blast2GO	CDS	1	1734	.	.	.	ID=g177.t1;Description=reverse transcriptase domain-containing protein;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=O00378;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g178.t1	Blast2GO	CDS	1	177	.	.	.	ID=g178.t1;Description=---NA---
+g179.t1	Blast2GO	CDS	1	396	.	.	.	ID=g179.t1;Description=DUF1725 domain-containing protein
+g180.t1	Blast2GO	CDS	1	78	.	.	.	ID=g180.t1;Description=---NA---
+g181.t1	Blast2GO	CDS	1	108	.	.	.	ID=g181.t1;Description=---NA---
+g182.t1	Blast2GO	CDS	1	291	.	.	.	ID=g182.t1;Description=hypothetical protein, partial
+g183.t1	Blast2GO	CDS	1	126	.	.	.	ID=g183.t1;Description=---NA---
+g184.t1	Blast2GO	CDS	1	213	.	.	.	ID=g184.t1;Description=---NA---
+g185.t1	Blast2GO	CDS	1	186	.	.	.	ID=g185.t1;Description=---NA---
+g186.t1	Blast2GO	CDS	1	126	.	.	.	ID=g186.t1;Description=---NA---
+g187.t1	Blast2GO	CDS	1	138	.	.	.	ID=g187.t1;Description=---NA---
+g188.t1	Blast2GO	CDS	1	216	.	.	.	ID=g188.t1;Description=---NA---
+g189.t1	Blast2GO	CDS	1	255	.	.	.	ID=g189.t1;Description=---NA---
+g190.t1	Blast2GO	CDS	1	138	.	.	.	ID=g190.t1;Description=tigger transposable element-derived protein 1-like;Gene=HJG59_018144;Gene=Q13537;Gene=mRhiFer1_016916;Gene=LOC109577629;Gene=TIGD1;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g191.t1	Blast2GO	CDS	1	267	.	.	.	ID=g191.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=Q13537;Gene=NYPRO_LOCUS23286;Gene=NYPRO_LOCUS13733;Gene=TIGD1;Gene=LOC109274148;Gene=LYPA_23C015701;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g192.t1	Blast2GO	CDS	1	147	.	.	.	ID=g192.t1;Description=---NA---
+g193.t1	Blast2GO	CDS	1	96	.	.	.	ID=g193.t1;Description=---NA---
+g194.t1	Blast2GO	CDS	1	603	.	.	.	ID=g194.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=HJG59_011161;Gene=HJG59_010292;Gene=P08548;Gene=HJG63_011660;Gene=HJG59_010841;Gene=HJG59_007858;Ontology_term=nucleotidyltransferase activity;Ontology_id=GO:0016779;Enzyme_code=EC:2.7.7;Enzyme_name=Transferring phosphorus-containing groups
+g195.t1	Blast2GO	CDS	1	159	.	.	.	ID=g195.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=M91_06316;Ontology_term=catalytic activity;Ontology_id=GO:0003824
+g196.t1	Blast2GO	CDS	1	225	.	.	.	ID=g196.t1;Description=---NA---
+g197.t1	Blast2GO	CDS	1	147	.	.	.	ID=g197.t1;Description=---NA---
+g198.t1	Blast2GO	CDS	1	156	.	.	.	ID=g198.t1;Description=---NA---
+g199.t1	Blast2GO	CDS	1	267	.	.	.	ID=g199.t1;Description=---NA---
+g200.t1	Blast2GO	CDS	1	114	.	.	.	ID=g200.t1;Description=---NA---
+g201.t1	Blast2GO	CDS	1	132	.	.	.	ID=g201.t1;Description=---NA---
+g202.t1	Blast2GO	CDS	1	177	.	.	.	ID=g202.t1;Description=homeobox protein MOX-2;Gene=GHT09_013612;Gene=MEOX2;Gene=CK820_G0021303;Ontology_term=protein binding,cytoplasm,limb development,skeletal muscle tissue development,nuclear speck,somite specification,RNA polymerase II cis-regulatory region sequence-specific DNA binding,roof of mouth development,DNA-binding transcription activator activity, RNA polymerase II-specific,positive regulation of transcription by RNA polymerase II,negative regulation of cell migration involved in sprouting angiogenesis,chromatin;Ontology_id=GO:0005515,GO:0005737,GO:0060173,GO:0007519,GO:0016607,GO:0001757,GO:0000978,GO:0060021,GO:0001228,GO:0045944,GO:0090051,GO:0000785
+g203.t1	Blast2GO	CDS	1	270	.	.	.	ID=g203.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=HJG59_007858
+g204.t1	Blast2GO	CDS	1	159	.	.	.	ID=g204.t1;Description=---NA---
+g205.t1	Blast2GO	CDS	1	63	.	.	.	ID=g205.t1;Description=---NA---
+g206.t1	Blast2GO	CDS	1	108	.	.	.	ID=g206.t1;Description=---NA---
+g207.t1	Blast2GO	CDS	1	174	.	.	.	ID=g207.t1;Description=---NA---
+g208.t1	Blast2GO	CDS	1	309	.	.	.	ID=g208.t1;Description=---NA---
+g209.t1	Blast2GO	CDS	1	561	.	.	.	ID=g209.t1;Description=DUF1725 domain-containing protein
+g210.t1	Blast2GO	CDS	1	1497	.	.	.	ID=g210.t1;Description=reverse transcriptase domain-containing protein;Gene=A11A3_17040;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g211.t1	Blast2GO	CDS	1	366	.	.	.	ID=g211.t1;Description=reverse transcriptase domain-containing protein;Gene=D1Z90_20885;Gene=DJ532_16045;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g212.t1	Blast2GO	CDS	1	528	.	.	.	ID=g212.t1;Description=L1 transposable element
+g213.t1	Blast2GO	CDS	1	138	.	.	.	ID=g213.t1;Description=---NA---
+g214.t1	Blast2GO	CDS	1	162	.	.	.	ID=g214.t1;Description=---NA---
+g215.t1	Blast2GO	CDS	1	141	.	.	.	ID=g215.t1;Description=---NA---
+g216.t1	Blast2GO	CDS	1	252	.	.	.	ID=g216.t1;Description=---NA---
+g217.t1	Blast2GO	CDS	1	333	.	.	.	ID=g217.t1;Description=4930579E17Rik protein;Gene=CRPPA;Ontology_term=cytosol,protein homodimerization activity,D-ribitol-5-phosphate cytidylyltransferase activity,axon guidance,isoprenoid biosynthetic process,protein O-linked mannosylation;Ontology_id=GO:0005829,GO:0042803,GO:0047349,GO:0007411,GO:0008299,GO:0035269;Enzyme_code=EC:2.7.7.40;Enzyme_name=D-ribitol-5-phosphate cytidylyltransferase
+g218.t1	Blast2GO	CDS	1	270	.	.	.	ID=g218.t1;Description=CDP-L-ribitol pyrophosphorylase A;Gene=CR201_G0019652;Gene=A0A140VJM1;Gene=CRPPA;Gene=EGM_12722;Gene=CK820_G0021309;Ontology_term=cytosol,protein homodimerization activity,D-ribitol-5-phosphate cytidylyltransferase activity,axon guidance,isoprenoid biosynthetic process,protein O-linked mannosylation;Ontology_id=GO:0005829,GO:0042803,GO:0047349,GO:0007411,GO:0008299,GO:0035269;Enzyme_code=EC:2.7.7.40;Enzyme_name=D-ribitol-5-phosphate cytidylyltransferase
+g219.t1	Blast2GO	CDS	1	120	.	.	.	ID=g219.t1;Description=---NA---
+g220.t1	Blast2GO	CDS	1	105	.	.	.	ID=g220.t1;Description=---NA---
+g221.t1	Blast2GO	CDS	1	138	.	.	.	ID=g221.t1;Description=reverse transcriptase domain-containing protein;Gene=Q1L835;Gene=M91_01925;Gene=M91_15199;Gene=M91_14132;Gene=M91_17934;Gene=M91_12677;Gene=M91_13338;Gene=M91_12925;Gene=M91_08673;Gene=M91_10420;Gene=M91_05014;Gene=M91_00772;Gene=M91_00785;Gene=M91_20604;Ontology_term=catalytic activity,nucleic acid metabolic process;Ontology_id=GO:0003824,GO:0090304
+g222.t1	Blast2GO	CDS	1	312	.	.	.	ID=g222.t1;Description=transmembrane and coiled-coil domain protein 3 isoform X4
+g223.t1	Blast2GO	CDS	1	246	.	.	.	ID=g223.t1;Description=LINE-1 retrotransposable element ORF2 protein
+g224.t1	Blast2GO	CDS	1	219	.	.	.	ID=g224.t1;Description=ZNF670-ZNF695 readthrough (NMD candidate);Gene=EGM_03077;Gene=EGK_03467;Gene=B3KX01;Ontology_term=membrane,regulation of DNA-templated transcription;Ontology_id=GO:0016020,GO:0006355
+g225.t1	Blast2GO	CDS	1	252	.	.	.	ID=g225.t1;Description=LORF2 protein
+g226.t1	Blast2GO	CDS	1	69	.	.	.	ID=g226.t1;Description=---NA---
+g227.t1	Blast2GO	CDS	1	123	.	.	.	ID=g227.t1;Description=---NA---
+g228.t1	Blast2GO	CDS	1	195	.	.	.	ID=g228.t1;Description=---NA---
+g229.t1	Blast2GO	CDS	1	216	.	.	.	ID=g229.t1;Description=---NA---
+g230.t1	Blast2GO	CDS	1	72	.	.	.	ID=g230.t1;Description=---NA---
+g231.t1	Blast2GO	CDS	1	138	.	.	.	ID=g231.t1;Description=---NA---
+g232.t1	Blast2GO	CDS	1	141	.	.	.	ID=g232.t1;Description=---NA---
+g233.t1	Blast2GO	CDS	1	156	.	.	.	ID=g233.t1;Description=---NA---
+g234.t1	Blast2GO	CDS	1	126	.	.	.	ID=g234.t1;Description=---NA---
+g235.t1	Blast2GO	CDS	1	255	.	.	.	ID=g235.t1;Description=hypothetical protein, partial
+g236.t1	Blast2GO	CDS	1	225	.	.	.	ID=g236.t1;Description=---NA---
+g237.t1	Blast2GO	CDS	1	153	.	.	.	ID=g237.t1;Description=---NA---
+g238.t1	Blast2GO	CDS	1	138	.	.	.	ID=g238.t1;Description=leucine-rich repeat-containing protein 72
+g239.t1	Blast2GO	CDS	1	141	.	.	.	ID=g239.t1;Description=Retron-type reverse transcriptase
+g240.t1	Blast2GO	CDS	1	222	.	.	.	ID=g240.t1;Description=hypothetical protein, partial
+g241.t1	Blast2GO	CDS	1	180	.	.	.	ID=g241.t1;Description=DUF1725 domain-containing protein
+g242.t1	Blast2GO	CDS	1	315	.	.	.	ID=g242.t1;Description=ataxin-2-like protein isoform X19;Gene=ATXN2L;Gene=CK820_G0056882;Gene=EGM_11609;Ontology_term=RNA binding;Ontology_id=GO:0003723
+g243.t1	Blast2GO	CDS	1	132	.	.	.	ID=g243.t1;Description=---NA---
+g244.t1	Blast2GO	CDS	1	69	.	.	.	ID=g244.t1;Description=---NA---
+g245.t1	Blast2GO	CDS	1	84	.	.	.	ID=g245.t1;Description=---NA---
+g246.t1	Blast2GO	CDS	1	201	.	.	.	ID=g246.t1;Description=---NA---
+g247.t1	Blast2GO	CDS	1	240	.	.	.	ID=g247.t1;Description=---NA---
+g248.t1	Blast2GO	CDS	1	216	.	.	.	ID=g248.t1;Description=---NA---
+g249.t1	Blast2GO	CDS	1	183	.	.	.	ID=g249.t1;Description=---NA---
+g250.t1	Blast2GO	CDS	1	150	.	.	.	ID=g250.t1;Description=---NA---
+g251.t1	Blast2GO	CDS	1	282	.	.	.	ID=g251.t1;Description=---NA---
+g252.t1	Blast2GO	CDS	1	123	.	.	.	ID=g252.t1;Description=---NA---
+g253.t1	Blast2GO	CDS	1	105	.	.	.	ID=g253.t1;Description=---NA---
+g254.t1	Blast2GO	CDS	1	288	.	.	.	ID=g254.t1;Description=zinc finger protein 91 isoform X1;Gene=I7G623;Gene=Q8IWW0;Gene=CK820_G0045516;Ontology_term=membrane,presynaptic active zone,acyltransferase activity,small GTPase binding,metal ion binding,regulation of DNA-templated transcription,regulation of exocytosis,calcium ion-regulated exocytosis of neurotransmitter;Ontology_id=GO:0016020,GO:0048786,GO:0016746,GO:0031267,GO:0046872,GO:0006355,GO:0017157,GO:0048791;Enzyme_code=EC:2.3;Enzyme_name=Acyltransferases
+g255.t1	Blast2GO	CDS	1	111	.	.	.	ID=g255.t1;Description=---NA---
+g256.t1	Blast2GO	CDS	1	174	.	.	.	ID=g256.t1;Description=---NA---
+g257.t1	Blast2GO	CDS	1	189	.	.	.	ID=g257.t1;Description=---NA---
+g258.t1	Blast2GO	CDS	1	180	.	.	.	ID=g258.t1;Description=---NA---
+g259.t1	Blast2GO	CDS	1	144	.	.	.	ID=g259.t1;Description=---NA---
+g260.t1	Blast2GO	CDS	1	189	.	.	.	ID=g260.t1;Description=uncharacterized protein LOC105474789
+g261.t1	Blast2GO	CDS	1	114	.	.	.	ID=g261.t1;Description=hypothetical protein FACS1894125_7470
+g262.t1	Blast2GO	CDS	1	255	.	.	.	ID=g262.t1;Description=cell cycle checkpoint protein RAD17 isoform X1;Gene=CK820_G0034221;Gene=G2HJ46;Gene=RAD17;Gene=CR201_G0016105;Ontology_term=chromosome, telomeric region,nucleoplasm,nucleolus,Rad17 RFC-like complex,chromatin binding,DNA clamp loader activity,protein binding,ATP binding,DNA repair,negative regulation of DNA replication,mitotic intra-S DNA damage checkpoint signaling,mitotic DNA replication checkpoint signaling,regulation of phosphorylation;Ontology_id=GO:0000781,GO:0005654,GO:0005730,GO:0031389,GO:0003682,GO:0003689,GO:0005515,GO:0005524,GO:0006281,GO:0008156,GO:0031573,GO:0033314,GO:0042325
+g263.t1	Blast2GO	CDS	1	246	.	.	.	ID=g263.t1;Description=cell cycle checkpoint protein RAD17 isoform X3;Gene=CK820_G0034221;Gene=RAD17;Gene=CR201_G0016105;Gene=HJG63_016335;Ontology_term=chromosome, telomeric region,nucleoplasm,nucleolus,Rad17 RFC-like complex,chromatin binding,DNA clamp loader activity,protein binding,ATP binding,DNA repair,negative regulation of DNA replication,mitotic intra-S DNA damage checkpoint signaling,mitotic DNA replication checkpoint signaling,regulation of phosphorylation;Ontology_id=GO:0000781,GO:0005654,GO:0005730,GO:0031389,GO:0003682,GO:0003689,GO:0005515,GO:0005524,GO:0006281,GO:0008156,GO:0031573,GO:0033314,GO:0042325
+g264.t1	Blast2GO	CDS	1	576	.	.	.	ID=g264.t1;Description=cell cycle checkpoint protein RAD17 isoform X2;Gene=RAD17;Gene=A0A2K5IXN3;Gene=CR201_G0016105;Ontology_term=chromosome, telomeric region,nucleoplasm,nucleolus,Rad17 RFC-like complex,chromatin binding,DNA clamp loader activity,protein binding,ATP binding,DNA repair,negative regulation of DNA replication,mitotic intra-S DNA damage checkpoint signaling,mitotic DNA replication checkpoint signaling,regulation of phosphorylation;Ontology_id=GO:0000781,GO:0005654,GO:0005730,GO:0031389,GO:0003682,GO:0003689,GO:0005515,GO:0005524,GO:0006281,GO:0008156,GO:0031573,GO:0033314,GO:0042325
+g265.t1	Blast2GO	CDS	1	300	.	.	.	ID=g265.t1;Description=cell cycle checkpoint protein RAD17 isoform X1;Gene=RAD17;Ontology_term=chromosome, telomeric region,nucleoplasm,nucleolus,Rad17 RFC-like complex,DNA clamp loader activity,ATP binding,DNA repair,negative regulation of DNA replication,mitotic intra-S DNA damage checkpoint signaling,regulation of phosphorylation;Ontology_id=GO:0000781,GO:0005654,GO:0005730,GO:0031389,GO:0003689,GO:0005524,GO:0006281,GO:0008156,GO:0031573,GO:0042325
+g266.t1	Blast2GO	CDS	1	120	.	.	.	ID=g266.t1;Description=---NA---
+g267.t1	Blast2GO	CDS	1	180	.	.	.	ID=g267.t1;Description=---NA---
+g268.t1	Blast2GO	CDS	1	159	.	.	.	ID=g268.t1;Description=---NA---
+g269.t1	Blast2GO	CDS	1	81	.	.	.	ID=g269.t1;Description=---NA---
+g270.t1	Blast2GO	CDS	1	222	.	.	.	ID=g270.t1;Description=Retron-type reverse transcriptase
+g271.t1	Blast2GO	CDS	1	186	.	.	.	ID=g271.t1;Description=reverse transcriptase domain-containing protein;Gene=EHQ86_15905;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g272.t1	Blast2GO	CDS	1	318	.	.	.	ID=g272.t1;Description=tyrosine 3/tryptophan 5 -monooxygenase activation protein, eta polypeptide (predicted);Gene=F8_2;Gene=LACE1;Gene=YWHAH;Ontology_term=monooxygenase activity,copper ion binding,ATP binding,ATP hydrolysis activity,identical protein binding;Ontology_id=GO:0004497,GO:0005507,GO:0005524,GO:0016887,GO:0042802;Enzyme_code=EC:1,EC:3.6.1.15;Enzyme_name=Oxidoreductases,nucleoside-triphosphate phosphatase
+g273.t1	Blast2GO	CDS	1	135	.	.	.	ID=g273.t1;Description=---NA---
+g274.t1	Blast2GO	CDS	1	210	.	.	.	ID=g274.t1;Description=hypothetical protein
+g275.t1	Blast2GO	CDS	1	267	.	.	.	ID=g275.t1;Description=Class E basic helix-loop-helix protein 22
+g276.t1	Blast2GO	CDS	1	345	.	.	.	ID=g276.t1;Description=hypothetical protein, partial
+g277.t1	Blast2GO	CDS	1	120	.	.	.	ID=g277.t1;Description=---NA---
+g278.t1	Blast2GO	CDS	1	384	.	.	.	ID=g278.t1;Description=---NA---
+g279.t1	Blast2GO	CDS	1	498	.	.	.	ID=g279.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=Q13537;Gene=TIGD1;Gene=LOC109274148;Gene=LYPA_23C015701;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g280.t1	Blast2GO	CDS	1	156	.	.	.	ID=g280.t1;Description=---NA---
+g281.t1	Blast2GO	CDS	1	102	.	.	.	ID=g281.t1;Description=---NA---
+g282.t1	Blast2GO	CDS	1	195	.	.	.	ID=g282.t1;Description=---NA---
+g283.t1	Blast2GO	CDS	1	342	.	.	.	ID=g283.t1;Description=hypothetical protein, partial
+g284.t1	Blast2GO	CDS	1	264	.	.	.	ID=g284.t1;Description=Adenomatous polyposis protein;Gene=EGK_16751;Gene=SYN2;Ontology_term=postsynaptic density,identical protein binding,negative regulation of cell population proliferation,synaptic vesicle clustering,negative regulation of microtubule depolymerization,beta-catenin binding,cellular response to DNA damage stimulus,plasma membrane,neurotransmitter secretion,microtubule,microtubule binding,Schaffer collateral - CA1 synapse,nucleus,ATP binding,anchoring junction,mitotic cytokinesis,positive regulation of apoptotic process,SNARE complex,calcium-ion regulated exocytosis,negative regulation of Wnt signaling pathway,glutamatergic synapse,regulation of cell cycle,synaptic vesicle membrane,cell migration;Ontology_id=GO:0014069,GO:0042802,GO:0008285,GO:0097091,GO:0007026,GO:0008013,GO:0006974,GO:0005886,GO:0007269,GO:0005874,GO:0008017,GO:0098685,GO:0005634,GO:0005524,GO:0070161,GO:0000281,GO:0043065,GO:0031201,GO:0017156,GO:0030178,GO:0098978,GO:0051726,GO:0030672,GO:0016477
+g285.t1	Blast2GO	CDS	1	189	.	.	.	ID=g285.t1;Description=---NA---
+g286.t1	Blast2GO	CDS	1	618	.	.	.	ID=g286.t1;Description=histone-lysine N-methyltransferase SETMAR isoform X1;Gene=LOC116559545;Gene=CR201_G0011358;Gene=SETMAR;Gene=A0A2K5UME4;Ontology_term=histone H3K4 methyltransferase activity,cell population proliferation,negative regulation of chromosome organization,nucleic acid phosphodiester bond hydrolysis,zinc ion binding,DNA double-strand break processing,site of double-strand break,protein homodimerization activity,positive regulation of DNA topoisomerase (ATP-hydrolyzing) activity,DNA catabolic process, endonucleolytic,double-stranded DNA binding,DNA integration,histone H3K36 methyltransferase activity,mitotic DNA integrity checkpoint signaling,nucleolus,chromatin organization,single-stranded DNA endodeoxyribonuclease activity,single-stranded DNA binding,DNA topoisomerase binding,condensed chromosome,histone H3-K36 dimethylation,replication fork processing,positive regulation of double-strand break repair via nonhomologous end joining,histone H3-K4 methylation;Ontology_id=GO:0042800,GO:0008283,GO:2001251,GO:0090305,GO:0008270,GO:0000729,GO:0035861,GO:0042803,GO:2000373,GO:0000737,GO:0003690,GO:0015074,GO:0046975,GO:0044774,GO:0005730,GO:0006325,GO:0000014,GO:0003697,GO:0044547,GO:0000793,GO:0097676,GO:0031297,GO:2001034,GO:0051568;Enzyme_code=EC:3.1,EC:2.1.1.354;Enzyme_name=Acting on ester bonds,[histone H3]-lysine(4) N-trimethyltransferase
+g287.t1	Blast2GO	CDS	1	195	.	.	.	ID=g287.t1;Description=mitochondrial enolase superfamily member 1 isoform X1
+g288.t1	Blast2GO	CDS	1	75	.	.	.	ID=g288.t1;Description=---NA---
+g289.t1	Blast2GO	CDS	1	93	.	.	.	ID=g289.t1;Description=---NA---
+g290.t1	Blast2GO	CDS	1	141	.	.	.	ID=g290.t1;Description=---NA---
+g291.t1	Blast2GO	CDS	1	177	.	.	.	ID=g291.t1;Description=---NA---
+g292.t1	Blast2GO	CDS	1	198	.	.	.	ID=g292.t1;Description=---NA---
+g293.t1	Blast2GO	CDS	1	855	.	.	.	ID=g293.t1;Description=reverse transcriptase domain-containing protein;Gene=O00360;Gene=O00378;Gene=O00368;Ontology_term=catalytic activity;Ontology_id=GO:0003824
+g294.t1	Blast2GO	CDS	1	363	.	.	.	ID=g294.t1;Description=DUF1725 domain-containing protein;Gene=COJ50_26595;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g295.t1	Blast2GO	CDS	1	99	.	.	.	ID=g295.t1;Description=---NA---
+g296.t1	Blast2GO	CDS	1	291	.	.	.	ID=g296.t1;Description=---NA---
+g297.t1	Blast2GO	CDS	1	144	.	.	.	ID=g297.t1;Description=---NA---
+g298.t1	Blast2GO	CDS	1	186	.	.	.	ID=g298.t1;Description=Bromodomain and WD repeat domain containing 1;Gene=BRWD1;Ontology_term=nucleoplasm,nucleolus,cytosol,protein binding,regulation of transcription by RNA polymerase II,cytoskeleton organization,regulation of cell shape;Ontology_id=GO:0005654,GO:0005730,GO:0005829,GO:0005515,GO:0006357,GO:0007010,GO:0008360
+g299.t1	Blast2GO	CDS	1	603	.	.	.	ID=g299.t1;Description=DUF1725 domain-containing protein
+g300.t1	Blast2GO	CDS	1	1944	.	.	.	ID=g300.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=A5647_00010;Gene=T06_8113;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g301.t1	Blast2GO	CDS	1	267	.	.	.	ID=g301.t1;Description=retrovirus-related Pol polyLINE-1 domain protein
+g302.t1	Blast2GO	CDS	1	906	.	.	.	ID=g302.t1;Description=L1 transposable element;Gene=O00376;Gene=L1RE1;Ontology_term=nucleolus,cytoplasmic stress granule,ribonucleoprotein complex,nucleotide binding,single-stranded DNA binding,single-stranded RNA binding,transposase activity,identical protein binding,transposition, RNA-mediated;Ontology_id=GO:0005730,GO:0010494,GO:1990904,GO:0000166,GO:0003697,GO:0003727,GO:0004803,GO:0042802,GO:0032197
+g303.t1	Blast2GO	CDS	1	150	.	.	.	ID=g303.t1;Description=---NA---
+g304.t1	Blast2GO	CDS	1	159	.	.	.	ID=g304.t1;Description=---NA---
+g305.t1	Blast2GO	CDS	1	468	.	.	.	ID=g305.t1;Description=DUF1725 domain-containing protein;Gene=A0A096XIB8;Gene=B7Z5F2;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g306.t1	Blast2GO	CDS	1	1431	.	.	.	ID=g306.t1;Description=reverse transcriptase domain-containing protein;Gene=Q8TE30;Gene=HPHPP4_1732;Gene=T06_8113;Gene=O00375;Gene=D9V96_21310;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,protein binding,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0005515,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g307.t1	Blast2GO	CDS	1	192	.	.	.	ID=g307.t1;Description=L1 transposable element
+g308.t1	Blast2GO	CDS	1	159	.	.	.	ID=g308.t1;Description=---NA---
+g309.t1	Blast2GO	CDS	1	264	.	.	.	ID=g309.t1;Description=---NA---
+g310.t1	Blast2GO	CDS	1	246	.	.	.	ID=g310.t1;Description=---NA---
+g311.t1	Blast2GO	CDS	1	165	.	.	.	ID=g311.t1;Description=hypothetical protein C9925_02015
+g312.t1	Blast2GO	CDS	1	108	.	.	.	ID=g312.t1;Description=hypothetical protein HJG63_012246
+g313.t1	Blast2GO	CDS	1	270	.	.	.	ID=g313.t1;Description=DUF1725 domain-containing protein
+g314.t1	Blast2GO	CDS	1	249	.	.	.	ID=g314.t1;Description=hCG1777113, isoform CRA_a
+g315.t1	Blast2GO	CDS	1	153	.	.	.	ID=g315.t1;Description=---NA---
+g316.t1	Blast2GO	CDS	1	75	.	.	.	ID=g316.t1;Description=---NA---
+g317.t1	Blast2GO	CDS	1	192	.	.	.	ID=g317.t1;Description=---NA---
+g318.t1	Blast2GO	CDS	1	165	.	.	.	ID=g318.t1;Description=---NA---
+g319.t1	Blast2GO	CDS	1	96	.	.	.	ID=g319.t1;Description=---NA---
+g320.t1	Blast2GO	CDS	1	309	.	.	.	ID=g320.t1;Description=FLJ44955 protein
+g321.t1	Blast2GO	CDS	1	198	.	.	.	ID=g321.t1;Description=hypothetical protein G6F54_012450
+g322.t1	Blast2GO	CDS	1	186	.	.	.	ID=g322.t1;Description=Uncharacterised protein
+g323.t1	Blast2GO	CDS	1	315	.	.	.	ID=g323.t1;Description=receptor tyrosine-protein kinase erbB-4 isoform X3;Gene=HJG59_011161;Gene=HJG59_010292;Gene=PANDA_013694;Gene=PANDA_014987;Gene=HJG59_011234;Gene=HJG59_010413;Gene=HJG59_010237;Gene=DEH69_00020
+g324.t1	Blast2GO	CDS	1	228	.	.	.	ID=g324.t1;Description=reverse transcriptase domain-containing protein
+g325.t1	Blast2GO	CDS	1	189	.	.	.	ID=g325.t1;Description=---NA---
+g326.t1	Blast2GO	CDS	1	138	.	.	.	ID=g326.t1;Description=Hypothetical predicted protein
+g327.t1	Blast2GO	CDS	1	219	.	.	.	ID=g327.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=A0AR24;Ontology_term=exonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004527,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g328.t1	Blast2GO	CDS	1	222	.	.	.	ID=g328.t1;Description=reverse transcriptase family protein;Gene=DF188_09940;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g329.t1	Blast2GO	CDS	1	168	.	.	.	ID=g329.t1;Description=DUF1725 domain-containing protein
+g330.t1	Blast2GO	CDS	1	135	.	.	.	ID=g330.t1;Description=Uncharacterised protein
+g331.t1	Blast2GO	CDS	1	87	.	.	.	ID=g331.t1;Description=---NA---
+g332.t1	Blast2GO	CDS	1	138	.	.	.	ID=g332.t1;Description=---NA---
+g333.t1	Blast2GO	CDS	1	165	.	.	.	ID=g333.t1;Description=receptor tyrosine-protein kinase erbB-4 isoform X3
+g334.t1	Blast2GO	CDS	1	324	.	.	.	ID=g334.t1;Description=Retron-type reverse transcriptase;Gene=C9925_01285;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g335.t1	Blast2GO	CDS	1	144	.	.	.	ID=g335.t1;Description=hypothetical protein
+g336.t1	Blast2GO	CDS	1	240	.	.	.	ID=g336.t1;Description=DUF1725 domain-containing protein
+g337.t1	Blast2GO	CDS	1	264	.	.	.	ID=g337.t1;Description=reverse transcriptase domain-containing protein;Gene=A11A3_17040;Gene=C7H19_25060;Gene=D9V96_21310;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g338.t1	Blast2GO	CDS	1	345	.	.	.	ID=g338.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=A0AR24;Ontology_term=exonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004527,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g339.t1	Blast2GO	CDS	1	147	.	.	.	ID=g339.t1;Description=hypothetical protein
+g340.t1	Blast2GO	CDS	1	441	.	.	.	ID=g340.t1;Description=reverse transcriptase family protein;Gene=D1Z90_20885;Gene=DJ532_16045;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g341.t1	Blast2GO	CDS	1	96	.	.	.	ID=g341.t1;Description=---NA---
+g342.t1	Blast2GO	CDS	1	75	.	.	.	ID=g342.t1;Description=---NA---
+g343.t1	Blast2GO	CDS	1	156	.	.	.	ID=g343.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=TIGD1;Gene=LYPA_23C015701;Ontology_term=nucleic acid binding;Ontology_id=GO:0003676
+g344.t1	Blast2GO	CDS	1	180	.	.	.	ID=g344.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=NYPRO_LOCUS23286;Gene=LOC111729866;Gene=HJG63_019226;Gene=NYPRO_LOCUS13733;Gene=TIGD1;Gene=LOC109274148;Gene=LYPA_23C015701;Ontology_term=nucleus,DNA binding;Ontology_id=GO:0005634,GO:0003677
+g345.t1	Blast2GO	CDS	1	258	.	.	.	ID=g345.t1;Description=reverse transcriptase family protein;Gene=FD754_008779;Gene=FD754_018048;Gene=FD754_012957;Gene=M91_03766;Gene=FD754_022059;Gene=FD754_007265;Gene=FD754_020320;Gene=FD754_006588;Gene=FD754_019901
+g346.t1	Blast2GO	CDS	1	75	.	.	.	ID=g346.t1;Description=---NA---
+g347.t1	Blast2GO	CDS	1	279	.	.	.	ID=g347.t1;Description=---NA---
+g348.t1	Blast2GO	CDS	1	81	.	.	.	ID=g348.t1;Description=---NA---
+g349.t1	Blast2GO	CDS	1	426	.	.	.	ID=g349.t1;Description=L1 transposable element;Gene=L1RE1;Ontology_term=nucleolus,cytoplasmic stress granule,ribonucleoprotein complex,nucleotide binding,single-stranded DNA binding,single-stranded RNA binding,identical protein binding,transposition, RNA-mediated;Ontology_id=GO:0005730,GO:0010494,GO:1990904,GO:0000166,GO:0003697,GO:0003727,GO:0042802,GO:0032197
+g350.t1	Blast2GO	CDS	1	366	.	.	.	ID=g350.t1;Description=reverse transcriptase domain-containing protein;Gene=D1Z90_20885;Gene=DJ532_16045;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g351.t1	Blast2GO	CDS	1	516	.	.	.	ID=g351.t1;Description=reverse transcriptase family protein
+g352.t1	Blast2GO	CDS	1	603	.	.	.	ID=g352.t1;Description=DUF1725 domain-containing protein
+g353.t1	Blast2GO	CDS	1	168	.	.	.	ID=g353.t1;Description=serine/threonine-protein kinase VRK2 isoform X2
+g354.t1	Blast2GO	CDS	1	267	.	.	.	ID=g354.t1;Description=Retron-type reverse transcriptase
+g355.t1	Blast2GO	CDS	1	84	.	.	.	ID=g355.t1;Description=---NA---
+g356.t1	Blast2GO	CDS	1	99	.	.	.	ID=g356.t1;Description=---NA---
+g357.t1	Blast2GO	CDS	1	363	.	.	.	ID=g357.t1;Description=Hypothetical predicted protein
+g358.t1	Blast2GO	CDS	1	177	.	.	.	ID=g358.t1;Description=---NA---
+g359.t1	Blast2GO	CDS	1	111	.	.	.	ID=g359.t1;Description=---NA---
+g360.t1	Blast2GO	CDS	1	177	.	.	.	ID=g360.t1;Description=---NA---
+g361.t1	Blast2GO	CDS	1	249	.	.	.	ID=g361.t1;Description=---NA---
+g362.t1	Blast2GO	CDS	1	174	.	.	.	ID=g362.t1;Description=---NA---
+g363.t1	Blast2GO	CDS	1	243	.	.	.	ID=g363.t1;Description=---NA---
+g364.t1	Blast2GO	CDS	1	201	.	.	.	ID=g364.t1;Description=---NA---
+g365.t1	Blast2GO	CDS	1	903	.	.	.	ID=g365.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=DF188_09940;Gene=A5647_00010;Gene=T06_8113;Gene=O00375;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g366.t1	Blast2GO	CDS	1	975	.	.	.	ID=g366.t1;Description=reverse transcriptase domain-containing protein;Gene=Q8TE30;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=O00375;Gene=A5641_21845;Gene=G8I2S9;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,protein binding,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0005515,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g367.t1	Blast2GO	CDS	1	69	.	.	.	ID=g367.t1;Description=---NA---
+g368.t1	Blast2GO	CDS	1	72	.	.	.	ID=g368.t1;Description=---NA---
+g369.t1	Blast2GO	CDS	1	195	.	.	.	ID=g369.t1;Description=---NA---
+g370.t1	Blast2GO	CDS	1	174	.	.	.	ID=g370.t1;Description=---NA---
+g371.t1	Blast2GO	CDS	1	132	.	.	.	ID=g371.t1;Description=tigger transposable element-derived protein 1;Gene=TIGD1
+g372.t1	Blast2GO	CDS	1	849	.	.	.	ID=g372.t1;Description=reverse transcriptase family protein
+g373.t1	Blast2GO	CDS	1	207	.	.	.	ID=g373.t1;Description=---NA---
+g374.t1	Blast2GO	CDS	1	156	.	.	.	ID=g374.t1;Description=---NA---
+g375.t1	Blast2GO	CDS	1	411	.	.	.	ID=g375.t1;Description=hypothetical protein
+g376.t1	Blast2GO	CDS	1	75	.	.	.	ID=g376.t1;Description=---NA---
+g377.t1	Blast2GO	CDS	1	282	.	.	.	ID=g377.t1;Description=---NA---
+g378.t1	Blast2GO	CDS	1	96	.	.	.	ID=g378.t1;Description=---NA---
+g379.t1	Blast2GO	CDS	1	144	.	.	.	ID=g379.t1;Description=endonuclease/exonuclease/phosphatase family protein
+g380.t1	Blast2GO	CDS	1	231	.	.	.	ID=g380.t1;Description=---NA---
+g381.t1	Blast2GO	CDS	1	261	.	.	.	ID=g381.t1;Description=---NA---
+g382.t1	Blast2GO	CDS	1	108	.	.	.	ID=g382.t1;Description=serine incorporator 5;Gene=CR201_G0024254;Gene=CK820_G0009350
+g383.t1	Blast2GO	CDS	1	2049	.	.	.	ID=g383.t1;Description=reverse transcriptase domain-containing protein;Gene=Q8TE30;Gene=A5662_01645;Gene=DF188_09940;Gene=A5647_00010;Gene=A11A3_17040;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,protein binding,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0005515,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g384.t1	Blast2GO	CDS	1	288	.	.	.	ID=g384.t1;Description=reverse transcriptase domain-containing protein;Gene=T06_24;Gene=T10_3883;Ontology_term=membrane;Ontology_id=GO:0016020
+g385.t1	Blast2GO	CDS	1	99	.	.	.	ID=g385.t1;Description=---NA---
+g386.t1	Blast2GO	CDS	1	84	.	.	.	ID=g386.t1;Description=---NA---
+g387.t1	Blast2GO	CDS	1	147	.	.	.	ID=g387.t1;Description=DUF1725 domain-containing protein;Gene=B7Z5F2;Ontology_term=RNA-directed DNA polymerase activity,RNA-templated DNA biosynthetic process;Ontology_id=GO:0003964,GO:0006278;Enzyme_code=EC:2.7.7.49;Enzyme_name=RNA-directed DNA polymerase
+g388.t1	Blast2GO	CDS	1	231	.	.	.	ID=g388.t1;Description=hypothetical protein, partial
+g389.t1	Blast2GO	CDS	1	177	.	.	.	ID=g389.t1;Description=---NA---
+g390.t1	Blast2GO	CDS	1	141	.	.	.	ID=g390.t1;Description=---NA---
+g391.t1	Blast2GO	CDS	1	237	.	.	.	ID=g391.t1;Description=endonuclease/exonuclease/phosphatase family protein
+g392.t1	Blast2GO	CDS	1	198	.	.	.	ID=g392.t1;Description=---NA---
+g393.t1	Blast2GO	CDS	1	114	.	.	.	ID=g393.t1;Description=---NA---
+g394.t1	Blast2GO	CDS	1	102	.	.	.	ID=g394.t1;Description=---NA---
+g395.t1	Blast2GO	CDS	1	291	.	.	.	ID=g395.t1;Description=---NA---
+g396.t1	Blast2GO	CDS	1	90	.	.	.	ID=g396.t1;Description=---NA---
+g397.t1	Blast2GO	CDS	1	153	.	.	.	ID=g397.t1;Description=---NA---
+g398.t1	Blast2GO	CDS	1	108	.	.	.	ID=g398.t1;Description=---NA---
+g399.t1	Blast2GO	CDS	1	66	.	.	.	ID=g399.t1;Description=---NA---
+g400.t1	Blast2GO	CDS	1	225	.	.	.	ID=g400.t1;Description=hypothetical protein, partial
+g401.t1	Blast2GO	CDS	1	402	.	.	.	ID=g401.t1;Description=reverse transcriptase family protein;Gene=RF55_23542;Ontology_term=DNA biosynthetic process;Ontology_id=GO:0071897
+g402.t1	Blast2GO	CDS	1	189	.	.	.	ID=g402.t1;Description=---NA---
+g403.t1	Blast2GO	CDS	1	81	.	.	.	ID=g403.t1;Description=---NA---
+g404.t1	Blast2GO	CDS	1	123	.	.	.	ID=g404.t1;Description=---NA---
+g405.t1	Blast2GO	CDS	1	69	.	.	.	ID=g405.t1;Description=---NA---
+g406.t1	Blast2GO	CDS	1	165	.	.	.	ID=g406.t1;Description=DUF1725 domain-containing protein
+g407.t1	Blast2GO	CDS	1	120	.	.	.	ID=g407.t1;Description=---NA---
+g408.t1	Blast2GO	CDS	1	120	.	.	.	ID=g408.t1;Description=---NA---
+g409.t1	Blast2GO	CDS	1	291	.	.	.	ID=g409.t1;Description=---NA---
+g410.t1	Blast2GO	CDS	1	333	.	.	.	ID=g410.t1;Description=---NA---
+g411.t1	Blast2GO	CDS	1	219	.	.	.	ID=g411.t1;Description=ORF1 codes for a 40 kDa product;Gene=L1RE1;Ontology_term=nucleolus,cytoplasmic stress granule,ribonucleoprotein complex,nucleotide binding,single-stranded DNA binding,single-stranded RNA binding,identical protein binding,transposition, RNA-mediated;Ontology_id=GO:0005730,GO:0010494,GO:1990904,GO:0000166,GO:0003697,GO:0003727,GO:0042802,GO:0032197
+g412.t1	Blast2GO	CDS	1	288	.	.	.	ID=g412.t1;Description=reverse transcriptase domain-containing protein
+g413.t1	Blast2GO	CDS	1	312	.	.	.	ID=g413.t1;Description=reverse transcriptase family protein;Gene=HJG60_010204;Ontology_term=catalytic activity;Ontology_id=GO:0003824
+g414.t1	Blast2GO	CDS	1	210	.	.	.	ID=g414.t1;Description=---NA---
+g415.t1	Blast2GO	CDS	1	402	.	.	.	ID=g415.t1;Description=zinc finger protein 429 isoform X1;Gene=ZNF429;Gene=ENK52_03945;Ontology_term=membrane,metal ion binding,regulation of DNA-templated transcription;Ontology_id=GO:0016020,GO:0046872,GO:0006355
+g416.t1	Blast2GO	CDS	1	114	.	.	.	ID=g416.t1;Description=---NA---
+g417.t1	Blast2GO	CDS	1	318	.	.	.	ID=g417.t1;Description=---NA---
+g418.t1	Blast2GO	CDS	1	288	.	.	.	ID=g418.t1;Description=PIR Superfamily Protein;Gene=POVWA2_073430;Ontology_term=membrane;Ontology_id=GO:0016020
+g419.t1	Blast2GO	CDS	1	465	.	.	.	ID=g419.t1;Description=DUF1725 domain-containing protein;Gene=B7Z5F2;Ontology_term=RNA-directed DNA polymerase activity,RNA-templated DNA biosynthetic process;Ontology_id=GO:0003964,GO:0006278;Enzyme_code=EC:2.7.7.49;Enzyme_name=RNA-directed DNA polymerase
+g420.t1	Blast2GO	CDS	1	108	.	.	.	ID=g420.t1;Description=---NA---
+g421.t1	Blast2GO	CDS	1	186	.	.	.	ID=g421.t1;Description=---NA---
+g422.t1	Blast2GO	CDS	1	123	.	.	.	ID=g422.t1;Description=---NA---
+g423.t1	Blast2GO	CDS	1	153	.	.	.	ID=g423.t1;Description=---NA---
+g424.t1	Blast2GO	CDS	1	495	.	.	.	ID=g424.t1;Description=DUF1725 domain-containing protein;Gene=COJ50_26595;Gene=B7Z5F2;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g425.t1	Blast2GO	CDS	1	516	.	.	.	ID=g425.t1;Description=reverse transcriptase domain-containing protein;Gene=D1Z90_20885;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g426.t1	Blast2GO	CDS	1	207	.	.	.	ID=g426.t1;Description=Gag-Pol polyprotein;Gene=DUI87_18853;Gene=DUI87_20952;Gene=chiPu_0032913;Gene=DUI87_13385;Gene=chiPu_0028576;Gene=DUI87_01867;Gene=DUI87_35020;Gene=chiPu_0001184;Gene=chiPu_0026187;Gene=LOC117656241;Gene=LOC113425509;Gene=DUI87_02481;Gene=scyTo_0024858;Gene=DUI87_00841;Gene=DUI87_01742;Gene=DUI87_03954;Gene=DUI87_21543;Ontology_term=nucleic acid binding,zinc ion binding,virion assembly;Ontology_id=GO:0003676,GO:0008270,GO:0019068
+g427.t1	Blast2GO	CDS	1	327	.	.	.	ID=g427.t1;Description=hypothetical protein;Gene=chiPu_0028994;Gene=DUI87_28808;Gene=chiPu_0004022;Gene=llap_12866;Gene=DUI87_14006;Gene=DUI87_12849;Gene=DUI87_34709;Gene=DUI87_07561;Gene=chiPu_0002928;Gene=DUI87_08365;Gene=DUI87_02337;Gene=chiPu_0001216;Gene=DUI87_21643;Gene=DUI87_26138;Gene=DUI87_03257
+g428.t1	Blast2GO	CDS	1	159	.	.	.	ID=g428.t1;Description=---NA---
+g429.t1	Blast2GO	CDS	1	111	.	.	.	ID=g429.t1;Description=---NA---
+g430.t1	Blast2GO	CDS	1	123	.	.	.	ID=g430.t1;Description=---NA---
+g431.t1	Blast2GO	CDS	1	144	.	.	.	ID=g431.t1;Description=---NA---
+g432.t1	Blast2GO	CDS	1	69	.	.	.	ID=g432.t1;Description=---NA---
+g433.t1	Blast2GO	CDS	1	81	.	.	.	ID=g433.t1;Description=---NA---
+g434.t1	Blast2GO	CDS	1	996	.	.	.	ID=g434.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=A5647_00010;Gene=A11A3_17040;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g435.t1	Blast2GO	CDS	1	834	.	.	.	ID=g435.t1;Description=reverse transcriptase family protein;Gene=D3Z38_19445;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g436.t1	Blast2GO	CDS	1	600	.	.	.	ID=g436.t1;Description=DUF1725 domain-containing protein
+g437.t1	Blast2GO	CDS	1	96	.	.	.	ID=g437.t1;Description=---NA---
+g438.t1	Blast2GO	CDS	1	339	.	.	.	ID=g438.t1;Description=---NA---
+g439.t1	Blast2GO	CDS	1	261	.	.	.	ID=g439.t1;Description=DUF1725 domain-containing protein
+g440.t1	Blast2GO	CDS	1	366	.	.	.	ID=g440.t1;Description=DUF1725 domain-containing protein;Gene=COJ50_26595;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g441.t1	Blast2GO	CDS	1	141	.	.	.	ID=g441.t1;Description=---NA---
+g442.t1	Blast2GO	CDS	1	108	.	.	.	ID=g442.t1;Description=---NA---
+g443.t1	Blast2GO	CDS	1	834	.	.	.	ID=g443.t1;Description=DUF1725 domain-containing protein
+g444.t1	Blast2GO	CDS	1	1740	.	.	.	ID=g444.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=A5647_00010;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g445.t1	Blast2GO	CDS	1	336	.	.	.	ID=g445.t1;Description=hypothetical protein
+g446.t1	Blast2GO	CDS	1	363	.	.	.	ID=g446.t1;Description=---NA---
+g447.t1	Blast2GO	CDS	1	141	.	.	.	ID=g447.t1;Description=---NA---
+g448.t1	Blast2GO	CDS	1	384	.	.	.	ID=g448.t1;Description=uncharacterized protein LOC118545533 isoform X1
+g449.t1	Blast2GO	CDS	1	198	.	.	.	ID=g449.t1;Description=DUF1725 domain-containing protein
+g450.t1	Blast2GO	CDS	1	132	.	.	.	ID=g450.t1;Description=---NA---
+g451.t1	Blast2GO	CDS	1	216	.	.	.	ID=g451.t1;Description=---NA---
+g452.t1	Blast2GO	CDS	1	87	.	.	.	ID=g452.t1;Description=---NA---
+g453.t1	Blast2GO	CDS	1	117	.	.	.	ID=g453.t1;Description=---NA---
+g454.t1	Blast2GO	CDS	1	147	.	.	.	ID=g454.t1;Description=---NA---
+g455.t1	Blast2GO	CDS	1	174	.	.	.	ID=g455.t1;Description=---NA---
+g456.t1	Blast2GO	CDS	1	162	.	.	.	ID=g456.t1;Description=---NA---
+g457.t1	Blast2GO	CDS	1	177	.	.	.	ID=g457.t1;Description=---NA---
+g458.t1	Blast2GO	CDS	1	138	.	.	.	ID=g458.t1;Description=---NA---
+g459.t1	Blast2GO	CDS	1	201	.	.	.	ID=g459.t1;Description=---NA---
+g460.t1	Blast2GO	CDS	1	210	.	.	.	ID=g460.t1;Description=---NA---
+g461.t1	Blast2GO	CDS	1	387	.	.	.	ID=g461.t1;Description=DUF1725 domain-containing protein
+g462.t1	Blast2GO	CDS	1	210	.	.	.	ID=g462.t1;Description=---NA---
+g463.t1	Blast2GO	CDS	1	267	.	.	.	ID=g463.t1;Description=---NA---
+g464.t1	Blast2GO	CDS	1	168	.	.	.	ID=g464.t1;Description=Transposase type 1;Gene=Q13539
+g465.t1	Blast2GO	CDS	1	249	.	.	.	ID=g465.t1;Description=pumilio homolog 2 isoform X6;Gene=Q13539;Ontology_term=nucleic acid binding;Ontology_id=GO:0003676
+g466.t1	Blast2GO	CDS	1	66	.	.	.	ID=g466.t1;Description=---NA---
+g467.t1	Blast2GO	CDS	1	84	.	.	.	ID=g467.t1;Description=---NA---
+g468.t1	Blast2GO	CDS	1	69	.	.	.	ID=g468.t1;Description=---NA---
+g469.t1	Blast2GO	CDS	1	150	.	.	.	ID=g469.t1;Description=---NA---
+g470.t1	Blast2GO	CDS	1	276	.	.	.	ID=g470.t1;Description=---NA---
+g471.t1	Blast2GO	CDS	1	99	.	.	.	ID=g471.t1;Description=---NA---
+g472.t1	Blast2GO	CDS	1	330	.	.	.	ID=g472.t1;Description=reverse transcriptase domain-containing protein
+g473.t1	Blast2GO	CDS	1	279	.	.	.	ID=g473.t1;Description=reverse transcriptase domain-containing protein
+g474.t1	Blast2GO	CDS	1	222	.	.	.	ID=g474.t1;Description=---NA---
+g475.t1	Blast2GO	CDS	1	375	.	.	.	ID=g475.t1;Description=elongation factor 1-alpha 1-like;Gene=EEF1A1;Gene=EF1alpha;Gene=mPipKuh1_007794;Gene=CR201_G0047724;Gene=CK820_G0000969;Gene=LOC101375611;Gene=HJG59_011156;Gene=Q862J5;Gene=GDO78_015852;Gene=LTLLF_110890;Ontology_term=translation elongation factor activity,GTPase activity,GTP binding,translational elongation;Ontology_id=GO:0003746,GO:0003924,GO:0005525,GO:0006414;Enzyme_code=EC:3.6.1.15;Enzyme_name=nucleoside-triphosphate phosphatase
+g476.t1	Blast2GO	CDS	1	114	.	.	.	ID=g476.t1;Description=---NA---
+g477.t1	Blast2GO	CDS	1	225	.	.	.	ID=g477.t1;Description=---NA---
+g478.t1	Blast2GO	CDS	1	213	.	.	.	ID=g478.t1;Description=---NA---
+g479.t1	Blast2GO	CDS	1	147	.	.	.	ID=g479.t1;Description=---NA---
+g480.t1	Blast2GO	CDS	1	114	.	.	.	ID=g480.t1;Description=---NA---
+g481.t1	Blast2GO	CDS	1	216	.	.	.	ID=g481.t1;Description=hypothetical protein M513_10937;Gene=M514_07911;Gene=M513_14381;Gene=M513_07911;Gene=M513_12315;Ontology_term=membrane,metal ion binding;Ontology_id=GO:0016020,GO:0046872
+g482.t1	Blast2GO	CDS	1	162	.	.	.	ID=g482.t1;Description=---NA---
+g483.t1	Blast2GO	CDS	1	375	.	.	.	ID=g483.t1;Description=L1 transposable element;Gene=L1RE1;Ontology_term=nucleolus,cytoplasmic stress granule,ribonucleoprotein complex,nucleotide binding,single-stranded DNA binding,single-stranded RNA binding,identical protein binding,transposition, RNA-mediated;Ontology_id=GO:0005730,GO:0010494,GO:1990904,GO:0000166,GO:0003697,GO:0003727,GO:0042802,GO:0032197
+g484.t1	Blast2GO	CDS	1	375	.	.	.	ID=g484.t1;Description=L1 transposable element;Gene=L1RE1;Ontology_term=nucleolus,cytoplasmic stress granule,ribonucleoprotein complex,nucleotide binding,single-stranded DNA binding,single-stranded RNA binding,identical protein binding,transposition, RNA-mediated;Ontology_id=GO:0005730,GO:0010494,GO:1990904,GO:0000166,GO:0003697,GO:0003727,GO:0042802,GO:0032197
+g485.t1	Blast2GO	CDS	1	303	.	.	.	ID=g485.t1;Description=DUF1725 domain-containing protein
+g486.t1	Blast2GO	CDS	1	156	.	.	.	ID=g486.t1;Description=---NA---
+g487.t1	Blast2GO	CDS	1	2928	.	.	.	ID=g487.t1;Description=reverse transcriptase domain-containing protein;Gene=A5662_01645;Gene=HPHPP4_1732;Gene=DF188_09940;Gene=A5647_00010;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g488.t1	Blast2GO	CDS	1	180	.	.	.	ID=g488.t1;Description=tigger transposable element-derived protein 1;Gene=HJG59_018144;Gene=TIGD1;Gene=FD755_017810
+g489.t1	Blast2GO	CDS	1	216	.	.	.	ID=g489.t1;Description=endonuclease/exonuclease/phosphatase family protein;Gene=O00370;Gene=M569_13379;Gene=DCC88_12395;Ontology_term=RNA-directed DNA polymerase activity,type II site-specific deoxyribonuclease activity,metal ion binding,DNA recombination,transposition, RNA-mediated,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0009036,GO:0046872,GO:0006310,GO:0032197,GO:0090305;Enzyme_code=EC:3.1.30,EC:2.7.7.49,EC:3.1.21.4;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase,type II site-specific deoxyribonuclease
+g490.t1	Blast2GO	CDS	1	354	.	.	.	ID=g490.t1;Description=reverse transcriptase domain-containing protein;Gene=D1Z90_20885;Gene=DJ532_16045;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g491.t1	Blast2GO	CDS	1	465	.	.	.	ID=g491.t1;Description=reverse transcriptase domain-containing protein;Gene=DJ531_13480;Gene=C7H19_25060;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g492.t1	Blast2GO	CDS	1	825	.	.	.	ID=g492.t1;Description=DUF1725 domain-containing protein
+g493.t1	Blast2GO	CDS	1	711	.	.	.	ID=g493.t1;Description=reverse transcriptase family protein;Gene=DJ526_10605;Gene=D3Z38_19445;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g494.t1	Blast2GO	CDS	1	237	.	.	.	ID=g494.t1;Description=Retron-type reverse transcriptase
+g495.t1	Blast2GO	CDS	1	312	.	.	.	ID=g495.t1;Description=DUF1725 domain-containing protein
+g496.t1	Blast2GO	CDS	1	99	.	.	.	ID=g496.t1;Description=---NA---
+g497.t1	Blast2GO	CDS	1	228	.	.	.	ID=g497.t1;Description=---NA---
+g498.t1	Blast2GO	CDS	1	153	.	.	.	ID=g498.t1;Description=apolipoprotein L6 isoform X4;Gene=B4DHX3;Ontology_term=NAD+-protein-arginine ADP-ribosyltransferase activity;Ontology_id=GO:0106274;Enzyme_code=EC:2.4.2.31;Enzyme_name=NAD(+)--protein-arginine ADP-ribosyltransferase
+g499.t1	Blast2GO	CDS	1	159	.	.	.	ID=g499.t1;Description=PDZ and LIM domain 5;Gene=PDLIM5;Ontology_term=stress fiber,cytosol,adherens junction,postsynaptic density,membrane,Z disc,filamentous actin,actin binding,protein kinase C binding,muscle alpha-actinin binding,actin cytoskeleton organization,regulation of synapse assembly,regulation of dendritic spine morphogenesis,cell growth involved in cardiac muscle cell development;Ontology_id=GO:0001725,GO:0005829,GO:0005912,GO:0014069,GO:0016020,GO:0030018,GO:0031941,GO:0003779,GO:0005080,GO:0051371,GO:0030036,GO:0051963,GO:0061001,GO:0061049
+g500.t1	Blast2GO	CDS	1	1113	.	.	.	ID=g500.t1;Description=reverse transcriptase domain-containing protein;Gene=EHQ86_15905;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g501.t1	Blast2GO	CDS	1	201	.	.	.	ID=g501.t1;Description=hypothetical protein, partial
+g502.t1	Blast2GO	CDS	1	186	.	.	.	ID=g502.t1;Description=hCG1772243, partial
+g503.t1	Blast2GO	CDS	1	132	.	.	.	ID=g503.t1;Description=---NA---
+g504.t1	Blast2GO	CDS	1	114	.	.	.	ID=g504.t1;Description=---NA---
+g505.t1	Blast2GO	CDS	1	183	.	.	.	ID=g505.t1;Description=---NA---
+g506.t1	Blast2GO	CDS	1	249	.	.	.	ID=g506.t1;Description=tigger transposable element-derived protein 1-like;Gene=LMF1
+g507.t1	Blast2GO	CDS	1	228	.	.	.	ID=g507.t1;Description=---NA---
+g508.t1	Blast2GO	CDS	1	615	.	.	.	ID=g508.t1;Description=ADP-ribosylation factor-like protein 4A;Gene=BN2614_LOCUS2;Gene=Arl4a;Gene=EGK_13896;Gene=NYPRO_LOCUS26928;Gene=FD754_020727;Gene=CK820_G0021286;Gene=FD755_012185;Gene=mRhiFer1_000993;Gene=A0A0D9SCN7;Gene=EGM_12727;Gene=LOC111147297;Gene=LYPA_23C014963;Gene=HJG59_000996;Gene=A0A7N9CLU1;Gene=ARL4A;Gene=A0A2K5L3M6;Gene=GHT09_004929;Gene=E5288_WYG001384;Gene=A0A2K5XET7;Gene=A0A2K6B5L7;Gene=LOC101357177;Gene=A0A2R8ZK83;Gene=A0A2K6QEL2;Gene=A0A2K5H831;Ontology_term=nucleoplasm,nucleolus,cytosol,plasma membrane,GTPase activity,protein binding,GTP binding,intracellular protein transport,vesicle-mediated transport,brown fat cell differentiation;Ontology_id=GO:0005654,GO:0005730,GO:0005829,GO:0005886,GO:0003924,GO:0005515,GO:0005525,GO:0006886,GO:0016192,GO:0050873;Enzyme_code=EC:3.6.1.15;Enzyme_name=nucleoside-triphosphate phosphatase
+g509.t1	Blast2GO	CDS	1	228	.	.	.	ID=g509.t1;Description=---NA---
+g510.t1	Blast2GO	CDS	1	198	.	.	.	ID=g510.t1;Description=protein O-mannosyl-transferase TMTC3 isoform X1
+g511.t1	Blast2GO	CDS	1	120	.	.	.	ID=g511.t1;Description=---NA---
+g512.t1	Blast2GO	CDS	1	93	.	.	.	ID=g512.t1;Description=---NA---
+g513.t1	Blast2GO	CDS	1	87	.	.	.	ID=g513.t1;Description=---NA---
+g514.t1	Blast2GO	CDS	1	330	.	.	.	ID=g514.t1;Description=adseverin isoform X2;Gene=Scin_0;Gene=Scin;Gene=SCIN;Gene=CK820_G0021283;Gene=E2I00_000413;Gene=EI555_013799;Gene=Q8NBV9;Ontology_term=sequestering of actin monomers,regulation of chondrocyte differentiation,cell projection assembly,negative regulation of cell population proliferation,positive regulation of megakaryocyte differentiation,cell projection,1-phosphatidylinositol binding,podosome,actin filament binding,barbed-end actin filament capping,phosphatidylinositol-4,5-bisphosphate binding,phosphatidylserine binding,anchoring junction,central nervous system development,actin filament severing,positive regulation of secretion,brush border,calcium ion binding,cell cortex,positive regulation of apoptotic process,calcium-ion regulated exocytosis,positive regulation of actin nucleation;Ontology_id=GO:0042989,GO:0032330,GO:0030031,GO:0008285,GO:0045654,GO:0042995,GO:0005545,GO:0002102,GO:0051015,GO:0051016,GO:0005546,GO:0001786,GO:0070161,GO:0007417,GO:0051014,GO:0051047,GO:0005903,GO:0005509,GO:0005938,GO:0043065,GO:0017156,GO:0051127
+g515.t1	Blast2GO	CDS	1	138	.	.	.	ID=g515.t1;Description=---NA---
+g516.t1	Blast2GO	CDS	1	180	.	.	.	ID=g516.t1;Description=---NA---
+g517.t1	Blast2GO	CDS	1	108	.	.	.	ID=g517.t1;Description=---NA---
+g518.t1	Blast2GO	CDS	1	198	.	.	.	ID=g518.t1;Description=DUF1725 domain-containing protein
+g519.t1	Blast2GO	CDS	1	198	.	.	.	ID=g519.t1;Description=probable histone-lysine N-methyltransferase PRDM7
+g520.t1	Blast2GO	CDS	1	159	.	.	.	ID=g520.t1;Description=---NA---
+g521.t1	Blast2GO	CDS	1	120	.	.	.	ID=g521.t1;Description=---NA---
+g522.t1	Blast2GO	CDS	1	183	.	.	.	ID=g522.t1;Description=hypothetical protein G6F68_021707
+g523.t1	Blast2GO	CDS	1	144	.	.	.	ID=g523.t1;Description=Uncharacterised protein
+g524.t1	Blast2GO	CDS	1	861	.	.	.	ID=g524.t1;Description=reverse transcriptase domain-containing protein;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g525.t1	Blast2GO	CDS	1	159	.	.	.	ID=g525.t1;Description=reverse transcriptase family protein;Gene=E5F30_05330;Ontology_term=RNA-directed DNA polymerase activity,RNA-templated DNA biosynthetic process;Ontology_id=GO:0003964,GO:0006278;Enzyme_code=EC:2.7.7.49;Enzyme_name=RNA-directed DNA polymerase
+g526.t1	Blast2GO	CDS	1	486	.	.	.	ID=g526.t1;Description=reverse transcriptase family protein;Gene=AOA60_15330;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g527.t1	Blast2GO	CDS	1	387	.	.	.	ID=g527.t1;Description=DUF1725 domain-containing protein;Gene=COJ50_26595;Ontology_term=endonuclease activity,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0004519,GO:0090305;Enzyme_code=EC:3.1;Enzyme_name=Acting on ester bonds
+g528.t1	Blast2GO	CDS	1	87	.	.	.	ID=g528.t1;Description=---NA---
+g529.t1	Blast2GO	CDS	1	297	.	.	.	ID=g529.t1;Description=DNA excision repair protein ERCC-6-like protein;Gene=EGK_20630;Ontology_term=nucleotide binding;Ontology_id=GO:0000166
+g530.t1	Blast2GO	CDS	1	312	.	.	.	ID=g530.t1;Description=hypothetical protein
+g531.t1	Blast2GO	CDS	1	87	.	.	.	ID=g531.t1;Description=---NA---
+g532.t1	Blast2GO	CDS	1	114	.	.	.	ID=g532.t1;Description=reverse transcriptase domain-containing protein
+g533.t1	Blast2GO	CDS	1	861	.	.	.	ID=g533.t1;Description=reverse transcriptase domain-containing protein;Gene=HPHPP4_1732;Gene=A5647_00010;Gene=T06_8113;Gene=A5641_21845;Ontology_term=RNA-directed DNA polymerase activity,endonuclease activity,RNA-templated DNA biosynthetic process,nucleic acid phosphodiester bond hydrolysis;Ontology_id=GO:0003964,GO:0004519,GO:0006278,GO:0090305;Enzyme_code=EC:3.1,EC:2.7.7.49;Enzyme_name=Acting on ester bonds,RNA-directed DNA polymerase
+g534.t1	Blast2GO	CDS	1	144	.	.	.	ID=g534.t1;Description=Uncharacterised protein

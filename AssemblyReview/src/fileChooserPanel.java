@@ -30,6 +30,9 @@ public class fileChooserPanel extends javax.swing.JPanel {
 
         clearBtn.setVisible(false);
         confirmBtn.setVisible(false);
+        
+        gtfFileContent = null;
+        fastaFileContent = null;
     }
     
     //Indicates if chosen file is fasta or gtf. If both are false, no file is chosen.
@@ -245,7 +248,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
 
     //Set variable indicate the type of the file (gtf or fatsa). Set message indicating to the user which file was chosen.
     public void setFileChosenMessage(String filename) {
-        if (fileName.endsWith(".gtf")) {
+        if (fileName.endsWith(".gtf")|fileName.endsWith(".gff")) {
             //Set type of file to gtf
             gtfFile = true;
             fastaFile = false;

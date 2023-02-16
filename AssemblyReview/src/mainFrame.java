@@ -14,7 +14,7 @@ public class mainFrame extends javax.swing.JFrame {
      */
     public mainFrame() {
         initComponents();
-        
+
         //See panel file browser when at software opening
         this.setPanelVisibility(true, false);
         fileChooserPanel.setFileType(true, false); //First file to choose is fasta
@@ -122,20 +122,16 @@ public class mainFrame extends javax.swing.JFrame {
 
     private void metricsMenuMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_metricsMenuMousePressed
         setPanelVisibility(false, true);
-        
-        //If file is chosen
-        if(fileChooserPanel.fileName != null){
-            //Start calculation of metrics for metricsPanel
-            metricsPanel.showMetrics(fileChooserPanel.fastaFileContent, fileChooserPanel.fastaFileName);
-        }
+        //Start calculation of metrics for metricsPanel
+        metricsPanel.showMetrics(fileChooserPanel.fastaFileContent, fileChooserPanel.gtfFileContent, fileChooserPanel.fastaFileName, fileChooserPanel.gtfFileName);
     }//GEN-LAST:event_metricsMenuMousePressed
-    
-    private void setPanelVisibility(boolean fileChoose, boolean metricView){
+
+    private void setPanelVisibility(boolean fileChoose, boolean metricView) {
         //Set visibility of metrics and fileChooser panel
         fileChooserPanel.setVisible(fileChoose);
         metricsPanel.setVisible(metricView);
     }
-    
+
     /**
      * @param args the command line arguments
      */

@@ -34,6 +34,7 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea = new javax.swing.JTextArea();
 
         setBorder(javax.swing.BorderFactory.createTitledBorder("General statistics"));
+        setPreferredSize(new java.awt.Dimension(675, 130));
 
         statisticsArea.setBackground(new java.awt.Color(240, 240, 240));
         statisticsArea.setColumns(20);
@@ -47,11 +48,11 @@ public class general_statistics extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 663, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 186, Short.MAX_VALUE)
+            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 113, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -65,9 +66,10 @@ public class general_statistics extends javax.swing.JPanel {
     public void startCalculation(ArrayList<StringBuffer> fileContent, String fileName) {
         //Create instance of statisticsCalculation for methods
         statisticsCalculation Stats = new statisticsCalculation();
-
+        
         //Write file name in statistics area
-        statisticsArea.append("Fasta file:" + fileName + "\n");
+        this.setBorder(javax.swing.BorderFactory.createTitledBorder("General statistics, " + fileName));
+        //statisticsArea.append("Fasta file:" + fileName + "\n");
 
         //Calculate number of sequences, lenght of sequences, min and max
         int[] statistics = Arrays.copyOf(throughContigs(fileContent, Stats), 6);
@@ -76,13 +78,13 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("Total number of contigs or scaffholds: " + statistics[0] + "\n");
 
         //Display total length of assembly
-        statisticsArea.append("Total length of contigs / scaffold: " + statistics[1] + "\n");
+        statisticsArea.append("Total length of contigs / scaffold: " + statistics[1] + "\t");
 
         //Display average length
         statisticsArea.append("Average contig or scaffhold length: " + (statistics[1] / statistics[0]) + "\n");
 
         //Display min and max values
-        statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\n");
+        statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\t");
         statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
 
         //Display GC content
@@ -90,7 +92,7 @@ public class general_statistics extends javax.swing.JPanel {
         statisticsArea.append("GC%: " + GC + "\n");
 
         //Display Ns value
-        statisticsArea.append("Ns: " + statistics[4] + "\n");
+        statisticsArea.append("Ns: " + statistics[4] + "\t");
         //Display N50 value
         statisticsArea.append("N50: " + statistics[5] + "\n");
     }
