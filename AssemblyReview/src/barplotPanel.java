@@ -20,13 +20,15 @@ public class barplotPanel extends javax.swing.JPanel {
      */
     public barplotPanel() {
         initComponents();
+        xCoord = new ArrayList<Integer>();
+        heights = new ArrayList<Integer>();
     }
 
     //Bar coordinates
-    private int[] xCoord;
-    private int[] heights;
+    private ArrayList<Integer> xCoord;
+    private ArrayList<Integer> heights;
+    private ArrayList<Integer> sorted_len;
     private int width;
-    private final int yCoord = 0;
     private int N50_index;
     private int numberBars = 0;
 
@@ -58,53 +60,48 @@ public class barplotPanel extends javax.swing.JPanel {
         super.paintComponent(g);
 
         //N50 and other contigs have different colors
-        Color N50_color = new Color(100, 55, 41);
-        Color other_color = new Color(68, 85, 90);
+        Color N50_color = new Color(250, 128, 114);
+        Color other_color = new Color(70, 130, 180);
 
         //Set color and rectangles
         g.setColor(other_color);
 
         //For every coordinate, draw a rectangle
         for (int i = 0; i < numberBars; i++) {
-            System.out.println("COORD ");
-            System.out.println("COORD " + xCoord[0]);
             if (i == N50_index) {
                 g.setColor(N50_color);
+                g.drawString(sorted_len.get(i).toString(), xCoord.get(i), getHeight() - heights.get(i) - 10);
             }
-            g.fillRect(xCoord[i], 0, width, heights[i]);
+            else{
+                g.setColor(other_color);
+            }
+            g.fillRect(xCoord.get(i), getHeight() - heights.get(i) - 5, width, heights.get(i));
+            //Draw bar value every 5 bars
+            if ((xCoord.get(i)%10 == 0)||(i==0)){
+                g.drawString(sorted_len.get(i).toString(), xCoord.get(i), getHeight() - heights.get(i) - 10);
+            }
         }
     }
 
     //Calculate each bar coordinates
-    private void setCoordinates(ArrayList<Integer> list_len) {
-        if (list_len.size() < 30) {
-            numberBars = list_len.size();
+    private void setCoordinates(ArrayList<Integer> sorted_len) {
+        if (sorted_len.size() < (this.getWidth())/1.5) {
+            numberBars = sorted_len.size();
         } else {
-            numberBars = 30;
+            numberBars = (int)(this.getWidth()/1.5);
         }
-        //Initialisation
-        int[] xCoord = new int[numberBars];
-        int[] heights = new int[numberBars];
-        System.out.println(numberBars);
-        int width;
-
         //Width calculation
-        width = (int) (this.getWidth() / (1.5 * numberBars));
-        System.out.println(this.getWidth());
-        System.out.println("w: " + width);
+        width = (int) (this.getWidth()*1.5 / (numberBars));
 
         //For each contig, calculate the corresponding bar x coordinate and height
         for (int i = 0; i < numberBars; i++) {
             //Set x
-            double x = i * 1.5 * width;
-            xCoord[i] = (int) x;
-            System.out.println("x " + xCoord[i]);
+            double x = (i * 1.5 * width);
+            xCoord.add((int)x + 10);
 
             //Set height
-            double h = this.getHeight() * list_len.get(i) / list_len.get(0);
-            heights[i] = (int) h;
-            System.out.println("h " + heights[i]);
-            System.out.println();
+            double h = (this.getHeight()-40) * sorted_len.get(i) / sorted_len.get(0);
+            heights.add((int)h);
         }
 
         repaint();
@@ -115,11 +112,15 @@ public class barplotPanel extends javax.swing.JPanel {
         //Create instance of statisticsCalculation for methods
         statisticsCalculation Stats = new statisticsCalculation();
         //Calculate list of length and sort it
-        ArrayList<Integer> sorted_len = new ArrayList<Integer>(Stats.getLength(fastaFileContent));
+        sorted_len = new ArrayList<Integer>(Stats.getLength(fastaFileContent));
+        //Size of list of len
+        int sizeListLen = sorted_len.size();
+        //Totale length of list of length
+        int totalLen = sorted_len.get(sizeListLen-1); //Total length is the last element of the array list
+        sorted_len.remove(sizeListLen-1);
         Collections.sort(sorted_len, Collections.reverseOrder());
         //Calculate N50
-        N50_index = Stats.calculateN50(sorted_len, sorted_len.size())[1];
-
+        N50_index = Stats.calculateN50(sorted_len, totalLen)[1];
         setCoordinates(sorted_len);
     }
 

@@ -82,13 +82,12 @@ public class statisticsCalculation {
         //Go throught the list of length and sum up the length until half of the genome is obtained
         while (sum_len < median) {
             //Add length to sum
-            sum_len += list_len.get(index);
+            sum_len += sorted_len.get(index);
             //Incremente index
             index++;
         }
         //N50 is the length of the contig once half of the genome is obtained
-        N50 = list_len.get(index); //Index is the indice of the last contig for which the median is obtained
-        
+        N50 = sorted_len.get(index); //Index is the indice of the last contig for which the median is obtained
         //Add values to result list
         results[0] = N50;
         results[1] = index;
@@ -174,6 +173,8 @@ public class statisticsCalculation {
         ArrayList<String> contigLine = Stats.concatFasta(fastaFileContent);
         //List of length
         ArrayList<Integer> list_len = new ArrayList<Integer>();
+        //Total length
+        int totalLen = 0;
 
         //For each contig or header
         for (int i = 0; i < contigLine.size(); i++) {
@@ -182,8 +183,11 @@ public class statisticsCalculation {
             if (!line.startsWith(">")) {
                 //Calculate list of length
                 list_len.add(line.length());
+                //Caclulate total length
+                totalLen = lengthSequence(totalLen, line);
             }
         }
+        list_len.add(totalLen); //Last value of the list is the total length
         return list_len;
     }
     
