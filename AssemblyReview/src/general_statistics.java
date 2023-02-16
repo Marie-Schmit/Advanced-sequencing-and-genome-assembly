@@ -87,7 +87,7 @@ public class general_statistics extends javax.swing.JPanel {
 
         //Display min and max values
         statisticsArea.append("Shortest contig / scaffold: " + statistics[2] + "\t");
-        statisticsArea.append("Longest contig / scaffold: " + statistics[3] + "\n");
+        statisticsArea.append("\t Longest contig / scaffold: " + statistics[3] + "\n");
 
         //Display GC content
         double GC = Stats.getGC(fileContent, statistics[1]);
@@ -111,16 +111,18 @@ public class general_statistics extends javax.swing.JPanel {
         int nb_Ns = 0; //Number of Ns
         int min = GENOME_SIZE;
         int max = 0;
-
         int N50 = 0; //N50 value
         //List of length for N50 calculation
         ArrayList<Integer> list_len = new ArrayList<Integer>();
-
+        
+        
+        System.out.println(contigLine.get(0));
+        System.out.println(contigLine.get(1));
+        
         //For each contig or header
         for (int i = 0; i < contigLine.size(); i++) {
             //Get each line as string
             String line = contigLine.get(i).toString();
-
             //Refresh number of sequences
             numberSequence = Stats.numberSequence(numberSequence, line);
             //Refresh total length

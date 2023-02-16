@@ -27,6 +27,8 @@ public class contigsMetrics extends javax.swing.JPanel {
 
         jScrollPane1 = new javax.swing.JScrollPane();
         sequenceTextArea = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        sequenceStatArea = new javax.swing.JTextArea();
 
         setBorder(javax.swing.BorderFactory.createTitledBorder("Contig / scaffold metrics"));
 
@@ -34,27 +36,45 @@ public class contigsMetrics extends javax.swing.JPanel {
         sequenceTextArea.setColumns(20);
         sequenceTextArea.setRows(5);
         sequenceTextArea.setBorder(null);
+        sequenceTextArea.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        sequenceTextArea.setEnabled(false);
         jScrollPane1.setViewportView(sequenceTextArea);
+
+        sequenceStatArea.setBackground(new java.awt.Color(240, 240, 240));
+        sequenceStatArea.setColumns(20);
+        sequenceStatArea.setRows(5);
+        sequenceStatArea.setDisabledTextColor(new java.awt.Color(0, 0, 0));
+        sequenceStatArea.setEnabled(false);
+        jScrollPane2.setViewportView(sequenceStatArea);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 852, Short.MAX_VALUE)
+            .addComponent(jScrollPane1)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 852, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(63, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(46, 46, 46))
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
 
     public void setSequence(String sequence){
+        //Disaply sequence text of selected scaffold / contig
         sequenceTextArea.setText(sequence);
-        System.out.println(sequence);
+        //Calculate statistics with method from class statistics calculation
+        statisticsCalculation Stats = new statisticsCalculation();
+        int length = Stats.lengthSequence(0, sequence.replace("\n", "")); //Length of selected sequence
+        int numberGC[] = Stats.numberGC(new StringBuffer(sequence));
+        //Display GC and length of selected scaffold / contig
+        sequenceStatArea.setText("Length of scaffold or contig: " + length + "\t");
+        sequenceStatArea.append("GC content of scaffold or contig: " + ((numberGC[0]+numberGC[1])/length) + "\t");
     }
     
     public String getSequence(){
@@ -63,6 +83,8 @@ public class contigsMetrics extends javax.swing.JPanel {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea sequenceStatArea;
     private javax.swing.JTextArea sequenceTextArea;
     // End of variables declaration//GEN-END:variables
 }

@@ -40,6 +40,7 @@ public class ContigsList extends javax.swing.JPanel {
 
         setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createTitledBorder("List of contigs")));
 
+        jList1.setBackground(new java.awt.Color(240, 240, 240));
         jList1.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = {};
             public int getSize() { return strings.length; }
@@ -68,7 +69,7 @@ public class ContigsList extends javax.swing.JPanel {
     private void jList1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_jList1ValueChanged
         //Pass value to contigs metric corresponding text area, to get the metrics displayed
         contigShowStats.setSequence(contigsHash.get(jList1.getSelectedValuesList().get(0)));
-        
+        System.out.print(contigsHash.get(jList1.getSelectedValuesList()));
     }//GEN-LAST:event_jList1ValueChanged
 
     public void setContigMetrics(contigsMetrics metrics){

@@ -97,7 +97,7 @@ public class statisticsCalculation {
     
     //GC content calculation
     //Calculate number of G and umber of C characters in one string
-    private int[] numberGC(StringBuffer line) {
+    public int[] numberGC(StringBuffer line) {
         int numberG = 0;
         int numberC = 0;
 
@@ -149,16 +149,17 @@ public class statisticsCalculation {
         String newLine = "";
 
         //For each line of the file
-        for (int i = 1; i < fileContent.size(); i++) {
+        for (int i = 0; i < fileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fileContent.get(i).toString();
             //Remove line return
-            line.replaceAll("\\n", "");
+            line = line.replace("\n", "");
 
             if (!line.startsWith(">")) { //Concatenate lines that are not headers
                 newLine += line;
             } else { //When header met, save concatenation and header in ArrayList
-                sequenceContent.add(new String(newLine));
+                if(newLine != "")
+                    sequenceContent.add(new String(newLine));
                 sequenceContent.add(new String(line));
                 newLine = "";
             }
@@ -170,7 +171,7 @@ public class statisticsCalculation {
     public ArrayList<String> listHeaders(ArrayList<StringBuffer> fileContent) {
         ArrayList<String> headers = new ArrayList<String>();
         //For each line of the file, store the one starting with ">"
-        for (int i = 1; i < fileContent.size(); i++) {
+        for (int i = 0; i < fileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fileContent.get(i).toString();
             if(line.startsWith(">")){
@@ -220,8 +221,6 @@ public class statisticsCalculation {
         for (int i = 0; i < fastaFileContent.size(); i++) {
             //Get each line of the file and convert to string
             String line = fastaFileContent.get(i).toString();
-            //Remove line return
-            line.replaceAll("\\n", "");
 
             if (line.startsWith(">")) { //Header
                 //New header met: end of previous contig, add contig and key value to HashMap

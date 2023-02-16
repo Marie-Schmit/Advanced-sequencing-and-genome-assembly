@@ -18,6 +18,8 @@ public class mainFrame extends javax.swing.JFrame {
         //See panel file browser when at software opening
         this.setPanelVisibility(true, false);
         fileChooserPanel.setFileType(true, false); //First file to choose is fasta
+        //Set instance of metricsPanel in file chooser, to display metrics when confirm button is pressed
+        fileChooserPanel.setMetricsInstance(metricsPanel);
     }
 
     /**

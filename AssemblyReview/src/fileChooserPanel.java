@@ -51,6 +51,9 @@ public class fileChooserPanel extends javax.swing.JPanel {
     private String fileDirectory; //Name of the selected file directory
     private FileDialog nameBox; //File browser
     private Pattern extension = Pattern.compile(".*\\.(gtf|fa)"); //Regex of files extensions
+    
+    //Instance of class metricsPanel to display metrics when confirm button is pressed
+    metricsPanel instanceMetricsPanel = new metricsPanel();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -102,10 +105,13 @@ public class fileChooserPanel extends javax.swing.JPanel {
         });
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Pick a file");
 
         falseFileLbl.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         falseFileLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        falseFileLbl.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        falseFileLbl.setMaximumSize(new java.awt.Dimension(35, 1150));
 
         waitMessage.setFont(new java.awt.Font("Segoe UI", 0, 8)); // NOI18N
         waitMessage.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -135,28 +141,26 @@ public class fileChooserPanel extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(textLbl, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(waitMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(falseFileLbl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 183, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(searchBarFile, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(fileBrowserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(138, 138, 138))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(clearBtn)
-                        .addGap(60, 60, 60)
-                        .addComponent(confirmBtn)
-                        .addGap(424, 424, 424))))
+                .addGap(0, 530, Short.MAX_VALUE)
+                .addComponent(clearBtn)
+                .addGap(60, 60, 60)
+                .addComponent(confirmBtn)
+                .addGap(424, 424, 424))
+            .addComponent(waitMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addComponent(searchBarFile, javax.swing.GroupLayout.PREFERRED_SIZE, 608, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fileBrowserBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(138, 138, 138))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(101, Short.MAX_VALUE)
+                .addContainerGap(119, Short.MAX_VALUE)
                 .addComponent(textLbl)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
@@ -169,7 +173,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
                 .addComponent(waitMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(falseFileLbl, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(clearBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(confirmBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -264,7 +268,7 @@ public class fileChooserPanel extends javax.swing.JPanel {
             fastaFile = true;
 
             //Update message indicating chosen file
-            fileChosenMessage = "The chosen fasta file is: " + filename;
+            fileChosenMessage = "Chosen file: " + filename;
 
             //Display message indicating chosen file in label
             falseFileLbl.setText(fileChosenMessage);
@@ -380,8 +384,16 @@ public class fileChooserPanel extends javax.swing.JPanel {
             gtfFileContent = fileContent;
             gtfFileName = nameBox.getFile();
         }    
+        this.setVisible(false);
+        //Display metrics
+        instanceMetricsPanel.showMetrics(fastaFileContent, gtfFileContent, fastaFileName, gtfFileName);
         //Open metrics panel and display results panel
         this.setVisible(false);
+    }
+    
+    //Set instance metricsPanel
+    public void setMetricsInstance(metricsPanel instance){
+        this.instanceMetricsPanel = instance;
     }
     
 
