@@ -85,6 +85,11 @@ public class barplotPanel extends javax.swing.JPanel {
 
     //Calculate each bar coordinates
     private void setCoordinates(ArrayList<Integer> sorted_len) {
+        //Coordinates initialisation
+        xCoord.clear();
+        heights.clear();
+        
+        //Calculate number of bars
         if (sorted_len.size() < (this.getWidth())/1.5) {
             numberBars = sorted_len.size();
         } else {

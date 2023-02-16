@@ -223,9 +223,6 @@ public class fileChooserPanel extends javax.swing.JPanel {
     }//GEN-LAST:event_fileBrowserBtnActionPerformed
 
     private void confirmBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmBtnActionPerformed
-        //Display wait message
-        setWaitMessage("Please wait, your selected file is being read...");
-
         //Set file name to display in panel actionPanel
         setFileChosenMessage(fileName);
 
