@@ -33,6 +33,7 @@ public class graphicalRepresentation extends javax.swing.JPanel {
         //Look for "N" in the sequence
         while (index < sequence.length()) {            
             if(sequence.charAt(index) == ('N')){
+                System.out.println(index + "___________");
                 System.out.println("N");
                 
                 int[] coord = new int[2];
@@ -50,9 +51,13 @@ public class graphicalRepresentation extends javax.swing.JPanel {
                 coord[1] = width;
                 xWidthGapCoord.add(coord);
             }
+            width = 0;
             index++;
         }
-        System.out.println(xWidthGapCoord);
+        for(int j = 0; j < xWidthGapCoord.size(); j++){
+            System.out.println("J " + j);
+            System.out.println("x: " + xWidthGapCoord.get(j)[0] + " w " + xWidthGapCoord.get(j)[1]);
+        }
     }
 
     //Repaint barplot when fastaFile is given
