@@ -239,4 +239,33 @@ public class statisticsCalculation {
         return contigsHash;
     }
     
+    //Get a string of contigs and a string of contigs header
+    public String[][] contigsArrays(ArrayList<StringBuffer> fastaFileContent) {
+        int lenFile = fastaFileContent.size();
+        //Strings initialisation
+        String[][] contigsAll = new String[2][lenFile];
+        String
+        
+        //For each contigs, add header as key and sequence as value
+        String newLine = ""; //Sequence value
+        String key = "";
+
+        //For each line of the file
+        for (int i = 0; i < fastaFileContent.size(); i++) {
+            //Get each line of the file and convert to string
+            String line = fastaFileContent.get(i).toString();
+
+            if (line.startsWith(">")) { //Header
+                //New header met: end of previous contig, add contig and key value to HashMap
+                contigsHash.put(new String(key), new String(newLine));
+                newLine = "";
+                //Create new key for current header
+                key = line;
+            } else { //Add lines between two headers to the same sequence
+                newLine += line;
+            }
+        }
+        return contigsHash;
+    }
+    
 }

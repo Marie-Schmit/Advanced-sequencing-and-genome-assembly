@@ -81,9 +81,8 @@ public class ContigsList extends javax.swing.JPanel {
         //Instance of statisticsCalculation
         statisticsCalculation Stats = new statisticsCalculation();
         //Get arrayList of headers, and list of sequences
-        //headerList = Stats.listHeaders(fastaFileContent);
-        //sequenceList = Stats.concatFasta(fastaFileContent);
-        contigsHash = Stats.contigsHashMap(fastaFileContent);
+        HashMap<String, String>[] hashResults = Stats.contigsHashMap(fastaFileContent);
+        contigsHash = hashResults[0];
         //Make and array of keys
         String[] keys = contigsHash.keySet().toArray(String[]::new);
 

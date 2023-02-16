@@ -29,6 +29,7 @@ public class contigsMetrics extends javax.swing.JPanel {
         sequenceTextArea = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         sequenceStatArea = new javax.swing.JTextArea();
+        graphicalRepresentation1 = new graphicalRepresentation();
 
         setBorder(javax.swing.BorderFactory.createTitledBorder("Contig / scaffold metrics"));
 
@@ -47,20 +48,33 @@ public class contigsMetrics extends javax.swing.JPanel {
         sequenceStatArea.setEnabled(false);
         jScrollPane2.setViewportView(sequenceStatArea);
 
+        javax.swing.GroupLayout graphicalRepresentation1Layout = new javax.swing.GroupLayout(graphicalRepresentation1);
+        graphicalRepresentation1.setLayout(graphicalRepresentation1Layout);
+        graphicalRepresentation1Layout.setHorizontalGroup(
+            graphicalRepresentation1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        graphicalRepresentation1Layout.setVerticalGroup(
+            graphicalRepresentation1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 34, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jScrollPane1)
             .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 852, Short.MAX_VALUE)
+            .addComponent(graphicalRepresentation1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(graphicalRepresentation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -83,6 +97,9 @@ public class contigsMetrics extends javax.swing.JPanel {
         else
                GC = -1;
         sequenceStatArea.append("GC content of scaffold or contig: " + GC + "\t");
+        
+        //Graphical representation oof scaffhold
+        this.graphicalRepresentation1.repaintGraph(sequence);
     }
     
     public String getSequence(){
@@ -90,6 +107,7 @@ public class contigsMetrics extends javax.swing.JPanel {
     }
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private graphicalRepresentation graphicalRepresentation1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea sequenceStatArea;
