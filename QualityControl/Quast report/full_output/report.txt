@@ -1,0 +1,22 @@
+Assembly                    19mer_cor_DBG2OLC_platanus_final_assembly  DBG2OLC_params_19_1_2_10_0.0001_final_assembly  Masurca_cor_beforePolishing_genome.scf
+# contigs (>= 0 bp)         48                                         185                                             16                                    
+# contigs (>= 1000 bp)      48                                         182                                             16                                    
+# contigs (>= 5000 bp)      40                                         140                                             16                                    
+# contigs (>= 10000 bp)     39                                         108                                             16                                    
+# contigs (>= 25000 bp)     33                                         63                                              14                                    
+# contigs (>= 50000 bp)     28                                         38                                              11                                    
+Total length (>= 0 bp)      4797012                                    5128345                                         4957066                               
+Total length (>= 1000 bp)   4797012                                    5126072                                         4957066                               
+Total length (>= 5000 bp)   4774863                                    4993229                                         4957066                               
+Total length (>= 10000 bp)  4768670                                    4761548                                         4957066                               
+Total length (>= 25000 bp)  4673143                                    4039448                                         4921711                               
+Total length (>= 50000 bp)  4468099                                    3190339                                         4822717                               
+# contigs                   48                                         185                                             16                                    
+Largest contig              536674                                     163820                                          1434334                               
+Total length                4797012                                    5128345                                         4957066                               
+GC (%)                      36.05                                      36.01                                           36.26                                 
+N50                         171235                                     66789                                           1349311                               
+N75                         119046                                     28481                                           361696                                
+L50                         9                                          27                                              2                                     
+L75                         17                                         56                                              5                                     
+# N's per 100 kbp           0.00                                       0.00                                            0.00                                  

@@ -1,0 +1,4 @@
+Assembly	# contigs (>= 0 bp)	# contigs (>= 1000 bp)	# contigs (>= 5000 bp)	# contigs (>= 10000 bp)	# contigs (>= 25000 bp)	# contigs (>= 50000 bp)	Total length (>= 0 bp)	Total length (>= 1000 bp)	Total length (>= 5000 bp)	Total length (>= 10000 bp)	Total length (>= 25000 bp)	Total length (>= 50000 bp)	# contigs	Largest contig	Total length	GC (%)	N50	N75	L50	L75	# N's per 100 kbp
+19mer_cor_DBG2OLC_platanus_final_assembly	48	48	40	39	33	28	4797012	4797012	4774863	4768670	4673143	4468099	48	536674	4797012	36.05	171235	119046	9	17	0.00
+DBG2OLC_params_19_1_2_10_0.0001_final_assembly	185	182	140	108	63	38	5128345	5126072	4993229	4761548	4039448	3190339	185	163820	5128345	36.01	66789	28481	27	56	0.00
+Masurca_cor_beforePolishing_genome.scf	16	16	16	16	14	11	4957066	4957066	4957066	4957066	4921711	4822717	16	1434334	4957066	36.26	1349311	361696	2	5	0.00
