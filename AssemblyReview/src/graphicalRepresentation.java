@@ -1,4 +1,6 @@
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 /*
@@ -20,22 +22,64 @@ public class graphicalRepresentation extends javax.swing.JPanel {
 
     //x and width coordinates of gaps (array list of array of two integers: x and width)
     private ArrayList<int[]> xWidthGapCoord = new ArrayList<int[]>();
+    private ArrayList<int[]> scaledGapCoord = new ArrayList<int[]>();
     //y coordinate
-    private int y = this.getHeight();
-    private int height = this.getHeight();
+    private int y = 0;
+    private int height = 35;
+    
+    @Override
+    public void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        //N50 and other contigs have different colors
+        Color gaps_color = new Color(250, 128, 114);
+        Color other_color = new Color(70, 130, 180);
+
+        //Set color and rectangles
+        g.setColor(other_color);
+        g.fillRect(0, y, this.getWidth(), height);
+        
+        //For every coordinate, draw a rectangle
+        for (int i = 0; i < scaledGapCoord.size(); i++) {
+            g.setColor(gaps_color);
+            g.fillRect(scaledGapCoord.get(i)[0], y, scaledGapCoord.get(i)[1], height);
+            
+        }
+    }
+    
+    //Scale width and x
+    private void scaleCoord(String sequence){
+        //Clear scaled coordinates
+        scaledGapCoord.clear();
+        double xVal = 0;
+        double wVal = 0;
+        
+        
+        //Calculate total length of scaffold
+        int scaffLen = sequence.length();
+        for(int j = 0; j < xWidthGapCoord.size(); j++){
+            int[] coord = new int[2];
+            double coef = this.getWidth()/(double)scaffLen;
+            //Caclulate new scaled x and width:
+            xVal = xWidthGapCoord.get(j)[0]*coef;
+            wVal = xWidthGapCoord.get(j)[1]*coef;
+            coord[0] = (int)xVal;
+            coord[1] = (int)Math.ceil(wVal);
+            scaledGapCoord.add(coord);
+        }
+    }
+    
 
     //Calculate coordinates of gaps rectangles
     private void calculateCoordinates(String sequence) {
         int width = 0;
         int index = 0;
-        
+        //Clear array list of coordinates
+        xWidthGapCoord.clear();
 
         //Look for "N" in the sequence
         while (index < sequence.length()) {            
-            if(sequence.charAt(index) == ('N')){
-                System.out.println(index + "___________");
-                System.out.println("N");
-                
+            if(sequence.charAt(index) == ('N')){                
                 int[] coord = new int[2];
                 coord[0] = index; //Index of first N is x coordinate
                 width ++; //One N found
@@ -43,7 +87,6 @@ public class graphicalRepresentation extends javax.swing.JPanel {
                 //Check for other successive N to increase the width of the rectangle
                 index++;
                 while(sequence.charAt(index) == ('N')){
-                    System.out.println("N");
                     width++;
                     index++;
                 }
@@ -54,10 +97,8 @@ public class graphicalRepresentation extends javax.swing.JPanel {
             width = 0;
             index++;
         }
-        for(int j = 0; j < xWidthGapCoord.size(); j++){
-            System.out.println("J " + j);
-            System.out.println("x: " + xWidthGapCoord.get(j)[0] + " w " + xWidthGapCoord.get(j)[1]);
-        }
+        //Scale coordinates
+        scaleCoord(sequence);
     }
 
     //Repaint barplot when fastaFile is given
@@ -78,15 +119,19 @@ public class graphicalRepresentation extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        setMinimumSize(new java.awt.Dimension(680, 35));
+        setPreferredSize(new java.awt.Dimension(680, 35));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 852, Short.MAX_VALUE)
+            .addGap(0, 676, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 34, Short.MAX_VALUE)
+            .addGap(0, 31, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 

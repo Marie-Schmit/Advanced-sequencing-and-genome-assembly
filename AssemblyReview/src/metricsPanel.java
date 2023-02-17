@@ -31,6 +31,7 @@ public class metricsPanel extends javax.swing.JPanel {
             //Create contigs list
             this.contigsList1.setContigMetrics(this.contigsMetrics2);
             this.contigsList1.setList(fastaFileContent);
+            this.graphicalRepresentation1.repaintGraph(concatSeq(fastaFileContent));
         }
         //Display gtf results if gtf file choosen
         if (gtfFileContent != null) {
@@ -40,6 +41,21 @@ public class metricsPanel extends javax.swing.JPanel {
         else if(gtfFileContent == null){
             this.gtfContent.setVisible(false);
         }
+    }
+    
+    private String concatSeq(ArrayList<StringBuffer> fastaFileContent){
+        String sequence = "";
+        for(int i = 0; i<fastaFileContent.size(); i++){
+            //Take only sequences, not headers
+            String line = fastaFileContent.get(i).toString();
+            //Remove line breaks
+            
+            if(!line.startsWith(">")){
+                line = line.replace("\n", "");
+                sequence += line;
+            }
+        }
+        return sequence;
     }
 
     /**
@@ -57,6 +73,7 @@ public class metricsPanel extends javax.swing.JPanel {
         gtfContent = new gtfContent();
         contigsList1 = new ContigsList();
         contigsMetrics2 = new contigsMetrics();
+        graphicalRepresentation1 = new graphicalRepresentation();
 
         jPanel3.setBackground(new java.awt.Color(153, 255, 51));
         jPanel3.setForeground(new java.awt.Color(153, 255, 102));
@@ -83,6 +100,17 @@ public class metricsPanel extends javax.swing.JPanel {
             .addGap(0, 294, Short.MAX_VALUE)
         );
 
+        javax.swing.GroupLayout graphicalRepresentation1Layout = new javax.swing.GroupLayout(graphicalRepresentation1);
+        graphicalRepresentation1.setLayout(graphicalRepresentation1Layout);
+        graphicalRepresentation1Layout.setHorizontalGroup(
+            graphicalRepresentation1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 676, Short.MAX_VALUE)
+        );
+        graphicalRepresentation1Layout.setVerticalGroup(
+            graphicalRepresentation1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 31, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -95,17 +123,20 @@ public class metricsPanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(gtfContent, javax.swing.GroupLayout.PREFERRED_SIZE, 686, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(general_statistics, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(general_statistics, javax.swing.GroupLayout.PREFERRED_SIZE, 684, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(graphicalRepresentation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(barplotPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(general_statistics, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(graphicalRepresentation1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(gtfContent, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(3, 3, 3)
@@ -123,6 +154,7 @@ public class metricsPanel extends javax.swing.JPanel {
     private ContigsList contigsList1;
     private contigsMetrics contigsMetrics2;
     private general_statistics general_statistics;
+    private graphicalRepresentation graphicalRepresentation1;
     private gtfContent gtfContent;
     private javax.swing.JPanel jPanel3;
     // End of variables declaration//GEN-END:variables
