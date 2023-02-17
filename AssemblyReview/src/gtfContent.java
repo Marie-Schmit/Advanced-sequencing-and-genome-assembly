@@ -10,7 +10,6 @@ import javax.swing.table.TableColumn;
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JPanel.java to edit this template
  */
-
 /**
  *
  * @author marie
@@ -22,7 +21,7 @@ public class gtfContent extends javax.swing.JPanel {
      */
     public gtfContent() {
         initComponents();
-        
+
         //Clear table for new page
         DefaultTableModel tableModel = (DefaultTableModel) jTable1.getModel();
         tableModel.setRowCount(0);
@@ -65,21 +64,42 @@ public class gtfContent extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     //Display table on a page
-    public void displayTablePage(ArrayList<StringBuffer> textContent, int startLine, int endLine){
+    public void displayTablePage(ArrayList<StringBuffer> textContent, int startLine, int endLine) {
         int i;
         //Clear table for new page
         DefaultTableModel tableModel = (DefaultTableModel) jTable1.getModel();
         tableModel.setRowCount(0);
-        
+
         //Go throught each line of gtf file
-        for (i = startLine; i < endLine-1; i++) {
+        for (i = startLine; i < endLine - 1; i++) {
             String[] row;
             //Each line of the gtf file is converted to a table row
             row = contentToString(textContent.get(i));
             addToTable(row);
         }
     }
-    
+
+    //Override to only display the text corresponding to a chosen scaffold or contig
+    public void displayTablePage(ArrayList<StringBuffer> textContent, String sequenceName) {
+        int startLine = 0;
+        int endLine = textContent.size();
+        int i;
+
+        //Clear table for new page
+        DefaultTableModel tableModel = (DefaultTableModel) jTable1.getModel();
+        tableModel.setRowCount(0);
+        //System.out.println(textContent.get(10).toString());
+        //Go throught each line of gtf file
+        for (i = startLine; i < endLine - 1; i++) {
+            if (textContent.get(i).toString().startsWith(sequenceName)) {
+                String[] row;
+                //Each line of the gtf file is converted to a table row
+                row = contentToString(textContent.get(i));
+                addToTable(row);
+            }
+        }
+    }
+
     //Convert a string buffer to a row of table
     private String[] contentToString(StringBuffer rowContent) {
         String rowText = rowContent.toString();
@@ -90,7 +110,7 @@ public class gtfContent extends javax.swing.JPanel {
 
         return row;
     }
-    
+
     //Add line to table, for gtf file
     private void addToTable(String[] row) {
         int i;
@@ -101,7 +121,7 @@ public class gtfContent extends javax.swing.JPanel {
         //Resize col 8 (attributes) of table
         //setColSize(jTable1, 8);
     }
-    
+
     //Resize colulumn of index colNumber of JTable table
     private void setColSize(JTable table, int colNumber) {
         TableColumn tableCol = table.getColumnModel().getColumn(colNumber); //get desired column
@@ -125,8 +145,7 @@ public class gtfContent extends javax.swing.JPanel {
 
         tableCol.setPreferredWidth(bestWidth);
     }
-    
-    
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane gtfTable;

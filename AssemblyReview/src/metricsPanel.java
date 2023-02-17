@@ -30,7 +30,7 @@ public class metricsPanel extends javax.swing.JPanel {
             this.barplotPanel.repaintBarPlot(fastaFileContent);
             //Create contigs list
             this.contigsList1.setContigMetrics(this.contigsMetrics2);
-            this.contigsList1.setList(fastaFileContent);
+            this.contigsList1.setList(fastaFileContent, this.gtfContent, gtfFileContent);
             this.graphicalRepresentation1.repaintGraph(concatSeq(fastaFileContent));
         }
         //Display gtf results if gtf file choosen

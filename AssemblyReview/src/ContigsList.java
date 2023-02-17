@@ -26,6 +26,9 @@ public class ContigsList extends javax.swing.JPanel {
     //Arrays of contigs header and their corresponding sequence
     String[] contigsHeaders;
     String[] contigsSeq;
+    //Set gtf panel
+    gtfContent gtfPanel ;
+    ArrayList<StringBuffer> gtfFileContent;
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -71,6 +74,11 @@ public class ContigsList extends javax.swing.JPanel {
         //Pass value to contigs metric corresponding text area, to get the metrics displayed
         if(jList1.getSelectedIndex() != -1) //Element is selected
             contigShowStats.setSequence(contigsSeq[jList1.getSelectedIndex()]);
+            //Display selected lines in gtf content
+            String sequenceName = jList1.getSelectedValuesList().get(0);
+            sequenceName = sequenceName.replace(">", "");
+            sequenceName = sequenceName.replace("\n", "");
+            gtfPanel.displayTablePage(gtfFileContent, sequenceName);
     }//GEN-LAST:event_jList1ValueChanged
 
     public void setContigMetrics(contigsMetrics metrics){
@@ -79,7 +87,10 @@ public class ContigsList extends javax.swing.JPanel {
     }
     
     //Set list values when fasta file is selected
-    public void setList(ArrayList<StringBuffer> fastaFileContent) {
+    public void setList(ArrayList<StringBuffer> fastaFileContent, gtfContent gtfPane, ArrayList<StringBuffer> gtfFileContent) {
+        //Pass values to gtfContent to display only the lines of selected contig
+        this.gtfFileContent = gtfFileContent;
+        this.gtfPanel = gtfPane;
         //Instance of statisticsCalculation
         statisticsCalculation Stats = new statisticsCalculation();
         //Get list of headers, and list of sequences
